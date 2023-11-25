@@ -2,7 +2,7 @@ name: wolfssl-5
 git: https://github.com/wolfSSL/wolfssl.git
 config-commands:
   - ./autogen.sh
-  - ./configure
+  - ./configure --enable-all
   # Build fix: disable "-Werror"
   - sed -i 's/-Werror//' Makefile
 clang-append:
