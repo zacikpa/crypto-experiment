@@ -1,4 +1,4 @@
-name: libsodium-1
+name: sodium-1
 git: https://github.com/jedisct1/libsodium.git
 config-commands:
   # A simple patch to fix the build for versions 1.0.12 and lower
