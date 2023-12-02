@@ -3,8 +3,9 @@ git: https://github.com/Mbed-TLS/mbedtls.git
 clang-append:
   - -g
   - -O2
+target:
+  - no_test
 tags:
-  - mbedtls-2.18.0
   - mbedtls-2.19.0
   - mbedtls-2.20.0
   - mbedtls-2.21.0
