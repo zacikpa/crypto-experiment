@@ -21,18 +21,14 @@ functions:
   - Base64_Decode
   - Base16_Encode
   - Base16_Decode
-  - wc_Compress
-  - wc_DeCompress
   - wc_SignatureVerify
   - wc_SignatureGenerate
   - wc_Des_CbcEncrypt
   - wc_Des_CbcDecrypt
   - wc_Des_EcbEncrypt
-  - wc_Des_EcbDecrypt
   - wc_Des3_CbcEncrypt
   - wc_Des3_CbcDecrypt
   - wc_Des3_EcbEncrypt
-  - wc_Des3_EcbDecrypt
   - wc_AesCbcEncrypt
   - wc_AesCbcDecrypt
   - wc_AesCtrEncrypt
@@ -40,7 +36,7 @@ functions:
   - wc_AesDecryptDirect
   - wc_AesGcmEncrypt
   - wc_AesGcmDecrypt
-  - wc_AesGmacUpdate
+  - wc_GmacUpdate
   - wc_AesCcmEncrypt
   - wc_AesCcmDecrypt
   - wc_AesXtsEncrypt
@@ -51,13 +47,7 @@ functions:
   - wc_AesCfbDecrypt
   - wc_AesSivEncrypt
   - wc_AesSivDecrypt
-  - wc_AesEaxEncryptAuth
-  - wc_AesEaxDecryptAuth
-  - wc_AesEaxEncryptUpdate
-  - wc_AesEaxDecryptUpdate
-  - wc_AesEaxEncryptFinal
-  - wc_AesEaxDecryptFinal
-  - wc_AesArc4Process
+  - wc_Arc4Process
   - wc_Blake2bUpdate
   - wc_Blake2bFinal
   - wc_CamelliaEncryptDirect
@@ -65,8 +55,8 @@ functions:
   - wc_CamelliaCbcEncrypt
   - wc_CamelliaCbcDecrypt
   - wc_Chacha_Process
-  - wc_Chacha20Poly1305_Encrypt
-  - wc_Chacha20Poly1305_Decrypt
+  - wc_ChaCha20Poly1305_Encrypt
+  - wc_ChaCha20Poly1305_Decrypt
   - wc_CmacUpdate
   - wc_CmacFinal
   - wc_AesCmacGenerate
@@ -100,7 +90,12 @@ functions:
   - wc_HmacFinal
   - wc_HKDF
   - wc_Md2Hash
-  - wc_Md4Hash
+  - wc_Md2Update
+  - wc_Md2Final
+  - wc_Md4Update
+  - wc_Md4Final
+  - wc_Md5Update
+  - wc_Md5Final
   - wc_Md5Hash
   - wc_PBKDF1
   - wc_PBKDF2
@@ -114,8 +109,8 @@ functions:
   - wc_RsaPrivateDecrypt
   - wc_RsaSSL_Sign
   - wc_RsaSSL_Verify
-  - wc_RsaPss_Sign
-  - wc_RsaPss_Verify
+  - wc_RsaPSS_Sign
+  - wc_RsaPSS_Verify
   - wc_ShaHash
   - wc_Sha224Hash
   - wc_Sha256Hash
@@ -125,6 +120,4 @@ functions:
   - wc_Sha3_256Hash
   - wc_Sha3_384Hash
   - wc_Sha3_512Hash
-  - wc_Shake128Hash
   - wc_Shake256Hash
-  - wc_SipHash
