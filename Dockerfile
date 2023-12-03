@@ -28,8 +28,9 @@ RUN dnf upgrade -y && \
 RUN mkdir /experiment
 WORKDIR /experiment
 
-RUN git clone https://github.com/viktormalik/diffkemp.git
+RUN git clone https://github.com/zacikpa/diffkemp.git
 WORKDIR /experiment/diffkemp
+RUN git checkout structure-pattern
 RUN mkdir build && \
     cd build && \
     cmake .. -GNinja -DCMAKE_BUILD_TYPE=Release && \
@@ -42,6 +43,8 @@ WORKDIR /experiment
 RUN git clone https://github.com/zacikpa/diffkemp-analysis.git
 
 COPY config /experiment/config
+COPY custom-patterns /experiment/custom-patterns
+COPY experiment-pre.py /experiment/experiment-pre.py
 
 ENTRYPOINT /bin/fish
 
