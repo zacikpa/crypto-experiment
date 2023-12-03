@@ -25,11 +25,9 @@ RUN dnf upgrade -y && \
       python-unversioned-command \
       diffutils
 
-RUN mkdir /experiment
-WORKDIR /experiment
-
+RUN git clone https://github.com/zacikpa/diffkemp-analysis.git
 RUN git clone https://github.com/zacikpa/diffkemp.git
-WORKDIR /experiment/diffkemp
+WORKDIR /diffkemp
 RUN git checkout structure-pattern
 RUN mkdir build && \
     cd build && \
@@ -39,8 +37,8 @@ RUN mkdir build && \
 RUN pip install -r requirements.txt && \
     pip install -e .
 
+RUN mkdir /experiment
 WORKDIR /experiment
-RUN git clone https://github.com/zacikpa/diffkemp-analysis.git
 
 COPY config /experiment/config
 COPY custom-patterns /experiment/custom-patterns

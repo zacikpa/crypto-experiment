@@ -4,8 +4,8 @@ import os
 import subprocess
 
 CONFIG_DIR = "config"
-ANALYSIS_SCRIPT = "./diffkemp-analysis/analyze.py"
-DIFFKEMP_BINARY = "./diffkemp/bin/diffkemp"
+ANALYSIS_SCRIPT = "../diffkemp-analysis/analyze.py"
+DIFFKEMP_BINARY = "../diffkemp/bin/diffkemp"
 RESULTS_DIFF_SCRIPT = "./diffkemp-analysis/results-diff.py"
 RESULTS_DIR = "results"
 RESULTS_FILENAME = "results.yml"
