@@ -10,9 +10,10 @@ RESULTS_DIFF_SCRIPT = "../diffkemp-analysis/diff-results.py"
 RESULTS_DIR = "results"
 RESULTS_FILENAME = "results.yml"
 DIFF_FILENAME = "diff.yml"
-ALL_PATTERNS_RESULTS_DIR = os.path.join(RESULTS_DIR, "all-patterns")
-ALL_PATTERNS_RESULTS_FILE = os.path.join(ALL_PATTERNS_RESULTS_DIR, "results.yml")
+ALL_PATTERNS_RESULTS_DIR = "all-patterns"
 DISABLED_PATTERNS = ["group-vars", "reordered-bin-ops"]
+
+LIBRARIES = ["mbedtls-2", "mbedtls-3", "nettle-3", "sodium-1", "wolfssl-4", "wolfssl-5"]
 
 BUILTIN_PATTERNS = [
     "struct-alignment",
@@ -22,8 +23,9 @@ BUILTIN_PATTERNS = [
     "inverse-conditions",
 ]
 
-for config_filename in os.listdir(CONFIG_DIR):
-    config_filepath = os.path.join(CONFIG_DIR, config_filename)
+for library in LIBRARIES:
+    config_filepath = os.path.join(CONFIG_DIR, f"{library}.yml")
+    all_pattern_results_dir = os.path.join(RESULTS_DIR, ALL_PATTERNS_RESULTS_DIR)
     analysis_cmd = [
         ANALYSIS_SCRIPT,
         config_filepath,
@@ -32,13 +34,12 @@ for config_filename in os.listdir(CONFIG_DIR):
         "--disable-patterns",
         ",".join(DISABLED_PATTERNS),
         "--output",
-        ALL_PATTERNS_RESULTS_DIR,
+        all_pattern_results_dir,
     ]
     subprocess.run(analysis_cmd)
 
     for pattern in BUILTIN_PATTERNS:
         results_dir = os.path.join(RESULTS_DIR, pattern)
-        results_file = os.path.join(results_dir, RESULTS_FILENAME)
         disabled_patterns = DISABLED_PATTERNS + [pattern]
         analysis_cmd = [
             ANALYSIS_SCRIPT,
@@ -51,11 +52,11 @@ for config_filename in os.listdir(CONFIG_DIR):
             results_dir,
         ]
         subprocess.run(analysis_cmd)
-        diff_file = os.path.join(results_dir, "diff.yml")
+        diff_file = os.path.join(results_dir, library, DIFF_FILENAME)
         diff_cmd = [
             RESULTS_DIFF_SCRIPT,
-            ALL_PATTERNS_RESULTS_FILE,
-            results_file,
+            os.path.join(all_pattern_results_dir, library, RESULTS_FILENAME),
+            os.path.join(results_dir, library, RESULTS_FILENAME),
             "--output",
             diff_file,
         ]
