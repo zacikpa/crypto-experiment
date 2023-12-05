@@ -71,7 +71,6 @@ functions:
   - wc_ecc_verify_hash
   - wc_ecc_encrypt
   - wc_ecc_decrypt
-  - wc_ecc_encrypt_ex
   - wc_ed25519_sign_msg
   - wc_ed25519ctx_sign_msg
   - wc_ed25519ph_sign_hash
