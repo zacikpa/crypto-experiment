@@ -11,6 +11,8 @@ RESULTS_DIR = os.path.join("results", "post")
 RESULTS_FILENAME = "results.yml"
 DIFF_FILENAME = "diff.yml"
 ALL_PATTERNS_RESULTS_DIR = "all-patterns"
+CUSTOM_PATTERNS_CONFIG_FILENAME = "config.yml"
+CUSTOM_PATTERNS_DIR = "custom-patterns"
 
 LIBRARIES = ["mbedtls-2", "mbedtls-3", "nettle-3", "sodium-1", "wolfssl-4", "wolfssl-5"]
 
@@ -34,6 +36,9 @@ for library in LIBRARIES:
 
     for pattern in NEW_PATTERNS:
         results_dir = os.path.join(RESULTS_DIR, pattern)
+        custom_pattern_config_path = os.path.join(
+            CUSTOM_PATTERNS_DIR, pattern, CUSTOM_PATTERNS_CONFIG_FILENAME
+        )
         analysis_cmd = [
             ANALYSIS_SCRIPT,
             config_filepath,
@@ -41,6 +46,8 @@ for library in LIBRARIES:
             DIFFKEMP_BINARY,
             "--disable-patterns",
             pattern,
+            "--custom-patterns",
+            custom_pattern_config_path,
             "--output",
             results_dir,
         ]
