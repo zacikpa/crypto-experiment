@@ -7,20 +7,16 @@ CONFIG_DIR = "config"
 ANALYSIS_SCRIPT = "../diffkemp-analysis/analyze.py"
 DIFFKEMP_BINARY = "../diffkemp/bin/diffkemp"
 RESULTS_DIFF_SCRIPT = "../diffkemp-analysis/diff-results.py"
-RESULTS_DIR = os.path.join("results", "pre")
+RESULTS_DIR = os.path.join("results", "post")
 RESULTS_FILENAME = "results.yml"
 DIFF_FILENAME = "diff.yml"
 ALL_PATTERNS_RESULTS_DIR = "all-patterns"
-DISABLED_PATTERNS = ["group-vars", "reordered-bin-ops"]
 
 LIBRARIES = ["mbedtls-2", "mbedtls-3", "nettle-3", "sodium-1", "wolfssl-4", "wolfssl-5"]
 
-BUILTIN_PATTERNS = [
-    "struct-alignment",
-    "function-splits",
-    "numerical-macros",
-    "relocations",
-    "inverse-conditions",
+NEW_PATTERNS = [
+    "group-vars",
+    "reordered-bin-ops",
 ]
 
 for library in LIBRARIES:
@@ -31,23 +27,20 @@ for library in LIBRARIES:
         config_filepath,
         "--diffkemp",
         DIFFKEMP_BINARY,
-        "--disable-patterns",
-        ",".join(DISABLED_PATTERNS),
         "--output",
         all_pattern_results_dir,
     ]
     subprocess.run(analysis_cmd)
 
-    for pattern in BUILTIN_PATTERNS:
+    for pattern in NEW_PATTERNS:
         results_dir = os.path.join(RESULTS_DIR, pattern)
-        disabled_patterns = DISABLED_PATTERNS + [pattern]
         analysis_cmd = [
             ANALYSIS_SCRIPT,
             config_filepath,
             "--diffkemp",
             DIFFKEMP_BINARY,
             "--disable-patterns",
-            ",".join(disabled_patterns),
+            pattern,
             "--output",
             results_dir,
         ]
