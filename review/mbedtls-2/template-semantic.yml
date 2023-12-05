@@ -1,0 +1,584 @@
+mbedtls-2.18.0 -> mbedtls-2.19.0:
+  mbedtls_ecdsa_sign:
+    category: 'genuine'
+    comment: 'safer blinding'
+    commits: []
+  mbedtls_ecdsa_verify:
+    category: 'genuine'
+    comment: 'added a check if a feature is enabled using a macro'
+    commits: []
+  mbedtls_sha512:
+    category: 'complex'
+    comment: '8 variables replaced by an array, then manipulated in a loop'
+    commits: []
+mbedtls-2.19.0 -> mbedtls-2.20.0:
+  mbedtls_aes_crypt_cbc:
+    category: 'simple'
+    comment: 'added buffer zeroization'
+    commits: []
+  mbedtls_aes_crypt_cfb128:
+    category: 'simple'
+    comment: 'added buffer zeroization'
+    commits: []
+  mbedtls_aes_crypt_cfb8:
+    category: 'simple'
+    comment: 'added buffer zeroization'
+    commits: []
+  mbedtls_aes_crypt_ctr:
+    category: 'simple'
+    comment: 'added buffer zeroization'
+    commits: []
+  mbedtls_aes_crypt_ecb:
+    category: 'simple'
+    comment: 'added buffer zeroization'
+    commits: []
+  mbedtls_aes_crypt_ofb:
+    category: 'simple'
+    comment: 'added buffer zeroization'
+    commits: []
+  mbedtls_aes_crypt_xts:
+    category: 'simple'
+    comment: 'added buffer zeroization'
+    commits: []
+  mbedtls_ecdsa_sign:
+    category: 'genuine'
+    comment: 'added error check'
+    commits: []
+  mbedtls_md:
+    category: 'genuine'
+    comment: 'parameter type changed'
+    commits: []
+  mbedtls_md_hmac:
+    category: 'genuine'
+    comment: 'parameter type changed'
+    commits: []
+  mbedtls_pkcs5_pbes2:
+    category: 'simple'
+    comment: 'function call returning same result within loop moved out of the loop'
+    commits: []
+  mbedtls_pkcs5_pbkdf2_hmac:
+    category: 'simple'
+    comment: 'function call returning same result within loop moved out of the loop'
+    commits: []
+mbedtls-2.20.0 -> mbedtls-2.21.0:
+  mbedtls_ecdsa_sign:
+    category: 'genuine'
+    comment: 'bug fix, incrementing pointer instead of value'
+    commits:
+    - https://github.com/ARMmbed/mbed-crypto/commit/ee4ba54d8dc51bbcf409db8f7a0055a8e0427ca6
+mbedtls-2.21.0 -> mbedtls-2.22.0:
+  mbedtls_hkdf:
+    category: 'unknown'
+    comment: 'added explicit memset initialization, commit claims semantics unchanged'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/3ab121a6034aa36a895e1bbb5daab7a27d8b14c3
+    - https://github.com/Mbed-TLS/mbedtls/commit/60d6516c60edff75b0c60a177f70604167b6bc8b
+mbedtls-2.22.0 -> mbedtls-2.23.0:
+  mbedtls_md_hmac:
+    category: 'simple'
+    comment: 'merged two switch cases containing the same function call'
+    commits: []
+mbedtls-2.23.0 -> mbedtls-2.24.0:
+  mbedtls_dhm_calc_secret:
+    category: 'unknown'
+    comment: 'no diff'
+    commits: []
+  mbedtls_md_hmac:
+    category: 'genuine'
+    comment: 'memory leak fix'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/d15c740df6e26b3dbe459c87ca59fa1d0d999d15
+  mbedtls_rsa_pkcs1_decrypt:
+    category: 'genuine'
+    comment: 'blinding security fix'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/750d3c76cbc1071774a7efd75d578c4b798d7cb6
+    - https://github.com/Mbed-TLS/mbedtls/commit/e288ec06515c80ef4c8d9048683d8d296d97a99d
+    - https://github.com/Mbed-TLS/mbedtls/commit/7868396e78fdf761f0e7fce231aff4d4c30899a3
+    - https://github.com/Mbed-TLS/mbedtls/commit/b3e3d79e1a2524b2d66d8c3c251ca099f2ce7abe
+  mbedtls_rsa_pkcs1_encrypt:
+    category: 'genuine'
+    comment: 'blinding security fix'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/750d3c76cbc1071774a7efd75d578c4b798d7cb6
+    - https://github.com/Mbed-TLS/mbedtls/commit/e288ec06515c80ef4c8d9048683d8d296d97a99d
+    - https://github.com/Mbed-TLS/mbedtls/commit/7868396e78fdf761f0e7fce231aff4d4c30899a3
+    - https://github.com/Mbed-TLS/mbedtls/commit/b3e3d79e1a2524b2d66d8c3c251ca099f2ce7abe
+  mbedtls_rsa_pkcs1_sign:
+    category: 'genuine'
+    comment: 'blinding security fix'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/750d3c76cbc1071774a7efd75d578c4b798d7cb6
+    - https://github.com/Mbed-TLS/mbedtls/commit/e288ec06515c80ef4c8d9048683d8d296d97a99d
+    - https://github.com/Mbed-TLS/mbedtls/commit/7868396e78fdf761f0e7fce231aff4d4c30899a3
+    - https://github.com/Mbed-TLS/mbedtls/commit/b3e3d79e1a2524b2d66d8c3c251ca099f2ce7abe
+  mbedtls_rsa_pkcs1_verify:
+    category: 'genuine'
+    comment: 'blinding security fix'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/750d3c76cbc1071774a7efd75d578c4b798d7cb6
+    - https://github.com/Mbed-TLS/mbedtls/commit/e288ec06515c80ef4c8d9048683d8d296d97a99d
+    - https://github.com/Mbed-TLS/mbedtls/commit/7868396e78fdf761f0e7fce231aff4d4c30899a3
+    - https://github.com/Mbed-TLS/mbedtls/commit/b3e3d79e1a2524b2d66d8c3c251ca099f2ce7abe
+  mbedtls_rsa_rsaes_oaep_decrypt:
+    category: 'genuine'
+    comment: 'blinding security fix'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/750d3c76cbc1071774a7efd75d578c4b798d7cb6
+    - https://github.com/Mbed-TLS/mbedtls/commit/e288ec06515c80ef4c8d9048683d8d296d97a99d
+    - https://github.com/Mbed-TLS/mbedtls/commit/7868396e78fdf761f0e7fce231aff4d4c30899a3
+    - https://github.com/Mbed-TLS/mbedtls/commit/b3e3d79e1a2524b2d66d8c3c251ca099f2ce7abe
+  mbedtls_rsa_rsaes_oaep_encrypt:
+    category: 'genuine'
+    comment: 'blinding security fix'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/750d3c76cbc1071774a7efd75d578c4b798d7cb6
+    - https://github.com/Mbed-TLS/mbedtls/commit/e288ec06515c80ef4c8d9048683d8d296d97a99d
+    - https://github.com/Mbed-TLS/mbedtls/commit/7868396e78fdf761f0e7fce231aff4d4c30899a3
+    - https://github.com/Mbed-TLS/mbedtls/commit/b3e3d79e1a2524b2d66d8c3c251ca099f2ce7abe
+  mbedtls_rsa_rsaes_pkcs1_v15_decrypt:
+    category: 'genuine'
+    comment: 'blinding security fix'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/750d3c76cbc1071774a7efd75d578c4b798d7cb6
+    - https://github.com/Mbed-TLS/mbedtls/commit/e288ec06515c80ef4c8d9048683d8d296d97a99d
+    - https://github.com/Mbed-TLS/mbedtls/commit/7868396e78fdf761f0e7fce231aff4d4c30899a3
+    - https://github.com/Mbed-TLS/mbedtls/commit/b3e3d79e1a2524b2d66d8c3c251ca099f2ce7abe
+  mbedtls_rsa_rsaes_pkcs1_v15_encrypt:
+    category: 'genuine'
+    comment: 'blinding security fix'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/750d3c76cbc1071774a7efd75d578c4b798d7cb6
+    - https://github.com/Mbed-TLS/mbedtls/commit/e288ec06515c80ef4c8d9048683d8d296d97a99d
+    - https://github.com/Mbed-TLS/mbedtls/commit/7868396e78fdf761f0e7fce231aff4d4c30899a3
+    - https://github.com/Mbed-TLS/mbedtls/commit/b3e3d79e1a2524b2d66d8c3c251ca099f2ce7abe
+  mbedtls_rsa_rsassa_pkcs1_v15_sign:
+    category: 'genuine'
+    comment: 'blinding security fix'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/750d3c76cbc1071774a7efd75d578c4b798d7cb6
+    - https://github.com/Mbed-TLS/mbedtls/commit/e288ec06515c80ef4c8d9048683d8d296d97a99d
+    - https://github.com/Mbed-TLS/mbedtls/commit/7868396e78fdf761f0e7fce231aff4d4c30899a3
+    - https://github.com/Mbed-TLS/mbedtls/commit/b3e3d79e1a2524b2d66d8c3c251ca099f2ce7abe
+  mbedtls_rsa_rsassa_pkcs1_v15_verify:
+    category: 'genuine'
+    comment: 'blinding security fix'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/750d3c76cbc1071774a7efd75d578c4b798d7cb6
+    - https://github.com/Mbed-TLS/mbedtls/commit/e288ec06515c80ef4c8d9048683d8d296d97a99d
+    - https://github.com/Mbed-TLS/mbedtls/commit/7868396e78fdf761f0e7fce231aff4d4c30899a3
+    - https://github.com/Mbed-TLS/mbedtls/commit/b3e3d79e1a2524b2d66d8c3c251ca099f2ce7abe
+  mbedtls_rsa_rsassa_pss_sign:
+    category: 'genuine'
+    comment: 'blinding security fix'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/750d3c76cbc1071774a7efd75d578c4b798d7cb6
+    - https://github.com/Mbed-TLS/mbedtls/commit/e288ec06515c80ef4c8d9048683d8d296d97a99d
+    - https://github.com/Mbed-TLS/mbedtls/commit/7868396e78fdf761f0e7fce231aff4d4c30899a3
+    - https://github.com/Mbed-TLS/mbedtls/commit/b3e3d79e1a2524b2d66d8c3c251ca099f2ce7abe
+  mbedtls_rsa_rsassa_pss_verify:
+    category: 'genuine'
+    comment: 'blinding security fix'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/750d3c76cbc1071774a7efd75d578c4b798d7cb6
+    - https://github.com/Mbed-TLS/mbedtls/commit/e288ec06515c80ef4c8d9048683d8d296d97a99d
+    - https://github.com/Mbed-TLS/mbedtls/commit/7868396e78fdf761f0e7fce231aff4d4c30899a3
+    - https://github.com/Mbed-TLS/mbedtls/commit/b3e3d79e1a2524b2d66d8c3c251ca099f2ce7abe
+mbedtls-2.24.0 -> mbedtls-2.25.0:
+  mbedtls_aes_crypt_cbc:
+    category: 'simple'
+    comment: 'group local variables and zeroize them at the end'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/5197c6692c6d895956b833951079dcf4d937fd5c
+  mbedtls_aes_crypt_cfb128:
+    category: 'simple'
+    comment: 'group local variables and zeroize them at the end'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/5197c6692c6d895956b833951079dcf4d937fd5c
+  mbedtls_aes_crypt_cfb8:
+    category: 'simple'
+    comment: 'group local variables and zeroize them at the end'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/5197c6692c6d895956b833951079dcf4d937fd5c
+  mbedtls_aes_crypt_ctr:
+    category: 'simple'
+    comment: 'group local variables and zeroize them at the end'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/5197c6692c6d895956b833951079dcf4d937fd5c
+  mbedtls_aes_crypt_ecb:
+    category: 'simple'
+    comment: 'group local variables and zeroize them at the end'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/5197c6692c6d895956b833951079dcf4d937fd5c
+  mbedtls_aes_crypt_ofb:
+    category: 'simple'
+    comment: 'group local variables and zeroize them at the end'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/5197c6692c6d895956b833951079dcf4d937fd5c
+  mbedtls_aes_crypt_xts:
+    category: 'simple'
+    comment: 'group local variables and zeroize them at the end'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/5197c6692c6d895956b833951079dcf4d937fd5c
+  mbedtls_ccm_auth_decrypt:
+    category: 'genuine'
+    comment: 'fixed off-by-one error'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/5e940c6068c652b6fcb32f7393e80689561255fe
+  mbedtls_ccm_encrypt_and_tag:
+    category: 'genuine'
+    comment: 'fixed off-by-one error'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/5e940c6068c652b6fcb32f7393e80689561255fe
+  mbedtls_ccm_star_auth_decrypt:
+    category: 'genuine'
+    comment: 'fixed off-by-one error'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/5e940c6068c652b6fcb32f7393e80689561255fe
+  mbedtls_ccm_star_encrypt_and_tag:
+    category: 'genuine'
+    comment: 'fixed off-by-one error'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/5e940c6068c652b6fcb32f7393e80689561255fe
+  mbedtls_md5:
+    category: 'simple'
+    comment: 'group local variables and zeroize them at the end'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/4cb56f83cbb20b00da4657dde7e86d0927a4cbe6
+    - https://github.com/Mbed-TLS/mbedtls/commit/d1c98fcf5e04b8f6628ca951131aa1f7d67283de
+  mbedtls_pkcs5_pbes2:
+    category: 'simple'
+    comment: 'zeroize local buffers at the end (goto cleanup instead of returning right away)'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/4553dd46d6f82daaef9146789f377e0a885b3011
+    - https://github.com/Mbed-TLS/mbedtls/commit/b8513fa6acbe45414f1168f694072e656e2e1499
+    - https://github.com/Mbed-TLS/mbedtls/commit/76749aea784cfec245390d0d6f0ab0a2d63ae90a
+  mbedtls_pkcs5_pbkdf2_hmac:
+    category: 'simple'
+    comment: 'zeroize local buffers at the end (goto cleanup instead of returning right away)'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/4553dd46d6f82daaef9146789f377e0a885b3011
+    - https://github.com/Mbed-TLS/mbedtls/commit/b8513fa6acbe45414f1168f694072e656e2e1499
+    - https://github.com/Mbed-TLS/mbedtls/commit/76749aea784cfec245390d0d6f0ab0a2d63ae90a
+  mbedtls_ripemd160:
+    category: 'simple'
+    comment: 'group local variables and zeroize them at the end'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/4cb56f83cbb20b00da4657dde7e86d0927a4cbe6
+    - https://github.com/Mbed-TLS/mbedtls/commit/d1c98fcf5e04b8f6628ca951131aa1f7d67283de
+  mbedtls_rsa_pkcs1_decrypt:
+    category: 'genuine'
+    comment: 'bug fix of retrying blinding if it fails'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/ca8b8e7c31f856e329e03f4857bbeb9cb066d03e
+  mbedtls_rsa_pkcs1_encrypt:
+    category: 'genuine'
+    comment: 'bug fix of retrying blinding if it fails'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/ca8b8e7c31f856e329e03f4857bbeb9cb066d03e
+  mbedtls_rsa_pkcs1_sign:
+    category: 'genuine'
+    comment: 'bug fix of retrying blinding if it fails'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/ca8b8e7c31f856e329e03f4857bbeb9cb066d03e
+  mbedtls_rsa_pkcs1_verify:
+    category: 'genuine'
+    comment: 'bug fix of retrying blinding if it fails'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/ca8b8e7c31f856e329e03f4857bbeb9cb066d03e
+  mbedtls_rsa_rsaes_oaep_decrypt:
+    category: 'genuine'
+    comment: 'bug fix of retrying blinding if it fails'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/ca8b8e7c31f856e329e03f4857bbeb9cb066d03e
+  mbedtls_rsa_rsaes_oaep_encrypt:
+    category: 'genuine'
+    comment: 'bug fix of retrying blinding if it fails'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/ca8b8e7c31f856e329e03f4857bbeb9cb066d03e
+  mbedtls_rsa_rsaes_pkcs1_v15_decrypt:
+    category: 'genuine'
+    comment: 'bug fix of retrying blinding if it fails'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/ca8b8e7c31f856e329e03f4857bbeb9cb066d03e
+  mbedtls_rsa_rsaes_pkcs1_v15_encrypt:
+    category: 'genuine'
+    comment: 'bug fix of retrying blinding if it fails'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/ca8b8e7c31f856e329e03f4857bbeb9cb066d03e
+  mbedtls_rsa_rsassa_pkcs1_v15_sign:
+    category: 'genuine'
+    comment: 'bug fix of retrying blinding if it fails'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/ca8b8e7c31f856e329e03f4857bbeb9cb066d03e
+  mbedtls_rsa_rsassa_pkcs1_v15_verify:
+    category: 'genuine'
+    comment: 'bug fix of retrying blinding if it fails'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/ca8b8e7c31f856e329e03f4857bbeb9cb066d03e
+  mbedtls_rsa_rsassa_pss_sign:
+    category: 'genuine'
+    comment: 'bug fix of retrying blinding if it fails'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/ca8b8e7c31f856e329e03f4857bbeb9cb066d03e
+  mbedtls_rsa_rsassa_pss_verify:
+    category: 'genuine'
+    comment: 'bug fix of retrying blinding if it fails'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/ca8b8e7c31f856e329e03f4857bbeb9cb066d03e
+  mbedtls_sha1:
+    category: 'simple'
+    comment: 'group local variables and zeroize them at the end'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/4cb56f83cbb20b00da4657dde7e86d0927a4cbe6
+    - https://github.com/Mbed-TLS/mbedtls/commit/76749aea784cfec245390d0d6f0ab0a2d63ae90a
+  mbedtls_sha256:
+    category: 'simple'
+    comment: 'group local variables and zeroize them at the end'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/4cb56f83cbb20b00da4657dde7e86d0927a4cbe6
+    - https://github.com/Mbed-TLS/mbedtls/commit/76749aea784cfec245390d0d6f0ab0a2d63ae90a
+  mbedtls_sha512:
+    category: 'simple'
+    comment: 'group local variables and zeroize them at the end'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/4cb56f83cbb20b00da4657dde7e86d0927a4cbe6
+    - https://github.com/Mbed-TLS/mbedtls/commit/76749aea784cfec245390d0d6f0ab0a2d63ae90a
+mbedtls-2.25.0 -> mbedtls-2.26.0:
+  mbedtls_base64_decode:
+    category: 'complex'
+    comment: 'replaced bare accesses to encoding table with constant-flow function calls'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/be165bd32b875cb3b6673babc1fc65c212d5efd1
+    - https://github.com/Mbed-TLS/mbedtls/commit/6e152fa36219fe9944a1e77ba567a4e48b5155d3
+    - https://github.com/Mbed-TLS/mbedtls/commit/0544d49330b9b12b244a54c9ff145d55c45f1aaf
+  mbedtls_base64_encode:
+    category: 'complex'
+    comment: 'replaced bare accesses to encoding table with constant-flow function calls'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/dadd10d656ec4c97a3553437ca3e448db91e87a8
+  mbedtls_rsa_pkcs1_decrypt:
+    category: 'genuine'
+    comment: 'fix incorrect error code'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/ae3741e8a440cbfa974a98cb443b26e6ba15f21d
+  mbedtls_rsa_pkcs1_encrypt:
+    category: 'genuine'
+    comment: 'fix incorrect error code'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/ae3741e8a440cbfa974a98cb443b26e6ba15f21d
+  mbedtls_rsa_pkcs1_sign:
+    category: 'genuine'
+    comment: 'fix incorrect error code'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/ae3741e8a440cbfa974a98cb443b26e6ba15f21d
+  mbedtls_rsa_pkcs1_verify:
+    category: 'genuine'
+    comment: 'fix incorrect error code'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/ae3741e8a440cbfa974a98cb443b26e6ba15f21d
+  mbedtls_rsa_rsaes_oaep_decrypt:
+    category: 'genuine'
+    comment: 'fix incorrect error code'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/ae3741e8a440cbfa974a98cb443b26e6ba15f21d
+  mbedtls_rsa_rsaes_oaep_encrypt:
+    category: 'genuine'
+    comment: 'fix incorrect error code'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/ae3741e8a440cbfa974a98cb443b26e6ba15f21d
+  mbedtls_rsa_rsaes_pkcs1_v15_decrypt:
+    category: 'genuine'
+    comment: 'fix incorrect error code'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/ae3741e8a440cbfa974a98cb443b26e6ba15f21d
+  mbedtls_rsa_rsaes_pkcs1_v15_encrypt:
+    category: 'genuine'
+    comment: 'fix incorrect error code'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/ae3741e8a440cbfa974a98cb443b26e6ba15f21d
+  mbedtls_rsa_rsassa_pkcs1_v15_sign:
+    category: 'genuine'
+    comment: 'fix incorrect error code'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/ae3741e8a440cbfa974a98cb443b26e6ba15f21d
+  mbedtls_rsa_rsassa_pkcs1_v15_verify:
+    category: 'genuine'
+    comment: 'fix incorrect error code'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/ae3741e8a440cbfa974a98cb443b26e6ba15f21d
+  mbedtls_rsa_rsassa_pss_sign:
+    category: 'genuine'
+    comment: 'fix incorrect error code'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/ae3741e8a440cbfa974a98cb443b26e6ba15f21d
+  mbedtls_rsa_rsassa_pss_verify:
+    category: 'genuine'
+    comment: 'fix incorrect error code'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/ae3741e8a440cbfa974a98cb443b26e6ba15f21d
+mbedtls-2.26.0 -> mbedtls-2.27.0:
+  mbedtls_dhm_calc_secret:
+    category: 'simple'
+    comment: 'use a macro for summing return codes'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/9f7a693f2c89419be19054e9065f8d2b71a88aca
+    - https://github.com/Mbed-TLS/mbedtls/commit/104eb82ec1b1ecdd18e0a9bebc1c802f5da80096
+  mbedtls_rsa_pkcs1_decrypt:
+    category: 'simple'
+    comment: 'use a macro for summing return codes'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/b7d02e0f15469237073aeaf4fe71e50ad1b0543b
+  mbedtls_rsa_pkcs1_encrypt:
+    category: 'simple'
+    comment: 'use a macro for summing return codes'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/b7d02e0f15469237073aeaf4fe71e50ad1b0543b
+  mbedtls_rsa_pkcs1_sign:
+    category: 'simple'
+    comment: 'use a macro for summing return codes'
+    commits: []
+  mbedtls_rsa_pkcs1_verify:
+    category: 'simple'
+    comment: 'use a macro for summing return codes'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/b7d02e0f15469237073aeaf4fe71e50ad1b0543b
+  mbedtls_rsa_rsaes_oaep_decrypt:
+    category: 'simple'
+    comment: 'use a macro for summing return codes'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/b7d02e0f15469237073aeaf4fe71e50ad1b0543b
+  mbedtls_rsa_rsaes_oaep_encrypt:
+    category: 'simple'
+    comment: 'use a macro for summing return codes'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/b7d02e0f15469237073aeaf4fe71e50ad1b0543b
+  mbedtls_rsa_rsaes_pkcs1_v15_decrypt:
+    category: 'simple'
+    comment: 'use a macro for summing return codes'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/b7d02e0f15469237073aeaf4fe71e50ad1b0543b
+  mbedtls_rsa_rsaes_pkcs1_v15_encrypt:
+    category: 'simple'
+    comment: 'use a macro for summing return codes'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/b7d02e0f15469237073aeaf4fe71e50ad1b0543b
+  mbedtls_rsa_rsassa_pkcs1_v15_sign:
+    category: 'simple'
+    comment: 'use a macro for summing return codes'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/b7d02e0f15469237073aeaf4fe71e50ad1b0543b
+  mbedtls_rsa_rsassa_pkcs1_v15_verify:
+    category: 'simple'
+    comment: 'use a macro for summing return codes'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/b7d02e0f15469237073aeaf4fe71e50ad1b0543b
+  mbedtls_rsa_rsassa_pss_sign:
+    category: 'complex'
+    comment: 'new function called with an argument that makes it behave like the old function + using a macro for summing return codes'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/8aa4d75ec98d19446151d778d2113cc5e26cb758
+    - https://github.com/Mbed-TLS/mbedtls/commit/f3fab3314747a2f1948ce9ecc224ff55e9bbb2fe
+  mbedtls_rsa_rsassa_pss_verify:
+    category: 'simple'
+    comment: 'use a macro for summing return codes'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/b7d02e0f15469237073aeaf4fe71e50ad1b0543b
+mbedtls-2.27.0 -> mbedtls-2.28.0:
+  mbedtls_aes_crypt_cbc:
+    category: 'genuine'
+    comment: 'new error code check'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/377a310da44b7f7001c7a6081b8700d80b2963d6
+  mbedtls_aes_crypt_cfb128:
+    category: 'genuine'
+    comment: 'new error code check'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/377a310da44b7f7001c7a6081b8700d80b2963d6
+  mbedtls_aes_crypt_cfb8:
+    category: 'genuine'
+    comment: 'new error code check'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/377a310da44b7f7001c7a6081b8700d80b2963d6
+  mbedtls_aes_crypt_ctr:
+    category: 'genuine'
+    comment: 'new error code check'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/377a310da44b7f7001c7a6081b8700d80b2963d6
+  mbedtls_aes_crypt_xts:
+    category: 'unknown'
+    comment: 'no diff'
+    commits: []
+  mbedtls_base64_decode:
+    category: 'genuine
+    comment: 'refactoring of local variables and semantics-altering bug fix'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/a97e911e5d86164fcac874e02e83219d2fcd57af
+    - https://github.com/Mbed-TLS/mbedtls/commit/6b541a026b98060a253be2f697146b8d1432ffa9
+    - https://github.com/Mbed-TLS/mbedtls/commit/831fd766f3f554d50fc82499b008514b833c008a
+    - https://github.com/Mbed-TLS/mbedtls/commit/7464f37e7b3c0cfec090d1ddee7347bddce088c3
+  mbedtls_base64_encode:
+    category: 'complex'
+    comment: 'encoding using ranges instead of tables'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/2c78f980711481f70478d9e3a3d08ca15c59f52c
+    - https://github.com/Mbed-TLS/mbedtls/commit/7464f37e7b3c0cfec090d1ddee7347bddce088c3
+    - https://github.com/Mbed-TLS/mbedtls/commit/d6e3f46daaae078c94d1828ab13f6e45326e560c
+  mbedtls_gcm_auth_decrypt:
+    category: 'genuine'
+    comment: 'IV related bug fix'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/5d5f520d3a8f5d252446b0f3f1571af6e22c1f64
+    - https://github.com/Mbed-TLS/mbedtls/commit/2bbafda1f876d32e86571819749583dc61c79665
+  mbedtls_gcm_crypt_and_tag:
+    category: 'genuine'
+    comment: 'IV related bug fix'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/5d5f520d3a8f5d252446b0f3f1571af6e22c1f64
+    - https://github.com/Mbed-TLS/mbedtls/commit/2bbafda1f876d32e86571819749583dc61c79665
+  mbedtls_pkcs12_derivation:
+    category: 'genuine'
+    comment: 'Bug fix in case of null parameter'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/7412eb4bc23ff069254c1f3f7d14c2c058157e94
+    - https://github.com/Mbed-TLS/mbedtls/commit/fe724fe618946772c3a7906de945d46dc9354c83
+  mbedtls_pkcs12_pbe:
+    category: 'genuine'
+    comment: 'Bug fix in case of null parameter'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/fe724fe618946772c3a7906de945d46dc9354c83
+  mbedtls_rsa_pkcs1_decrypt:
+    category: 'unknown'
+    comment: 'no diff'
+    commits: []
+  mbedtls_rsa_pkcs1_sign:
+    category: 'genuine'
+    comment: 'result is zeroized if return code is not 0'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/8c99a760d5ee083b1401ee1fcee90c1b4655bf75
+    - https://github.com/Mbed-TLS/mbedtls/commit/18a44949d0773d1c363f4d21008504d3de617b76
+  mbedtls_rsa_pkcs1_verify:
+    category: 'complex'
+    comment: 'switched constant-time memcmp implementation'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/378e7eb5cc149ac6267426b109ba1c68e2dd7729
+    - https://github.com/Mbed-TLS/mbedtls/commit/18a44949d0773d1c363f4d21008504d3de617b76
+  mbedtls_rsa_rsaes_pkcs1_v15_decrypt:
+    category: 'complex'
+    comment: 'switched constant-time memcmp implementation'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/91deea7765eb7a0765e75676136a1e623ac8870c
+    - https://github.com/Mbed-TLS/mbedtls/commit/c2aee6fc0bc5070ea944e7367dfe2387dd178aad
+    - https://github.com/Mbed-TLS/mbedtls/commit/18a44949d0773d1c363f4d21008504d3de617b76
+  mbedtls_rsa_rsassa_pkcs1_v15_sign:
+    category: 'genuine'
+    comment: 'result is zeroized if return code is not 0'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/8c99a760d5ee083b1401ee1fcee90c1b4655bf75
+    - https://github.com/Mbed-TLS/mbedtls/commit/18a44949d0773d1c363f4d21008504d3de617b76
+  mbedtls_rsa_rsassa_pkcs1_v15_verify:
+    category: 'complex'
+    comment: 'switched constant-time memcmp implementation'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/378e7eb5cc149ac6267426b109ba1c68e2dd7729
+    - https://github.com/Mbed-TLS/mbedtls/commit/18a44949d0773d1c363f4d21008504d3de617b76
