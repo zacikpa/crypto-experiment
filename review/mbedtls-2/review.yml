@@ -1,0 +1,354 @@
+semantic:
+  mbedtls-2.18.0 -> mbedtls-2.19.0:
+    mbedtls_ecdsa_sign:
+      category: 'genuine'
+      comment: 'safer blinding'
+    mbedtls_ecdsa_verify:
+      category: 'genuine'
+      comment: 'added a check if a feature is enabled using a macro'
+    mbedtls_sha512:
+      category: 'complex'
+      comment: '8 variables replaced by an array, then manipulated in a loop'
+  mbedtls-2.19.0 -> mbedtls-2.20.0:
+    mbedtls_aes_crypt_cbc:
+      category: 'simple'
+      comment: 'added buffer zeroization'
+    mbedtls_aes_crypt_cfb128:
+      category: 'simple'
+      comment: 'added buffer zeroization'
+    mbedtls_aes_crypt_cfb8:
+      category: 'simple'
+      comment: 'added buffer zeroization'
+    mbedtls_aes_crypt_ctr:
+      category: 'simple'
+      comment: 'added buffer zeroization'
+    mbedtls_aes_crypt_ecb:
+      category: 'simple'
+      comment: 'added buffer zeroization'
+    mbedtls_aes_crypt_ofb:
+      category: 'simple'
+      comment: 'added buffer zeroization'
+    mbedtls_aes_crypt_xts:
+      category: 'simple'
+      comment: 'added buffer zeroization'
+    mbedtls_ecdsa_sign:
+      category: 'genuine'
+      comment: 'added error check'
+    mbedtls_md:
+      category: 'genuine'
+      comment: 'parameter type changed'
+    mbedtls_md_hmac:
+      category: 'genuine'
+      comment: 'parameter type changed'
+    mbedtls_pkcs5_pbes2:
+      category: 'simple'
+      comment: 'function call returning same result within loop moved out of the loop'
+    mbedtls_pkcs5_pbkdf2_hmac:
+      category: 'simple'
+      comment: 'function call returning same result within loop moved out of the loop'
+  mbedtls-2.20.0 -> mbedtls-2.21.0:
+    mbedtls_ecdsa_sign:
+      category: 'genuine'
+      comment: 'bug fix, incrementing pointer instead of value'
+      link: https://github.com/ARMmbed/mbed-crypto/commit/ee4ba54d8dc51bbcf409db8f7a0055a8e0427ca6
+  mbedtls-2.21.0 -> mbedtls-2.22.0:
+    mbedtls_hkdf:
+      category: 'unknown'
+      comment: 'added explicit memset initialization, commit claims semantics unchanged'
+      link: https://github.com/Mbed-TLS/mbedtls/commit/3ab121a6034aa36a895e1bbb5daab7a27d8b14c3
+  mbedtls-2.22.0 -> mbedtls-2.23.0:
+    mbedtls_md_hmac:
+      category: 'simple'
+      comment: 'merged two switch cases containing the same function call'
+  mbedtls-2.23.0 -> mbedtls-2.24.0:
+    mbedtls_dhm_calc_secret:
+      category: 'unknown'
+      comment: 'no diff'
+    mbedtls_md_hmac:
+      category: 'genuine'
+      comment: 'memory leak fix'
+      link: https://github.com/Mbed-TLS/mbedtls/commit/d15c740df6e26b3dbe459c87ca59fa1d0d999d15
+    mbedtls_rsa_pkcs1_decrypt:
+      category: 'genuine'
+      comment: 'blinding security fix'
+      link: https://github.com/Mbed-TLS/mbedtls/commit/750d3c76cbc1071774a7efd75d578c4b798d7cb6
+    mbedtls_rsa_pkcs1_encrypt:
+      category: 'genuine'
+      comment: 'blinding security fix'
+    mbedtls_rsa_pkcs1_sign:
+      category: 'genuine'
+      comment: 'blinding security fix'
+    mbedtls_rsa_pkcs1_verify:
+      category: 'genuine'
+      comment: 'blinding security fix'
+    mbedtls_rsa_rsaes_oaep_decrypt:
+      category: 'genuine'
+      comment: 'blinding security fix'
+    mbedtls_rsa_rsaes_oaep_encrypt:
+      category: 'genuine'
+      comment: 'blinding security fix'
+    mbedtls_rsa_rsaes_pkcs1_v15_decrypt:
+      category: 'genuine'
+      comment: 'blinding security fix'
+    mbedtls_rsa_rsaes_pkcs1_v15_encrypt:
+      category: 'genuine'
+      comment: 'blinding security fix'
+    mbedtls_rsa_rsassa_pkcs1_v15_sign:
+      category: 'genuine'
+      comment: 'blinding security fix'
+    mbedtls_rsa_rsassa_pkcs1_v15_verify:
+      category: 'genuine'
+      comment: 'blinding security fix'
+    mbedtls_rsa_rsassa_pss_sign:
+      category: 'genuine'
+      comment: 'blinding security fix'
+    mbedtls_rsa_rsassa_pss_verify:
+      category: 'genuine'
+      comment: 'blinding security fix'
+  mbedtls-2.24.0 -> mbedtls-2.25.0:
+    mbedtls_aes_crypt_cbc:
+      category: 'simple'
+      comment: 'group local variables and zeroize them at the end'
+    mbedtls_aes_crypt_cfb128:
+      category: 'simple'
+      comment: 'group local variables and zeroize them at the end'
+    mbedtls_aes_crypt_cfb8:
+      category: 'simple'
+      comment: 'group local variables and zeroize them at the end'
+    mbedtls_aes_crypt_ctr:
+      category: 'simple'
+      comment: 'group local variables and zeroize them at the end'
+    mbedtls_aes_crypt_ecb:
+      category: 'simple'
+      comment: 'group local variables and zeroize them at the end'
+    mbedtls_aes_crypt_ofb:
+      category: 'simple'
+      comment: 'group local variables and zeroize them at the end'
+    mbedtls_aes_crypt_xts:
+      category: 'simple'
+      comment: 'group local variables and zeroize them at the end'
+    mbedtls_ccm_auth_decrypt:
+      category: 'genuine'
+      comment: 'fixed off-by-one error'
+      link: https://github.com/Mbed-TLS/mbedtls/commit/5e940c6068c652b6fcb32f7393e80689561255fe
+    mbedtls_ccm_encrypt_and_tag:
+      category: 'genuine'
+      comment: 'fixed off-by-one error'
+    mbedtls_ccm_star_auth_decrypt:
+      category: 'genuine'
+      comment: 'fixed off-by-one error'
+    mbedtls_ccm_star_encrypt_and_tag:
+      category: 'genuine'
+      comment: 'fixed off-by-one error'
+    mbedtls_md5:
+      category: 'simple'
+      comment: 'group local variables and zeroize them at the end'
+    mbedtls_pkcs5_pbes2:
+      category: 'simple'
+      comment: 'zeroize local buffers at the end (goto cleanup instead of returning right away)'
+      link: https://github.com/Mbed-TLS/mbedtls/commit/4553dd46d6f82daaef9146789f377e0a885b3011
+    mbedtls_pkcs5_pbkdf2_hmac:
+      category: 'simple'
+      comment: 'zeroize local buffers at the end (goto cleanup instead of returning right away)'
+    mbedtls_ripemd160:
+      category: 'simple'
+      comment: 'group local variables and zeroize them at the end'
+    mbedtls_rsa_pkcs1_decrypt:
+      category: 'genuine'
+      comment: 'bug fix of retrying blinding if it fails'
+      link: https://github.com/Mbed-TLS/mbedtls/commit/ca8b8e7c31f856e329e03f4857bbeb9cb066d03e
+    mbedtls_rsa_pkcs1_encrypt:
+      category: 'genuine'
+      comment: 'bug fix of retrying blinding if it fails'
+    mbedtls_rsa_pkcs1_sign:
+      category: 'genuine'
+      comment: 'bug fix of retrying blinding if it fails'
+    mbedtls_rsa_pkcs1_verify:
+      category: 'genuine'
+      comment: 'bug fix of retrying blinding if it fails'
+    mbedtls_rsa_rsaes_oaep_decrypt:
+      category: 'genuine'
+      comment: 'bug fix of retrying blinding if it fails'
+    mbedtls_rsa_rsaes_oaep_encrypt:
+      category: 'genuine'
+      comment: 'bug fix of retrying blinding if it fails'
+    mbedtls_rsa_rsaes_pkcs1_v15_decrypt:
+      category: 'genuine'
+      comment: 'bug fix of retrying blinding if it fails'
+    mbedtls_rsa_rsaes_pkcs1_v15_encrypt:
+      category: 'genuine'
+      comment: 'bug fix of retrying blinding if it fails'
+    mbedtls_rsa_rsassa_pkcs1_v15_sign:
+      category: 'genuine'
+      comment: 'bug fix of retrying blinding if it fails'
+    mbedtls_rsa_rsassa_pkcs1_v15_verify:
+      category: 'genuine'
+      comment: 'bug fix of retrying blinding if it fails'
+    mbedtls_rsa_rsassa_pss_sign:
+      category: 'genuine'
+      comment: 'bug fix of retrying blinding if it fails'
+    mbedtls_rsa_rsassa_pss_verify:
+      category: 'genuine'
+      comment: 'bug fix of retrying blinding if it fails'
+    mbedtls_sha1:
+      category: 'simple'
+      comment: 'group local variables and zeroize them at the end'
+    mbedtls_sha256:
+      category: 'simple'
+      comment: 'group local variables and zeroize them at the end'
+    mbedtls_sha512:
+      category: 'simple'
+      comment: 'group local variables and zeroize them at the end'
+  mbedtls-2.25.0 -> mbedtls-2.26.0:
+    mbedtls_base64_decode:
+      category: 'complex'
+      comment: 'replaced bare access to encoding table with a function call'
+      link: https://github.com/Mbed-TLS/mbedtls/commit/6e152fa36219fe9944a1e77ba567a4e48b5155d3
+    mbedtls_base64_encode:
+      category: 'complex'
+      comment: 'replaced bare accesses to encoding table with constant-flow function calls'
+      link: https://github.com/Mbed-TLS/mbedtls/commit/dadd10d656ec4c97a3553437ca3e448db91e87a8
+    mbedtls_rsa_pkcs1_decrypt:
+      category: 'genuine'
+      comment: 'fix incorrect error code'
+      link: https://github.com/Mbed-TLS/mbedtls/commit/ae3741e8a440cbfa974a98cb443b26e6ba15f21d
+    mbedtls_rsa_pkcs1_encrypt:
+      category: 'genuine'
+      comment: 'fix incorrect error code'
+    mbedtls_rsa_pkcs1_sign:
+      category: 'genuine'
+      comment: 'fix incorrect error code'
+    mbedtls_rsa_pkcs1_verify:
+      category: 'genuine'
+      comment: 'fix incorrect error code'
+    mbedtls_rsa_rsaes_oaep_decrypt:
+      category: 'genuine'
+      comment: 'fix incorrect error code'
+    mbedtls_rsa_rsaes_oaep_encrypt:
+      category: 'genuine'
+      comment: 'fix incorrect error code'
+    mbedtls_rsa_rsaes_pkcs1_v15_decrypt:
+      category: 'genuine'
+      comment: 'fix incorrect error code'
+    mbedtls_rsa_rsaes_pkcs1_v15_encrypt:
+      category: 'genuine'
+      comment: 'fix incorrect error code'
+    mbedtls_rsa_rsassa_pkcs1_v15_sign:
+      category: 'genuine'
+      comment: 'fix incorrect error code'
+    mbedtls_rsa_rsassa_pkcs1_v15_verify:
+      category: 'genuine'
+      comment: 'fix incorrect error code'
+    mbedtls_rsa_rsassa_pss_sign:
+      category: 'genuine'
+      comment: 'fix incorrect error code'
+    mbedtls_rsa_rsassa_pss_verify:
+      category: 'genuine'
+      comment: 'fix incorrect error code'
+  mbedtls-2.26.0 -> mbedtls-2.27.0:
+    mbedtls_dhm_calc_secret:
+      category: 'simple'
+      comment: 'use a macro for summing return codes'
+      link: https://github.com/Mbed-TLS/mbedtls/commit/9f7a693f2c89419be19054e9065f8d2b71a88aca
+    mbedtls_rsa_pkcs1_decrypt:
+      category: 'simple'
+      comment: 'use a macro for summing return codes'
+    mbedtls_rsa_pkcs1_encrypt:
+      category: 'simple'
+      comment: 'use a macro for summing return codes'
+    mbedtls_rsa_pkcs1_sign:
+      category: 'simple'
+      comment: 'use a macro for summing return codes'
+    mbedtls_rsa_pkcs1_verify:
+      category: 'simple'
+      comment: 'use a macro for summing return codes'
+    mbedtls_rsa_rsaes_oaep_decrypt:
+      category: 'simple'
+      comment: 'use a macro for summing return codes'
+    mbedtls_rsa_rsaes_oaep_encrypt:
+      category: 'simple'
+      comment: 'use a macro for summing return codes'
+    mbedtls_rsa_rsaes_pkcs1_v15_decrypt:
+      category: 'simple'
+      comment: 'use a macro for summing return codes'
+    mbedtls_rsa_rsaes_pkcs1_v15_encrypt:
+      category: 'simple'
+      comment: 'use a macro for summing return codes'
+    mbedtls_rsa_rsassa_pkcs1_v15_sign:
+      category: 'simple'
+      comment: 'use a macro for summing return codes'
+    mbedtls_rsa_rsassa_pkcs1_v15_verify:
+      category: 'simple'
+      comment: 'use a macro for summing return codes'
+    mbedtls_rsa_rsassa_pss_sign:
+      category: 'complex'
+      comment: 'new function called with an argument that makes it behave like the old function + using a macro for summing return codes'
+      link: https://github.com/Mbed-TLS/mbedtls/commit/8aa4d75ec98d19446151d778d2113cc5e26cb758
+    mbedtls_rsa_rsassa_pss_verify:
+      category: 'simple'
+      comment: 'use a macro for summing return codes'
+  mbedtls-2.27.0 -> mbedtls-2.28.0:
+    mbedtls_aes_crypt_cbc:
+      category: 'genuine'
+      comment: 'new return code check'
+      link: https://github.com/Mbed-TLS/mbedtls/commit/377a310da44b7f7001c7a6081b8700d80b2963d6
+    mbedtls_aes_crypt_cfb128:
+      category: 'genuine'
+      comment: 'new return code check'
+    mbedtls_aes_crypt_cfb8:
+      category: 'genuine'
+      comment: 'new return code check'
+    mbedtls_aes_crypt_ctr:
+      category: 'genuine'
+      comment: 'new return code check'
+    mbedtls_aes_crypt_xts:
+      category: 'unknown'
+      comment: 'no diff'
+    mbedtls_base64_decode:
+      category: 'genuine'
+      comment: 'refactoring of local variables and semantics-altering bug fix'
+      link: https://github.com/Mbed-TLS/mbedtls/commit/a97e911e5d86164fcac874e02e83219d2fcd57af
+    mbedtls_base64_encode:
+      category: 'complex'
+      comment: 'encoding using ranges instead of tables'
+      link: https://github.com/Mbed-TLS/mbedtls/commit/d6e3f46daaae078c94d1828ab13f6e45326e560c
+    mbedtls_gcm_auth_decrypt:
+      category: 'genuine'
+      comment: 'IV related bug fix'
+      link: https://github.com/Mbed-TLS/mbedtls/commit/d6e3f46daaae078c94d1828ab13f6e45326e560c
+    mbedtls_gcm_crypt_and_tag:
+      category: 'genuine'
+      comment: 'IV related bug fix'
+    mbedtls_pkcs12_derivation:
+      category: 'genuine'
+      comment: 'Bug fix in case of null parameter'
+    mbedtls_pkcs12_pbe:
+      category: 'genuine'
+      comment: 'Bug fix in case of null parameter'
+    mbedtls_rsa_pkcs1_decrypt:
+      category: 'unknown'
+      comment: 'no diff'
+    mbedtls_rsa_pkcs1_sign:
+      category: 'genuine'
+      comment: 'result is zeroized if return code is not 0'
+      link: https://github.com/Mbed-TLS/mbedtls/commit/d6e3f46daaae078c94d1828ab13f6e45326e560c
+    mbedtls_rsa_pkcs1_verify:
+      category: 'complex'
+      comment: 'major changes to constant-time memcmp implementation'
+    mbedtls_rsa_rsaes_pkcs1_v15_decrypt:
+      category: 'complex'
+      comment: 'major changes to constant-time memcmp implementation'
+    mbedtls_rsa_rsassa_pkcs1_v15_sign:
+      category: 'genuine'
+      comment: 'result is zeroized if return code is not 0'
+    mbedtls_rsa_rsassa_pkcs1_v15_verify:
+      category: 'complex'
+      comment: 'major changes to constant-time memcmp implementation'
+syntactic:
+  mbedtls-2.20.0 -> mbedtls-2.21.0:
+    mbedtls_md:
+      comment: '#ifdef encapsulation not translated into llvm'
+    mbedtls_md_hmac:
+      comment: '#ifdef encapsulation not translated into llvm'
+    mbedtls_sha512:
+      comment: '#ifdef encapsulation not translated into llvm'
