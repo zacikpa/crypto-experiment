@@ -43,6 +43,7 @@ WORKDIR /experiment
 COPY config /experiment/config
 COPY custom-patterns /experiment/custom-patterns
 COPY experiment-pre.py /experiment/experiment-pre.py
+COPY experiment-post.py /experiment/experiment-post.py
 
 ENTRYPOINT /bin/fish
 
