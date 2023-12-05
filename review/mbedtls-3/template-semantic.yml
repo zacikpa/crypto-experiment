@@ -1,0 +1,772 @@
+mbedtls-3.0.0 -> mbedtls-3.1.0:
+  mbedtls_aes_crypt_cbc:
+    category: 'genuine'
+    comment: 'added new error checks'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/7820a574f158deaa2110f8718704c99d295c0b12
+  mbedtls_aes_crypt_cfb128:
+    category: 'genuine'
+    comment: 'added new error checks'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/7820a574f158deaa2110f8718704c99d295c0b12
+  mbedtls_aes_crypt_cfb8:
+    category: 'genuine'
+    comment: 'added new error checks'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/7820a574f158deaa2110f8718704c99d295c0b12
+  mbedtls_aes_crypt_ctr:
+    category: 'genuine'
+    comment: 'added new error checks'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/7820a574f158deaa2110f8718704c99d295c0b12
+  mbedtls_aes_crypt_xts:
+    category: 'unknown'
+    comment: 'no diff'
+    commits: []
+  mbedtls_base64_decode:
+    category: 'complex'
+    comment: 'refactoring of local variables and decoding `=` characters'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/b553eaabeac6cc4a08676accfaad5458bf47c7f7
+    - https://github.com/Mbed-TLS/mbedtls/commit/1121cd29b65f89186102f82bf3ae0dda24029a63
+    - https://github.com/Mbed-TLS/mbedtls/commit/67468e81a602b2d74fbaf6e0de7b72f7760dad9b
+    - https://github.com/Mbed-TLS/mbedtls/commit/b8d78926ebb7249e6e834b09ad52420ad12b5a1b
+  mbedtls_base64_encode:
+    category: 'complex'
+    comment: 'moved to constant-time encoding'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/d7d3279fdf42c38f392653bfeed1b8f1bed822a8
+    - https://github.com/Mbed-TLS/mbedtls/commit/b8d78926ebb7249e6e834b09ad52420ad12b5a1b
+  mbedtls_ccm_auth_decrypt:
+    category: 'simple'
+    comment: 'factoring out common code'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/1bda9451ef395c35b99255625fc647287e4ecc8e
+  mbedtls_ccm_encrypt_and_tag:
+    category: 'genuine'
+    comment: 'factoring out common code, but also removing buffer zeroization'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/05e92d67bbe15f30c9ad74c123362e1701125dad
+    - https://github.com/Mbed-TLS/mbedtls/commit/eb395c00c9253aa6552128d0da1e05002df30aa1
+  mbedtls_ccm_star_auth_decrypt:
+    category: 'genuine'
+    comment: 'factoring out common code, removing zeroization, and adding new error checks'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/05e92d67bbe15f30c9ad74c123362e1701125dad
+    - https://github.com/Mbed-TLS/mbedtls/commit/793692cbcb296042cc1d5a35b39536e8dc59cdbf
+    - https://github.com/Mbed-TLS/mbedtls/commit/1bda9451ef395c35b99255625fc647287e4ecc8e
+  mbedtls_ccm_star_encrypt_and_tag:
+    category: 'genuine'
+    comment: 'factoring out common code, removing zeroization, and adding new error checks'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/05e92d67bbe15f30c9ad74c123362e1701125dad
+    - https://github.com/Mbed-TLS/mbedtls/commit/793692cbcb296042cc1d5a35b39536e8dc59cdbf
+  mbedtls_gcm_auth_decrypt:
+    category: 'genuine'
+    comment: 'IV related bug fix'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/eab65acca45c6287799877aaed0c30341687f330
+    - https://github.com/Mbed-TLS/mbedtls/commit/c48f43b44de534af4a89aae26cefebdba0a14aca
+    - https://github.com/Mbed-TLS/mbedtls/commit/5ecac217f01aee0f73cffcb30e8b32f00921299f
+  mbedtls_gcm_crypt_and_tag:
+    category: 'genuine'
+    comment: 'IV related bug fix'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/eab65acca45c6287799877aaed0c30341687f330
+    - https://github.com/Mbed-TLS/mbedtls/commit/c48f43b44de534af4a89aae26cefebdba0a14aca
+    - https://github.com/Mbed-TLS/mbedtls/commit/5ecac217f01aee0f73cffcb30e8b32f00921299f
+  mbedtls_pkcs12_derivation:
+    category: 'genuine'
+    comment: 'Bug fix in case of null parameter'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/4086bdbe37839e8be594ff5b6e42cad74f60e272
+    - https://github.com/Mbed-TLS/mbedtls/commit/853c0da8de599bc5bb5785635e3837768e7e034e
+  mbedtls_pkcs12_pbe:
+    category: 'genuine'
+    comment: 'Bug fix in case of null parameter'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/853c0da8de599bc5bb5785635e3837768e7e034e
+  mbedtls_rsa_pkcs1_decrypt:
+    category: 'unknown'
+    comment: 'no diff'
+    commits: []
+  mbedtls_rsa_pkcs1_sign:
+    category: 'genuine'
+    comment: 'result is zeroized if return code is not 0'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/14d5fef6b7cc8da650c5d211be9fe7fb42010022
+    - https://github.com/Mbed-TLS/mbedtls/commit/90437e37620bb550ce6fbd47565a6f521682513a
+  mbedtls_rsa_pkcs1_verify:
+    category: 'complex'
+    comment: 'switched constant-time memcmp implementation'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/4602564d7a588cc8f2df57d9a8fdddbf06c1ff80
+    - https://github.com/Mbed-TLS/mbedtls/commit/90437e37620bb550ce6fbd47565a6f521682513a
+  mbedtls_rsa_rsaes_pkcs1_v15_decrypt:
+    category: 'complex'
+    comment: 'switched constant-time memcmp implementation'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/bef600f27e0a41dcdb12cb60c076c1bc3cfd41e7
+    - https://github.com/Mbed-TLS/mbedtls/commit/63bbba5c133356d10ff53c8d9c09900163b9566f
+    - https://github.com/Mbed-TLS/mbedtls/commit/90437e37620bb550ce6fbd47565a6f521682513a
+  mbedtls_rsa_rsassa_pkcs1_v15_sign:
+    category: 'genuine'
+    comment: 'result is zeroized if return code is not 0'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/14d5fef6b7cc8da650c5d211be9fe7fb42010022
+    - https://github.com/Mbed-TLS/mbedtls/commit/90437e37620bb550ce6fbd47565a6f521682513a
+  mbedtls_rsa_rsassa_pkcs1_v15_verify:
+    category: 'complex'
+    comment: 'switched constant-time memcmp implementation'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/4602564d7a588cc8f2df57d9a8fdddbf06c1ff80
+    - https://github.com/Mbed-TLS/mbedtls/commit/90437e37620bb550ce6fbd47565a6f521682513a
+mbedtls-3.1.0 -> mbedtls-3.2.0:
+  mbedtls_gcm_auth_decrypt:
+    category: 'unknown'
+    comment: 'added missing local buffer initialization'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/a3008e7e2ee944e9ae9f2e62dd16664e7b204134
+  mbedtls_gcm_crypt_and_tag:
+    category: 'unknown'
+    comment: 'added missing local buffer initialization'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/a3008e7e2ee944e9ae9f2e62dd16664e7b204134
+  mbedtls_pkcs12_derivation:
+    category: 'unknown'
+    comment: 'added missing local buffer initialization'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/a3008e7e2ee944e9ae9f2e62dd16664e7b204134
+  mbedtls_pkcs12_pbe:
+    category: 'unknown'
+    comment: 'added missing local buffer initialization'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/a3008e7e2ee944e9ae9f2e62dd16664e7b204134
+  mbedtls_rsa_pkcs1_verify:
+    category: 'unknown'
+    comment: 'added missing local buffer initialization'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/a3008e7e2ee944e9ae9f2e62dd16664e7b204134
+  mbedtls_rsa_rsassa_pss_verify:
+    category: 'unknown'
+    comment: 'added missing local buffer initialization'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/a3008e7e2ee944e9ae9f2e62dd16664e7b204134
+  mbedtls_sha256:
+    category: 'unknown'
+    comment: 'no diff'
+    commits: []
+  mbedtls_sha512:
+    category: 'unknown'
+    comment: 'no diff'
+    commits: []
+mbedtls-3.2.0 -> mbedtls-3.3.0:
+  mbedtls_aes_crypt_cbc:
+    category: 'genuine'
+    comment: 'input structure changed its type'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/a8ef1565bb38b707f49b917dbfe8381a2a16c977
+  mbedtls_aes_crypt_cfb128:
+    category: 'genuine'
+    comment: 'input structure changed its type'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/a8ef1565bb38b707f49b917dbfe8381a2a16c977
+  mbedtls_aes_crypt_cfb8:
+    category: 'genuine'
+    comment: 'input structure changed its type'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/a8ef1565bb38b707f49b917dbfe8381a2a16c977
+  mbedtls_aes_crypt_ctr:
+    category: 'genuine'
+    comment: 'input structure changed its type'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/dd76ef359df0ffd321de56863ebf82c72c4a75ba
+  mbedtls_aes_crypt_ecb:
+    category: 'genuine'
+    comment: 'input structure changed its type'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/a8ef1565bb38b707f49b917dbfe8381a2a16c977
+  mbedtls_aes_crypt_ofb:
+    category: 'genuine'
+    comment: 'input structure changed its type'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/dd76ef359df0ffd321de56863ebf82c72c4a75ba
+  mbedtls_aes_crypt_xts:
+    category: 'genuine'
+    comment: 'input structure changed its type'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/1797b05602630bd7f985c77b4b721613d70aaaa2
+    - https://github.com/Mbed-TLS/mbedtls/commit/a8ef1565bb38b707f49b917dbfe8381a2a16c977
+  mbedtls_camellia_crypt_cbc:
+    category: 'simple'
+    comment: 'input check changed from (!(a || b)) to (!a && !b)'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/1fd7f9854659992d20eb6670a6b50a89e009ca1a
+  mbedtls_camellia_crypt_cfb128:
+    category: 'simple'
+    comment: 'input check changed from (!(a || b)) to (!a && !b)'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/1fd7f9854659992d20eb6670a6b50a89e009ca1a
+  mbedtls_camellia_crypt_ecb:
+    category: 'simple'
+    comment: 'input check changed from (!(a || b)) to (!a && !b)'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/1fd7f9854659992d20eb6670a6b50a89e009ca1a
+  mbedtls_ecjpake_derive_secret:
+    category: 'complex'
+    comment: 'heavy refactoring, factoring out a function to reuse'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/12663092bc042d1c59ae0d4879167c47a9b2fc4f
+    - https://github.com/Mbed-TLS/mbedtls/commit/ecaba1c9b24cbab31f98bc8fecef30c88b1398dc
+  mbedtls_pkcs12_derivation:
+    category: 'unknown'
+    comment: 'depends on macros'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/40afdd2791d7f769fb131e447c274c2ced059a6a
+    - https://github.com/Mbed-TLS/mbedtls/commit/7bd12c5d5e3d207c916e041a5335e5a3a4c040bf
+  mbedtls_pkcs12_pbe:
+    category: 'unknown'
+    comment: 'depends on macros'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/40afdd2791d7f769fb131e447c274c2ced059a6a
+    - https://github.com/Mbed-TLS/mbedtls/commit/7bd12c5d5e3d207c916e041a5335e5a3a4c040bf
+  mbedtls_pkcs5_pbes2:
+    category: 'unknown'
+    comment: 'completely new implementation of a function'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/dd36c76f0998b773fc57a79692249ad2cc294b86
+  mbedtls_rsa_pkcs1_decrypt:
+    category: 'unknown'
+    comment: 'completely new implementation of a function'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/259c2135457e77bdcccb407fe4b4c1b6269efb05
+    - https://github.com/Mbed-TLS/mbedtls/commit/faa3b4e0c3fa8b2dfa1e78a1361b401b246d7547
+    - https://github.com/Mbed-TLS/mbedtls/commit/35c09e48243467100f7d8bdde8d5e4df79409cbd
+    - https://github.com/Mbed-TLS/mbedtls/commit/40afdd2791d7f769fb131e447c274c2ced059a6a
+  mbedtls_rsa_pkcs1_encrypt:
+    category: 'unknown'
+    comment: 'completely new implementation of a function'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/259c2135457e77bdcccb407fe4b4c1b6269efb05
+    - https://github.com/Mbed-TLS/mbedtls/commit/f3a67554506a35fcf2d8e1e8586c89eb01b9c801
+    - https://github.com/Mbed-TLS/mbedtls/commit/35c09e48243467100f7d8bdde8d5e4df79409cbd
+    - https://github.com/Mbed-TLS/mbedtls/commit/faa3b4e0c3fa8b2dfa1e78a1361b401b246d7547
+  mbedtls_rsa_pkcs1_sign:
+    category: 'genuine'
+    comment: 'removed null pointer validation'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/6a473b2f175c3e9ff7ce8a9ae33c00412a7ec9ea
+  mbedtls_rsa_pkcs1_verify:
+    category: 'genuine'
+    comment: 'removed null pointer validation'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/6a473b2f175c3e9ff7ce8a9ae33c00412a7ec9ea
+  mbedtls_rsa_rsaes_oaep_decrypt:
+    category: 'unknown'
+    comment: 'completely new implementation of a function'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/259c2135457e77bdcccb407fe4b4c1b6269efb05
+    - https://github.com/Mbed-TLS/mbedtls/commit/faa3b4e0c3fa8b2dfa1e78a1361b401b246d7547
+    - https://github.com/Mbed-TLS/mbedtls/commit/35c09e48243467100f7d8bdde8d5e4df79409cbd
+    - https://github.com/Mbed-TLS/mbedtls/commit/40afdd2791d7f769fb131e447c274c2ced059a6a
+  mbedtls_rsa_rsaes_oaep_encrypt:
+    category: 'unknown'
+    comment: 'completely new implementation of a function'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/259c2135457e77bdcccb407fe4b4c1b6269efb05
+    - https://github.com/Mbed-TLS/mbedtls/commit/f3a67554506a35fcf2d8e1e8586c89eb01b9c801
+    - https://github.com/Mbed-TLS/mbedtls/commit/35c09e48243467100f7d8bdde8d5e4df79409cbd
+    - https://github.com/Mbed-TLS/mbedtls/commit/faa3b4e0c3fa8b2dfa1e78a1361b401b246d7547
+  mbedtls_rsa_rsassa_pkcs1_v15_sign:
+    category: 'genuine'
+    comment: 'removed null pointer validation'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/6a473b2f175c3e9ff7ce8a9ae33c00412a7ec9ea
+  mbedtls_rsa_rsassa_pkcs1_v15_verify:
+    category: 'genuine'
+    comment: 'removed null pointer validation'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/6a473b2f175c3e9ff7ce8a9ae33c00412a7ec9ea
+  mbedtls_rsa_rsassa_pss_sign:
+    category: 'genuine'
+    comment: 'completely new implementation of a function'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/faa3b4e0c3fa8b2dfa1e78a1361b401b246d7547
+    - https://github.com/Mbed-TLS/mbedtls/commit/6a473b2f175c3e9ff7ce8a9ae33c00412a7ec9ea
+    - https://github.com/Mbed-TLS/mbedtls/commit/f701acc088434253578d253cd98db020047f4d81
+  mbedtls_rsa_rsassa_pss_verify:
+    category: 'genuine'
+    comment: 'completely new implementation of a function'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/6a473b2f175c3e9ff7ce8a9ae33c00412a7ec9ea
+    - https://github.com/Mbed-TLS/mbedtls/commit/40afdd2791d7f769fb131e447c274c2ced059a6a
+    - https://github.com/Mbed-TLS/mbedtls/commit/faa3b4e0c3fa8b2dfa1e78a1361b401b246d7547
+    - https://github.com/Mbed-TLS/mbedtls/commit/f701acc088434253578d253cd98db020047f4d81
+    - https://github.com/Mbed-TLS/mbedtls/commit/259c2135457e77bdcccb407fe4b4c1b6269efb05
+    - https://github.com/Mbed-TLS/mbedtls/commit/f3a67554506a35fcf2d8e1e8586c89eb01b9c801
+  mbedtls_sha256:
+    category: 'simple'
+    comment: 'input check changed from (!(a || b)) to (!a && !b)'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/696dfb6b1eda07a9f032bc6f8664b001899be5ec
+  mbedtls_sha512:
+    category: 'simple'
+    comment: 'input check changed from (!(a || b)) to (!a && !b)'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/5893ab02b6628b571bb257f1d6183660b3e9c876
+mbedtls-3.3.0 -> mbedtls-3.4.0:
+  mbedtls_aes_cmac_prf_128:
+    category: 'complex'
+    comment: 'alignment optimization, mbedtls_xor'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/449bd8303eed8164b83682d2ce028dca0e49b1fa
+  mbedtls_aes_crypt_cbc:
+    category: 'complex'
+    comment: 'alignment optimization, mbedtls_xor'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/449bd8303eed8164b83682d2ce028dca0e49b1fa
+  mbedtls_aes_crypt_cfb128:
+    category: 'complex'
+    comment: 'alignment optimization, mbedtls_xor'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/449bd8303eed8164b83682d2ce028dca0e49b1fa
+  mbedtls_aes_crypt_cfb8:
+    category: 'complex'
+    comment: 'alignment optimization, mbedtls_xor'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/449bd8303eed8164b83682d2ce028dca0e49b1fa
+  mbedtls_aes_crypt_ctr:
+    category: 'complex'
+    comment: 'alignment optimization, mbedtls_xor'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/449bd8303eed8164b83682d2ce028dca0e49b1fa
+  mbedtls_aes_crypt_ecb:
+    category: 'complex'
+    comment: 'alignment optimization, mbedtls_xor'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/148cad134a740f5f72f4c7376ae37bc5befeab28
+    - https://github.com/Mbed-TLS/mbedtls/commit/2bb3d8101f19aa9395498dd49746c3764ff739d3
+    - https://github.com/Mbed-TLS/mbedtls/commit/9af58cd7f8e08a66b3e9b11106c31ab56be7e67f
+    - https://github.com/Mbed-TLS/mbedtls/commit/449bd8303eed8164b83682d2ce028dca0e49b1fa
+    - https://github.com/Mbed-TLS/mbedtls/commit/0de8f853f04217ba982d08bb6393bb529eeb596a
+  mbedtls_aes_crypt_ofb:
+    category: 'complex'
+    comment: 'alignment optimization, mbedtls_xor'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/449bd8303eed8164b83682d2ce028dca0e49b1fa
+  mbedtls_aes_crypt_xts:
+    category: 'complex'
+    comment: 'alignment optimization, mbedtls_xor'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/069e7f462a426795301aaaa79e811721427447df
+    - https://github.com/Mbed-TLS/mbedtls/commit/449bd8303eed8164b83682d2ce028dca0e49b1fa
+    - https://github.com/Mbed-TLS/mbedtls/commit/a8cf607458dfda284ceaabdf033e5a7a99a45807
+  mbedtls_aria_crypt_cbc:
+    category: 'complex'
+    comment: 'mbedtls_xor'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/449bd8303eed8164b83682d2ce028dca0e49b1fa
+  mbedtls_aria_crypt_cfb128:
+    category: 'complex'
+    comment: 'mbedtls_xor'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/449bd8303eed8164b83682d2ce028dca0e49b1fa
+  mbedtls_aria_crypt_ctr:
+    category: 'complex'
+    comment: 'mbedtls_xor'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/449bd8303eed8164b83682d2ce028dca0e49b1fa
+  mbedtls_aria_crypt_ecb:
+    category: 'complex'
+    comment: 'mbedtls_xor'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/449bd8303eed8164b83682d2ce028dca0e49b1fa
+  mbedtls_camellia_crypt_cbc:
+    category: 'complex'
+    comment: 'mbedtls_xor'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/449bd8303eed8164b83682d2ce028dca0e49b1fa
+  mbedtls_camellia_crypt_cfb128:
+    category: 'complex'
+    comment: 'mbedtls_xor'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/449bd8303eed8164b83682d2ce028dca0e49b1fa
+  mbedtls_camellia_crypt_ctr:
+    category: 'complex'
+    comment: 'mbedtls_xor'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/449bd8303eed8164b83682d2ce028dca0e49b1fa
+  mbedtls_camellia_crypt_ecb:
+    category: 'complex'
+    comment: 'mbedtls_xor'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/449bd8303eed8164b83682d2ce028dca0e49b1fa
+  mbedtls_ccm_auth_decrypt:
+    category: 'complex'
+    comment: 'mbedtls_xor'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/449bd8303eed8164b83682d2ce028dca0e49b1fa
+  mbedtls_ccm_encrypt_and_tag:
+    category: 'complex'
+    comment: 'mbedtls_xor'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/449bd8303eed8164b83682d2ce028dca0e49b1fa
+  mbedtls_ccm_star_auth_decrypt:
+    category: 'complex'
+    comment: 'mbedtls_xor'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/449bd8303eed8164b83682d2ce028dca0e49b1fa
+  mbedtls_ccm_star_encrypt_and_tag:
+    category: 'complex'
+    comment: 'mbedtls_xor'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/449bd8303eed8164b83682d2ce028dca0e49b1fa
+  mbedtls_chacha20_crypt:
+    category: 'complex'
+    comment: 'mbedtls_xor'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/449bd8303eed8164b83682d2ce028dca0e49b1fa
+  mbedtls_chachapoly_auth_decrypt:
+    category: 'complex'
+    comment: 'mbedtls_xor'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/449bd8303eed8164b83682d2ce028dca0e49b1fa
+  mbedtls_chachapoly_encrypt_and_tag:
+    category: 'complex'
+    comment: 'mbedtls_xor'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/449bd8303eed8164b83682d2ce028dca0e49b1fa
+  mbedtls_cipher_cmac:
+    category: 'complex'
+    comment: 'mbedtls_xor'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/449bd8303eed8164b83682d2ce028dca0e49b1fa
+  mbedtls_des3_crypt_cbc:
+    category: 'complex'
+    comment: 'mbedtls_xor'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/449bd8303eed8164b83682d2ce028dca0e49b1fa
+  mbedtls_des3_crypt_ecb:
+    category: 'complex'
+    comment: 'mbedtls_xor'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/449bd8303eed8164b83682d2ce028dca0e49b1fa
+  mbedtls_des_crypt_cbc:
+    category: 'complex'
+    comment: 'mbedtls_xor'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/449bd8303eed8164b83682d2ce028dca0e49b1fa
+  mbedtls_des_crypt_ecb:
+    category: 'complex'
+    comment: 'mbedtls_xor'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/449bd8303eed8164b83682d2ce028dca0e49b1fa
+  mbedtls_gcm_auth_decrypt:
+    category: 'complex'
+    comment: 'mbedtls_xor'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/9af58cd7f8e08a66b3e9b11106c31ab56be7e67f
+    - https://github.com/Mbed-TLS/mbedtls/commit/d22fb73e3ed52812e4c474df148064cd4abb9b71
+    - https://github.com/Mbed-TLS/mbedtls/commit/df87a12c8154afd3f90057037716dc590ebe9859
+    - https://github.com/Mbed-TLS/mbedtls/commit/449bd8303eed8164b83682d2ce028dca0e49b1fa
+    - https://github.com/Mbed-TLS/mbedtls/commit/1ac7f6b09de944c6d005d7f5b8a3346163a5524c
+  mbedtls_gcm_crypt_and_tag:
+    category: 'complex'
+    comment: 'mbedtls_xor'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/9af58cd7f8e08a66b3e9b11106c31ab56be7e67f
+    - https://github.com/Mbed-TLS/mbedtls/commit/d22fb73e3ed52812e4c474df148064cd4abb9b71
+    - https://github.com/Mbed-TLS/mbedtls/commit/df87a12c8154afd3f90057037716dc590ebe9859
+    - https://github.com/Mbed-TLS/mbedtls/commit/449bd8303eed8164b83682d2ce028dca0e49b1fa
+    - https://github.com/Mbed-TLS/mbedtls/commit/1ac7f6b09de944c6d005d7f5b8a3346163a5524c
+  mbedtls_md5:
+    category: 'complex'
+    comment: 'mbedtls_xor'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/449bd8303eed8164b83682d2ce028dca0e49b1fa
+  mbedtls_md_hmac:
+    category: 'complex'
+    comment: 'mbedtls_xor'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/39a376a41783fa1ebdaa8ffeded717d81b3c8054
+    - https://github.com/Mbed-TLS/mbedtls/commit/449bd8303eed8164b83682d2ce028dca0e49b1fa
+    - https://github.com/Mbed-TLS/mbedtls/commit/d8ea37f1a3764727ea74ced95336368a9bce626c
+    - https://github.com/Mbed-TLS/mbedtls/commit/f48b1f810e9c94bd9a4ac4434c19b2c2bd89fa4c
+    - https://github.com/Mbed-TLS/mbedtls/commit/12612e5ab45db3cd688a26ffaa3de56f252a74c9
+  mbedtls_pkcs5_pbes2:
+    category: 'complex'
+    comment: 'mbedtls_xor'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/8a045ce5e669045c8ef374374d4d3f19ecd5def5
+    - https://github.com/Mbed-TLS/mbedtls/commit/449bd8303eed8164b83682d2ce028dca0e49b1fa
+  mbedtls_pkcs5_pbkdf2_hmac:
+    category: 'complex'
+    comment: 'mbedtls_xor'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/449bd8303eed8164b83682d2ce028dca0e49b1fa
+  mbedtls_poly1305_mac:
+    category: 'complex'
+    comment: 'mbedtls_xor'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/449bd8303eed8164b83682d2ce028dca0e49b1fa
+  mbedtls_ripemd160:
+    category: 'complex'
+    comment: 'mbedtls_xor'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/449bd8303eed8164b83682d2ce028dca0e49b1fa
+  mbedtls_sha1:
+    category: 'complex'
+    comment: 'mbedtls_xor'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/449bd8303eed8164b83682d2ce028dca0e49b1fa
+  mbedtls_sha256:
+    category: 'complex'
+    comment: 'mbedtls_xor'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/449bd8303eed8164b83682d2ce028dca0e49b1fa
+    - https://github.com/Mbed-TLS/mbedtls/commit/a3f99591f6a05cdfd2c3376a88c9b9f78789738e
+  mbedtls_sha512:
+    category: 'complex'
+    comment: 'mbedtls_xor'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/43363f5962ce558c0544ad978c2080c5307a5424
+    - https://github.com/Mbed-TLS/mbedtls/commit/449bd8303eed8164b83682d2ce028dca0e49b1fa
+mbedtls-3.4.0 -> mbedtls-3.5.0:
+  mbedtls_aes_cmac_prf_128:
+    category: 'genuine'
+    comment: 'new error check'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/2e8f6aabc22f42f045859c8027054acdab87c5eb
+  mbedtls_aes_crypt_cbc:
+    category: 'genuine'
+    comment: 'bug fix of potential iv corruption'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/a0b166e11e8943378109e5167f2745453d7ea877
+    - https://github.com/Mbed-TLS/mbedtls/commit/9e628621b4e4ef95825d89552dc5444bb31158c2
+    - https://github.com/Mbed-TLS/mbedtls/commit/2dd15b3ab50068fd20371cf228a96a7c49e70baa
+    - https://github.com/Mbed-TLS/mbedtls/commit/2ad93674dc180e085e29d4986800f8cac9bb4891
+    - https://github.com/Mbed-TLS/mbedtls/commit/906c63cf3571b64db8eed423f1240195e4cb14e3
+  mbedtls_aes_crypt_xts:
+    category: 'complex'
+    comment: 'added compiler hint for likely branch'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/360e04f3791e62ab217f27cb145ebf309b2d75dc
+  mbedtls_aria_crypt_cbc:
+    category: 'unknown'
+    comment: 'no diff'
+    commits: []
+  mbedtls_base64_decode:
+    category: 'unknown'
+    comment: 'no diff'
+    commits: []
+  mbedtls_base64_encode:
+    category: 'unknown'
+    comment: 'replaced architecture-dependent int_max'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/68ef1d6ee68c23ec20b14bd4588d8fb5034013ac
+  mbedtls_camellia_crypt_cbc:
+    category: 'unknown'
+    comment: 'no diff'
+    commits: []
+  mbedtls_ccm_auth_decrypt:
+    category: 'unknown'
+    comment: 'no diff'
+    commits: []
+  mbedtls_ccm_encrypt_and_tag:
+    category: 'unknown'
+    comment: 'no diff'
+    commits: []
+  mbedtls_ccm_star_auth_decrypt:
+    category: 'unknown'
+    comment: 'no diff'
+    commits: []
+  mbedtls_ccm_star_encrypt_and_tag:
+    category: 'unknown'
+    comment: 'no diff'
+    commits: []
+  mbedtls_chacha20_crypt:
+    category: 'unknown'
+    comment: 'no diff'
+    commits: []
+  mbedtls_chachapoly_auth_decrypt:
+    category: 'complex'
+    comment: 'optimizing duplicate memcmp'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/d26a3d6da72e12e93d3384939bcc4241e47bcc99
+  mbedtls_cipher_cmac:
+    category: 'genuine'
+    comment: 'added error check'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/2e8f6aabc22f42f045859c8027054acdab87c5eb
+  mbedtls_des3_crypt_cbc:
+    category: 'unknown'
+    comment: 'no diff'
+    commits: []
+  mbedtls_des_crypt_cbc:
+    category: 'unknown'
+    comment: 'no diff'
+    commits: []
+  mbedtls_ecdsa_sign:
+    category: 'genuine'
+    comment: 'added error check'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/e2caf4161ba96e3e22276707f9e43cdf68caf621
+  mbedtls_ecdsa_verify:
+    category: 'unknown'
+    comment: 'no diff'
+    commits: []
+  mbedtls_ecjpake_derive_secret:
+    category: 'complex'
+    comment: 'changed implementation of hash size query'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/9b41eb8533474d264be33368ba625034111e2fd7
+  mbedtls_gcm_auth_decrypt:
+    category: 'complex'
+    comment: 'optimizing duplicate memcmp'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/72fd0bdc713ca43e72b77e164240fa49b0942105
+    - https://github.com/Mbed-TLS/mbedtls/commit/f2249ec9058f276657cbe59750472798273b25b8
+    - https://github.com/Mbed-TLS/mbedtls/commit/d26a3d6da72e12e93d3384939bcc4241e47bcc99
+  mbedtls_gcm_crypt_and_tag:
+    category: 'complex'
+    comment: 'optimizing duplicate memcmp'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/72fd0bdc713ca43e72b77e164240fa49b0942105
+    - https://github.com/Mbed-TLS/mbedtls/commit/f2249ec9058f276657cbe59750472798273b25b8
+  mbedtls_md:
+    category: 'genuine'
+    comment: 'added new md function'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/a36ef6b41080c96ad8ea6f862541113f9ccaf1a0
+    - https://github.com/Mbed-TLS/mbedtls/commit/4712d4c3e66b19b840b333d90c965cd98559710f
+    - https://github.com/Mbed-TLS/mbedtls/commit/a6779287e80002390ea6b68f60e2d23bc880f62a
+    - https://github.com/Mbed-TLS/mbedtls/commit/9e97e6daed2c4acaa7c5a8db615917006a50681b
+  mbedtls_md5:
+    category: 'unknown'
+    comment: 'no diff'
+    commits: []
+  mbedtls_md_hmac:
+    category: 'genuine'
+    comment: 'added new md function'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/ca8c61b81519176b5287548b0e789e97f8ca2802
+    - https://github.com/Mbed-TLS/mbedtls/commit/4712d4c3e66b19b840b333d90c965cd98559710f
+    - https://github.com/Mbed-TLS/mbedtls/commit/a6779287e80002390ea6b68f60e2d23bc880f62a
+    - https://github.com/Mbed-TLS/mbedtls/commit/73cfde8f85e10f4face574ee783904b33e6d0c62
+  mbedtls_pkcs12_derivation:
+    category: 'complex'
+    comment: 'new function implementation'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/8857984b2f87f4caab853c4bcf04934f97f19c9f
+    - https://github.com/Mbed-TLS/mbedtls/commit/9b41eb8533474d264be33368ba625034111e2fd7
+  mbedtls_pkcs12_pbe:
+    category: 'complex'
+    comment: 'new function implementation'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/d527896b7ef1164d94104a4dd4ad59828c1639bb
+    - https://github.com/Mbed-TLS/mbedtls/commit/e1cb35b719859bd5f14a507c3fbbff2d4284a278
+  mbedtls_pkcs5_pbes2:
+    category: 'complex'
+    comment: 'new function implementation'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/c5fef82c52f13f934b57da065f92a7149e539801
+    - https://github.com/Mbed-TLS/mbedtls/commit/c9f4040f7f3356293e90c58d11f6567def641e08
+    - https://github.com/Mbed-TLS/mbedtls/commit/79b6e26b1bbf0bf88a1b3b389f7d7a8090374774
+    - https://github.com/Mbed-TLS/mbedtls/commit/5d3f315478b553ff154b6e0d81b48c1ddd27af9e
+  mbedtls_pkcs5_pbkdf2_hmac:
+    category: 'unknown'
+    comment: 'no diff'
+    commits: []
+  mbedtls_ripemd160:
+    category: 'complex'
+    comment: 'add zeroization'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/aafd1e0924aa21c1d105328bb2a988b61e6294fc
+  mbedtls_rsa_pkcs1_decrypt:
+    category: 'complex'
+    comment: 'new function implementation'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/01ed84a1f3a4e21e97cf3469b127376bfeb08166
+    - https://github.com/Mbed-TLS/mbedtls/commit/66d6ac92e633186e16910c6ee3d037cec1fe4b86
+    - https://github.com/Mbed-TLS/mbedtls/commit/8857984b2f87f4caab853c4bcf04934f97f19c9f
+    - https://github.com/Mbed-TLS/mbedtls/commit/b4e6b41aa03f2c8cbf9533d7820bec6d139b9ad7
+    - https://github.com/Mbed-TLS/mbedtls/commit/9b41eb8533474d264be33368ba625034111e2fd7
+    - https://github.com/Mbed-TLS/mbedtls/commit/c62f7fcce914b24bb3b990695899d425c6bb6e0c
+  mbedtls_rsa_pkcs1_encrypt:
+    category: 'complex'
+    comment: 'new function implementation'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/01ed84a1f3a4e21e97cf3469b127376bfeb08166
+    - https://github.com/Mbed-TLS/mbedtls/commit/9b41eb8533474d264be33368ba625034111e2fd7
+  mbedtls_rsa_pkcs1_sign:
+    category: 'complex'
+    comment: 'new function implementation'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/01ed84a1f3a4e21e97cf3469b127376bfeb08166
+    - https://github.com/Mbed-TLS/mbedtls/commit/9b41eb8533474d264be33368ba625034111e2fd7
+    - https://github.com/Mbed-TLS/mbedtls/commit/ca8c61b81519176b5287548b0e789e97f8ca2802
+  mbedtls_rsa_pkcs1_verify:
+    category: 'complex'
+    comment: 'new function implementation'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/8857984b2f87f4caab853c4bcf04934f97f19c9f
+    - https://github.com/Mbed-TLS/mbedtls/commit/9b41eb8533474d264be33368ba625034111e2fd7
+    - https://github.com/Mbed-TLS/mbedtls/commit/ca8c61b81519176b5287548b0e789e97f8ca2802
+  mbedtls_rsa_rsaes_oaep_decrypt:
+    category: 'complex'
+    comment: 'new function implementation'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/01ed84a1f3a4e21e97cf3469b127376bfeb08166
+    - https://github.com/Mbed-TLS/mbedtls/commit/66d6ac92e633186e16910c6ee3d037cec1fe4b86
+    - https://github.com/Mbed-TLS/mbedtls/commit/8857984b2f87f4caab853c4bcf04934f97f19c9f
+    - https://github.com/Mbed-TLS/mbedtls/commit/b4e6b41aa03f2c8cbf9533d7820bec6d139b9ad7
+    - https://github.com/Mbed-TLS/mbedtls/commit/9b41eb8533474d264be33368ba625034111e2fd7
+    - https://github.com/Mbed-TLS/mbedtls/commit/c62f7fcce914b24bb3b990695899d425c6bb6e0c
+  mbedtls_rsa_rsaes_oaep_encrypt:
+    category: 'complex'
+    comment: 'new function implementation'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/01ed84a1f3a4e21e97cf3469b127376bfeb08166
+    - https://github.com/Mbed-TLS/mbedtls/commit/9b41eb8533474d264be33368ba625034111e2fd7
+  mbedtls_rsa_rsaes_pkcs1_v15_decrypt:
+    category: 'complex'
+    comment: 'new function implementation'
+    commits: []
+  mbedtls_rsa_rsassa_pkcs1_v15_sign:
+    category: 'complex'
+    comment: 'new function implementation'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/9b41eb8533474d264be33368ba625034111e2fd7
+    - https://github.com/Mbed-TLS/mbedtls/commit/ca8c61b81519176b5287548b0e789e97f8ca2802
+  mbedtls_rsa_rsassa_pkcs1_v15_verify:
+    category: 'complex'
+    comment: 'new function implementation'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/9b41eb8533474d264be33368ba625034111e2fd7
+    - https://github.com/Mbed-TLS/mbedtls/commit/ca8c61b81519176b5287548b0e789e97f8ca2802
+  mbedtls_rsa_rsassa_pss_sign:
+    category: 'complex'
+    comment: 'new function implementation'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/01ed84a1f3a4e21e97cf3469b127376bfeb08166
+    - https://github.com/Mbed-TLS/mbedtls/commit/9b41eb8533474d264be33368ba625034111e2fd7
+  mbedtls_rsa_rsassa_pss_verify:
+    category: 'complex'
+    comment: 'new function implementation'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/8857984b2f87f4caab853c4bcf04934f97f19c9f
+    - https://github.com/Mbed-TLS/mbedtls/commit/9b41eb8533474d264be33368ba625034111e2fd7
+  mbedtls_sha1:
+    category: 'complex'
+    comment: 'added zeroization'
+    commits: []
+  mbedtls_sha256:
+    category: 'complex'
+    comment: 'added zeroization'
+    commits: []
+  mbedtls_sha512:
+    category: 'complex'
+    comment: 'added zeroization'
+    commits:
+    - https://github.com/Mbed-TLS/mbedtls/commit/aafd1e0924aa21c1d105328bb2a988b61e6294fc
+    - https://github.com/Mbed-TLS/mbedtls/commit/90330a4a2d0722c52d94b379fbd6423e002199b7
