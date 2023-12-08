@@ -1,0 +1,537 @@
+nettle_3.0_release_20140607 -> nettle_3.1_release_20150407:
+  nettle_base16_decode_final:
+    category: 'unknown'
+    comment: 'no diff'
+    commits: []
+  nettle_base16_decode_single:
+    category: 'unknown'
+    comment: 'no diff'
+    commits: []
+  nettle_base16_decode_update:
+    category: 'unknown'
+    comment: 'no diff'
+    commits: []
+  nettle_base64_decode_final:
+    category: 'genuine'
+    comment: 'context struct changed'
+    commits: []
+  nettle_base64_decode_single:
+    category: 'genuine'
+    comment: 'context struct changed'
+    commits: []
+  nettle_base64_decode_update:
+    category: 'genuine'
+    comment: 'context struct changed'
+    commits: []
+  nettle_base64_encode_final:
+    category: 'genuine'
+    comment: 'context struct changed'
+    commits: []
+  nettle_base64_encode_single:
+    category: 'genuine'
+    comment: 'context struct changed'
+    commits: []
+  nettle_base64_encode_update:
+    category: 'genuine'
+    comment: 'context struct changed'
+    commits: []
+  nettle_ccm_decrypt_message:
+    category: 'complex'
+    comment: 'secure memcmp'
+    commits: []
+  nettle_chacha_poly1305_decrypt:
+    category: 'genuine'
+    comment: 'implementation changed according to draft-irtf-cfrg-chacha20-poly1305-08'
+    commits: []
+  nettle_chacha_poly1305_digest:
+    category: 'genuine'
+    comment: 'implementation changed according to draft-irtf-cfrg-chacha20-poly1305-08'
+    commits: []
+  nettle_chacha_poly1305_encrypt:
+    category: 'genuine'
+    comment: 'implementation changed according to draft-irtf-cfrg-chacha20-poly1305-08'
+    commits: []
+  nettle_chacha_poly1305_update:
+    category: 'genuine'
+    comment: 'implementation changed according to draft-irtf-cfrg-chacha20-poly1305-08'
+    commits: []
+  nettle_ecdsa_sign:
+    category: 'genuine'
+    comment: 'ecc key struct changed'
+    commits: []
+  nettle_ecdsa_verify:
+    category: 'genuine'
+    comment: 'ecc key struct changed'
+    commits: []
+nettle_3.1_release_20150407 -> nettle_3.2_release_20160128:
+  nettle_base64_encode_update:
+    category: 'genuine'
+    comment: 'fixed parameter signedness'
+    commits:
+    - https://git.lysator.liu.se/nettle/nettle/commit/071f93c86fe9999443c0b5acf050642d0a1bbc94
+nettle_3.2_release_20160128 -> nettle_3.3_release_20161001:
+  nettle_ccm_decrypt_message:
+    category: 'simple'
+    comment: 'moved secure memcmp to separate file'
+    commits: []
+  nettle_des_decrypt:
+    category: 'genuine'
+    comment: 'bug fix, added initialization'
+    commits: []
+  nettle_des_encrypt:
+    category: 'genuine'
+    comment: 'bug fix, added initialization'
+    commits: []
+  nettle_dsa_sign:
+    category: 'genuine'
+    comment: 'added error check that p is odd'
+    commits: []
+  nettle_twofish_decrypt:
+    category: 'genuine'
+    comment: 'fixed undefined shift'
+    commits: []
+  nettle_twofish_encrypt:
+    category: 'genuine'
+    comment: 'fixed undefined shift'
+    commits: []
+nettle_3.3_release_20161001 -> nettle_3.4_release_20171119:
+  nettle_base16_decode_single:
+    category: 'genuine'
+    comment: 'changed input type'
+    commits: []
+  nettle_base16_decode_update:
+    category: 'genuine'
+    comment: 'changed input type'
+    commits: []
+  nettle_base64_decode_single:
+    category: 'genuine'
+    comment: 'changed input type'
+    commits: []
+  nettle_base64_decode_update:
+    category: 'genuine'
+    comment: 'changed input type'
+    commits: []
+  nettle_base64_encode_final:
+    category: 'genuine'
+    comment: 'changed output type'
+    commits: []
+  nettle_base64_encode_single:
+    category: 'genuine'
+    comment: 'changed output type'
+    commits: []
+  nettle_base64_encode_update:
+    category: 'genuine'
+    comment: 'changed output type'
+    commits: []
+nettle_3.4_release_20171119 -> nettle_3.5_release_20190626:
+  nettle_aes_decrypt:
+    category: 'genuine'
+    comment: 'changed context struct'
+    commits: []
+  nettle_aes_encrypt:
+    category: 'genuine'
+    comment: 'changed context struct'
+    commits: []
+  nettle_cbc_decrypt:
+    category: 'simple'
+    comment: 'in-place algorithm tweaks'
+    commits: []
+  nettle_cfb_decrypt:
+    category: 'simple'
+    comment: 'in-place algorithm tweaks'
+    commits: []
+  nettle_chacha_poly1305_decrypt:
+    category: 'unknown'
+    comment: 'no relevant diff found'
+    commits: []
+  nettle_chacha_poly1305_encrypt:
+    category: 'unknown'
+    comment: 'no relevant diff found'
+    commits: []
+  nettle_chacha_poly1305_update:
+    category: 'unknown'
+    comment: 'no relevant diff found'
+    commits: []
+  nettle_ctr_crypt:
+    category: 'complex'
+    comment: 'complex ctr optimizations'
+    commits: []
+  nettle_gcm_decrypt:
+    category: 'complex'
+    comment: 'optimizations and in-place tweaks'
+    commits: []
+  nettle_gcm_digest:
+    category: 'complex'
+    comment: 'optimizations and in-place tweaks'
+    commits: []
+  nettle_gcm_encrypt:
+    category: 'complex'
+    comment: 'optimizations and in-place tweaks'
+    commits: []
+  nettle_gcm_update:
+    category: 'complex'
+    comment: 'optimizations and in-place tweaks'
+    commits: []
+  nettle_md2_digest:
+    category: 'unknown'
+    comment: 'switched fields in context struct'
+    commits: []
+  nettle_md2_update:
+    category: 'unknown'
+    comment: 'switched fields in context struct'
+    commits: []
+  nettle_md4_digest:
+    category: 'unknown'
+    comment: 'switched fields in context struct'
+    commits: []
+  nettle_md5_digest:
+    category: 'unknown'
+    comment: 'switched fields in context struct'
+    commits: []
+  nettle_md5_update:
+    category: 'unknown'
+    comment: 'switched fields in context struct'
+    commits: []
+  nettle_ripemd160_digest:
+    category: 'unknown'
+    comment: 'switched fields in context struct'
+    commits: []
+  nettle_sha1_digest:
+    category: 'unknown'
+    comment: 'switched fields in context struct'
+    commits: []
+  nettle_sha1_update:
+    category: 'unknown'
+    comment: 'switched fields in context struct'
+    commits: []
+  nettle_sha224_digest:
+    category: 'unknown'
+    comment: 'switched fields in context struct'
+    commits: []
+  nettle_sha256_digest:
+    category: 'unknown'
+    comment: 'switched fields in context struct'
+    commits: []
+  nettle_sha384_digest:
+    category: 'unknown'
+    comment: 'switched fields in context struct'
+    commits: []
+  nettle_sha512_224_digest:
+    category: 'unknown'
+    comment: 'switched fields in context struct'
+    commits: []
+  nettle_sha512_256_digest:
+    category: 'unknown'
+    comment: 'switched fields in context struct'
+    commits: []
+  nettle_sha512_digest:
+    category: 'unknown'
+    comment: 'switched fields in context struct'
+    commits: []
+  nettle_umac128_digest:
+    category: 'unknown'
+    comment: 'switched fields in context struct'
+    commits: []
+  nettle_umac32_digest:
+    category: 'unknown'
+    comment: 'switched fields in context struct'
+    commits: []
+  nettle_umac64_digest:
+    category: 'unknown'
+    comment: 'switched fields in context struct'
+    commits: []
+  nettle_umac96_digest:
+    category: 'unknown'
+    comment: 'switched fields in context struct'
+    commits: []
+nettle_3.5_release_20190626 -> nettle_3.6_release_20200429:
+  nettle_cfb8_decrypt:
+    category: 'genuine'
+    comment: 'bug fix of output iv truncation'
+    commits:
+    - https://git.lysator.liu.se/nettle/nettle/commit/9a31a078e5c105cf4dcc85fba323d9e67544e9c4
+    - https://git.lysator.liu.se/nettle/nettle/commit/f4a9c842621baf5d71aa9cc3989851f44dc46861
+  nettle_chacha_poly1305_decrypt:
+    category: 'unknown'
+    comment: 'probably equivalent, changed implementation to treat counter as 32-bit'
+    commits:
+    - https://git.lysator.liu.se/nettle/nettle/commit/2176ccc158d220f2884a10980266899c495b77be
+    - https://git.lysator.liu.se/nettle/nettle/commit/9a31a078e5c105cf4dcc85fba323d9e67544e9c4
+  nettle_chacha_poly1305_digest:
+    category: 'unknown'
+    comment: 'probably equivalent, changed implementation to treat counter as 32-bit'
+    commits:
+    - https://git.lysator.liu.se/nettle/nettle/commit/9a31a078e5c105cf4dcc85fba323d9e67544e9c4
+    - https://git.lysator.liu.se/nettle/nettle/commit/c840b91d3e5055e2c72f8361a6b6995ae04e7b3c
+  nettle_chacha_poly1305_encrypt:
+    category: 'unknown'
+    comment: 'probably equivalent, changed implementation to treat counter as 32-bit'
+    commits:
+    - https://git.lysator.liu.se/nettle/nettle/commit/2176ccc158d220f2884a10980266899c495b77be
+    - https://git.lysator.liu.se/nettle/nettle/commit/9a31a078e5c105cf4dcc85fba323d9e67544e9c4
+  nettle_chacha_poly1305_update:
+    category: 'unknown'
+    comment: 'probably equivalent, changed implementation to treat counter as 32-bit'
+    commits:
+    - https://git.lysator.liu.se/nettle/nettle/commit/9a31a078e5c105cf4dcc85fba323d9e67544e9c4
+  nettle_eax_digest:
+    category: 'complex'
+    comment: 'heavy refactoring of block xoring'
+    commits:
+    - https://git.lysator.liu.se/nettle/nettle/commit/9a31a078e5c105cf4dcc85fba323d9e67544e9c4
+  nettle_ed25519_sha512_sign:
+    category: 'genuine'
+    comment: 'changed context struct'
+    commits:
+    - https://git.lysator.liu.se/nettle/nettle/commit/9a31a078e5c105cf4dcc85fba323d9e67544e9c4
+    - https://git.lysator.liu.se/nettle/nettle/commit/42e410bf0c084b1352b235e7e190fa6406a11441
+    - https://git.lysator.liu.se/nettle/nettle/commit/1a85646bdb96855b261280bcf814c01e2b8d462d
+  nettle_ed25519_sha512_verify:
+    category: 'genuine'
+    comment: 'changed context struct'
+    commits:
+    - https://git.lysator.liu.se/nettle/nettle/commit/9a31a078e5c105cf4dcc85fba323d9e67544e9c4
+    - https://git.lysator.liu.se/nettle/nettle/commit/1a85646bdb96855b261280bcf814c01e2b8d462d
+  nettle_gcm_decrypt:
+    category: 'complex'
+    comment: 'heavy refactoring of block xoring and shifting'
+    commits:
+    - https://git.lysator.liu.se/nettle/nettle/commit/9a31a078e5c105cf4dcc85fba323d9e67544e9c4
+  nettle_gcm_digest:
+    category: 'complex'
+    comment: 'heavy refactoring of block xoring and shifting'
+    commits:
+    - https://git.lysator.liu.se/nettle/nettle/commit/9a31a078e5c105cf4dcc85fba323d9e67544e9c4
+  nettle_gcm_encrypt:
+    category: 'complex'
+    comment: 'heavy refactoring of block xoring and shifting'
+    commits:
+    - https://git.lysator.liu.se/nettle/nettle/commit/9a31a078e5c105cf4dcc85fba323d9e67544e9c4
+  nettle_gcm_update:
+    category: 'complex'
+    comment: 'heavy refactoring of block xoring and shifting'
+    commits:
+    - https://git.lysator.liu.se/nettle/nettle/commit/9a31a078e5c105cf4dcc85fba323d9e67544e9c4
+  nettle_gosthash94_digest:
+    category: 'genuine'
+    comment: 'changed context struct'
+    commits:
+    - https://git.lysator.liu.se/nettle/nettle/commit/9826eed6b23296eac9e496232ba1b74c1d205694
+    - https://git.lysator.liu.se/nettle/nettle/commit/9f4ade7f147fe1bb4f606040843d813ec8a9084c
+  nettle_gosthash94_update:
+    category: 'genuine'
+    comment: 'changed context struct'
+    commits:
+    - https://git.lysator.liu.se/nettle/nettle/commit/9826eed6b23296eac9e496232ba1b74c1d205694
+    - https://git.lysator.liu.se/nettle/nettle/commit/9f4ade7f147fe1bb4f606040843d813ec8a9084c
+  nettle_poly1305_aes_digest:
+    category: 'simple'
+    comment: 'made a function internal'
+    commits:
+    - https://git.lysator.liu.se/nettle/nettle/commit/9a31a078e5c105cf4dcc85fba323d9e67544e9c4
+    - https://git.lysator.liu.se/nettle/nettle/commit/c840b91d3e5055e2c72f8361a6b6995ae04e7b3c
+  nettle_sha3_224_digest:
+    category: 'simple'
+    comment: 'simple macro changes'
+    commits:
+    - https://git.lysator.liu.se/nettle/nettle/commit/9a31a078e5c105cf4dcc85fba323d9e67544e9c4
+    - https://git.lysator.liu.se/nettle/nettle/commit/f77bd0a33c255b4fd6cac4f8be4d1cde8da0980b
+  nettle_sha3_256_digest:
+    category: 'simple'
+    comment: 'simple macro changes'
+    commits:
+    - https://git.lysator.liu.se/nettle/nettle/commit/9a31a078e5c105cf4dcc85fba323d9e67544e9c4
+    - https://git.lysator.liu.se/nettle/nettle/commit/f77bd0a33c255b4fd6cac4f8be4d1cde8da0980b
+  nettle_sha3_384_digest:
+    category: 'simple'
+    comment: 'simple macro changes'
+    commits:
+    - https://git.lysator.liu.se/nettle/nettle/commit/9a31a078e5c105cf4dcc85fba323d9e67544e9c4
+    - https://git.lysator.liu.se/nettle/nettle/commit/f77bd0a33c255b4fd6cac4f8be4d1cde8da0980b
+  nettle_sha3_512_digest:
+    category: 'simple'
+    comment: 'simple macro changes'
+    commits:
+    - https://git.lysator.liu.se/nettle/nettle/commit/9a31a078e5c105cf4dcc85fba323d9e67544e9c4
+    - https://git.lysator.liu.se/nettle/nettle/commit/f77bd0a33c255b4fd6cac4f8be4d1cde8da0980b
+  nettle_xts_decrypt_message:
+    category: 'complex'
+    comment: 'heavy refactoring of block xoring and shifting'
+    commits:
+    - https://git.lysator.liu.se/nettle/nettle/commit/685cc919a37b60d3f81dd569bf6e93ad7be0f89b
+    - https://git.lysator.liu.se/nettle/nettle/commit/9a31a078e5c105cf4dcc85fba323d9e67544e9c4
+  nettle_xts_encrypt_message:
+    category: 'complex'
+    comment: 'heavy refactoring of block xoring and shifting'
+    commits:
+    - https://git.lysator.liu.se/nettle/nettle/commit/685cc919a37b60d3f81dd569bf6e93ad7be0f89b
+    - https://git.lysator.liu.se/nettle/nettle/commit/9a31a078e5c105cf4dcc85fba323d9e67544e9c4
+nettle_3.6_release_20200429 -> nettle_3.7_release_20210104:
+  nettle_blowfish_decrypt:
+    category: 'genuine'
+    comment: 'fixed undefined behavior'
+    commits:
+    - https://git.lysator.liu.se/nettle/nettle/commit/e183f3bce626bd802c40ed4142858d0b8b8a0914
+    - https://git.lysator.liu.se/nettle/nettle/commit/9e2bea82b9fb606bffd2d3f648e05248e146e54f
+  nettle_blowfish_encrypt:
+    category: 'genuine'
+    comment: 'fixed undefined behavior'
+    commits:
+    - https://git.lysator.liu.se/nettle/nettle/commit/e183f3bce626bd802c40ed4142858d0b8b8a0914
+    - https://git.lysator.liu.se/nettle/nettle/commit/9e2bea82b9fb606bffd2d3f648e05248e146e54f
+  nettle_ecdsa_sign:
+    category: 'unknown'
+    comment: 'no diff found'
+    commits:
+    - https://git.lysator.liu.se/nettle/nettle/commit/9e2bea82b9fb606bffd2d3f648e05248e146e54f
+  nettle_gcm_decrypt:
+    category: 'unknown'
+    comment: 'heavy optimization'
+    commits:
+    - https://git.lysator.liu.se/nettle/nettle/commit/5ebf77033b05fdbad0bb612fa9c224862c6a5b7e
+    - https://git.lysator.liu.se/nettle/nettle/commit/90c34ebe3ee812ecaee46980597e37b6136ba9e2
+    - https://git.lysator.liu.se/nettle/nettle/commit/9e2bea82b9fb606bffd2d3f648e05248e146e54f
+  nettle_gcm_digest:
+    category: 'unknown'
+    comment: 'heavy optimization'
+    commits:
+    - https://git.lysator.liu.se/nettle/nettle/commit/9e2bea82b9fb606bffd2d3f648e05248e146e54f
+  nettle_gcm_encrypt:
+    category: 'unknown'
+    comment: 'heavy optimization'
+    commits:
+    - https://git.lysator.liu.se/nettle/nettle/commit/5ebf77033b05fdbad0bb612fa9c224862c6a5b7e
+    - https://git.lysator.liu.se/nettle/nettle/commit/90c34ebe3ee812ecaee46980597e37b6136ba9e2
+    - https://git.lysator.liu.se/nettle/nettle/commit/9e2bea82b9fb606bffd2d3f648e05248e146e54f
+  nettle_gcm_update:
+    category: 'unknown'
+    comment: 'heavy optimization'
+    commits:
+    - https://git.lysator.liu.se/nettle/nettle/commit/90c34ebe3ee812ecaee46980597e37b6136ba9e2
+    - https://git.lysator.liu.se/nettle/nettle/commit/9e2bea82b9fb606bffd2d3f648e05248e146e54f
+  nettle_salsa20r12_crypt:
+    category: 'unknown'
+    comment: 'stop condition tweaking'
+    commits:
+    - https://git.lysator.liu.se/nettle/nettle/commit/07350a3ff76cc2c61058315b00f6748160cf5704
+    - https://git.lysator.liu.se/nettle/nettle/commit/9e2bea82b9fb606bffd2d3f648e05248e146e54f
+    - https://git.lysator.liu.se/nettle/nettle/commit/097497ec6b93dc9b2b66afa8bd9321fb87dd6439
+nettle_3.7_release_20210104 -> nettle_3.8_release_20220602:
+  nettle_aes_decrypt:
+    category: 'simple'
+    comment: 'moving between files'
+    commits:
+    - https://git.lysator.liu.se/nettle/nettle/commit/1c88685a3421753509772823c05f3355ff6486ee
+  nettle_aes_encrypt:
+    category: 'simple'
+    comment: 'moving between files'
+    commits:
+    - https://git.lysator.liu.se/nettle/nettle/commit/1c88685a3421753509772823c05f3355ff6486ee
+  nettle_gcm_decrypt:
+    category: 'unknown'
+    comment: 'new implementation'
+    commits:
+    - https://git.lysator.liu.se/nettle/nettle/commit/1d438ad40aa983cf9dc3c0f41cabb6bea70af977
+    - https://git.lysator.liu.se/nettle/nettle/commit/1c88685a3421753509772823c05f3355ff6486ee
+  nettle_gcm_digest:
+    category: 'unknown'
+    comment: 'new implementation'
+    commits:
+    - https://git.lysator.liu.se/nettle/nettle/commit/1d438ad40aa983cf9dc3c0f41cabb6bea70af977
+    - https://git.lysator.liu.se/nettle/nettle/commit/1c88685a3421753509772823c05f3355ff6486ee
+    - https://git.lysator.liu.se/nettle/nettle/commit/d382fcc07e8fa924b170e0d2660662b107a70f79
+  nettle_gcm_encrypt:
+    category: 'unknown'
+    comment: 'new implementation'
+    commits:
+    - https://git.lysator.liu.se/nettle/nettle/commit/1d438ad40aa983cf9dc3c0f41cabb6bea70af977
+    - https://git.lysator.liu.se/nettle/nettle/commit/1c88685a3421753509772823c05f3355ff6486ee
+  nettle_gcm_update:
+    category: 'unknown'
+    comment: 'new implementation'
+    commits:
+    - https://git.lysator.liu.se/nettle/nettle/commit/1d438ad40aa983cf9dc3c0f41cabb6bea70af977
+    - https://git.lysator.liu.se/nettle/nettle/commit/1c88685a3421753509772823c05f3355ff6486ee
+  nettle_rsa_decrypt:
+    category: 'genuine'
+    comment: 'add input check'
+    commits:
+    - https://git.lysator.liu.se/nettle/nettle/commit/1c88685a3421753509772823c05f3355ff6486ee
+    - https://git.lysator.liu.se/nettle/nettle/commit/c80961c646b0962ab152619ac0a7c6a21850a380
+nettle_3.8_release_20220602 -> nettle_3.9_release_20230514:
+  nettle_blowfish_bcrypt_hash:
+    category: 'simple'
+    comment: 'new macro implementation'
+    commits:
+    - https://git.lysator.liu.se/nettle/nettle/commit/ea4ea5e6904124b297ade0d1b182c5e530909765
+    - https://git.lysator.liu.se/nettle/nettle/commit/ff660604eb66c5ff2b2bb508ba7f41b9c13c8087
+  nettle_blowfish_bcrypt_verify:
+    category: 'simple'
+    comment: 'new macro implementation'
+    commits:
+    - https://git.lysator.liu.se/nettle/nettle/commit/ea4ea5e6904124b297ade0d1b182c5e530909765
+    - https://git.lysator.liu.se/nettle/nettle/commit/ff660604eb66c5ff2b2bb508ba7f41b9c13c8087
+  nettle_chacha_poly1305_decrypt:
+    category: 'complex'
+    comment: 'new implementation'
+    commits:
+    - https://git.lysator.liu.se/nettle/nettle/commit/ea4ea5e6904124b297ade0d1b182c5e530909765
+  nettle_chacha_poly1305_encrypt:
+    category: 'complex'
+    comment: 'new implementation'
+    commits:
+    - https://git.lysator.liu.se/nettle/nettle/commit/ea4ea5e6904124b297ade0d1b182c5e530909765
+  nettle_chacha_poly1305_update:
+    category: 'complex'
+    comment: 'new implementation'
+    commits:
+    - https://git.lysator.liu.se/nettle/nettle/commit/ea4ea5e6904124b297ade0d1b182c5e530909765
+  nettle_gcm_decrypt:
+    category: 'unknown'
+    comment: 'new implementation'
+    commits:
+    - https://git.lysator.liu.se/nettle/nettle/commit/ea4ea5e6904124b297ade0d1b182c5e530909765
+  nettle_gcm_digest:
+    category: 'unknown'
+    comment: 'new implementation'
+    commits:
+    - https://git.lysator.liu.se/nettle/nettle/commit/ea4ea5e6904124b297ade0d1b182c5e530909765
+  nettle_gcm_encrypt:
+    category: 'unknown'
+    comment: 'new implementation'
+    commits:
+    - https://git.lysator.liu.se/nettle/nettle/commit/ea4ea5e6904124b297ade0d1b182c5e530909765
+  nettle_gcm_update:
+    category: 'unknown'
+    comment: 'new implementation'
+    commits:
+    - https://git.lysator.liu.se/nettle/nettle/commit/ea4ea5e6904124b297ade0d1b182c5e530909765
+  nettle_poly1305_aes_digest:
+    category: 'complex'
+    comment: 'new implementation'
+    commits:
+    - https://git.lysator.liu.se/nettle/nettle/commit/ea4ea5e6904124b297ade0d1b182c5e530909765
+  nettle_poly1305_aes_update:
+    category: 'complex'
+    comment: 'new implementation'
+    commits:
+    - https://git.lysator.liu.se/nettle/nettle/commit/ea4ea5e6904124b297ade0d1b182c5e530909765
+    - https://git.lysator.liu.se/nettle/nettle/commit/bb9c0a1ed4e6b3be4c5a259d3a6192960bc0c432
+  nettle_sha224_digest:
+    category: 'unknown'
+    comment: 'new implementation'
+    commits:
+    - https://git.lysator.liu.se/nettle/nettle/commit/ea4ea5e6904124b297ade0d1b182c5e530909765
+    - https://git.lysator.liu.se/nettle/nettle/commit/8beda43fef902f4563a7629a2cd1cb1e991d8fcf
+  nettle_sha256_digest:
+    category: 'unknown'
+    comment: 'new implementation'
+    commits:
+    - https://git.lysator.liu.se/nettle/nettle/commit/ea4ea5e6904124b297ade0d1b182c5e530909765
+    - https://git.lysator.liu.se/nettle/nettle/commit/8beda43fef902f4563a7629a2cd1cb1e991d8fcf
+  nettle_sha256_update:
+    category: 'unknown'
+    comment: 'new implementation'
+    commits:
+    - https://git.lysator.liu.se/nettle/nettle/commit/ea4ea5e6904124b297ade0d1b182c5e530909765
+    - https://git.lysator.liu.se/nettle/nettle/commit/fad1bf50a5087a5b88a5500965ba3959d11f997f
