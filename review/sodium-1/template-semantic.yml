@@ -1,0 +1,437 @@
+1.0.10 -> 1.0.11:
+  crypto_aead_aes256gcm_decrypt:
+    category: 'genuine'
+    comment: 'new behavior of decryption functions - accept null pointer as output'
+    commits: []
+  crypto_aead_aes256gcm_decrypt_afternm:
+    category: 'genuine'
+    comment: 'new behavior of decryption functions - accept null pointer as output'
+    commits:
+    - https://github.com/jedisct1/libsodium/commit/a37d2b87bf1c9e5007a85f569aa326c084fe9b8d
+    - https://github.com/jedisct1/libsodium/commit/0a590b07b23bc8d6c707bbcb2705ee0dd89fac3f
+  crypto_aead_aes256gcm_decrypt_detached:
+    category: 'genuine'
+    comment: 'new behavior of decryption functions - accept null pointer as output'
+    commits: []
+  crypto_aead_aes256gcm_decrypt_detached_afternm:
+    category: 'genuine'
+    comment: 'new behavior of decryption functions - accept null pointer as output'
+    commits: []
+  crypto_aead_aes256gcm_encrypt:
+    category: 'unknown'
+    comment: 'no diff'
+    commits: []
+  crypto_aead_aes256gcm_encrypt_detached:
+    category: 'unknown'
+    comment: 'no diff'
+    commits: []
+  crypto_aead_chacha20poly1305_decrypt:
+    category: 'genuine'
+    comment: 'new behavior of decryption functions - accept null pointer as output'
+    commits:
+    - https://github.com/jedisct1/libsodium/commit/0a590b07b23bc8d6c707bbcb2705ee0dd89fac3f
+  crypto_aead_chacha20poly1305_decrypt_detached:
+    category: 'genuine'
+    comment: 'new behavior of decryption functions - accept null pointer as output'
+    commits: []
+  crypto_aead_chacha20poly1305_ietf_decrypt:
+    category: 'genuine'
+    comment: 'new behavior of decryption functions - accept null pointer as output'
+    commits:
+    - https://github.com/jedisct1/libsodium/commit/0a590b07b23bc8d6c707bbcb2705ee0dd89fac3f
+  crypto_aead_chacha20poly1305_ietf_decrypt_detached:
+    category: 'genuine'
+    comment: 'new behavior of decryption functions - accept null pointer as output'
+    commits: []
+  crypto_hash_sha256:
+    category: 'simple'
+    comment: 'memcpy replaced with explicit loop'
+    commits: []
+  crypto_hash_sha512:
+    category: 'simple'
+    comment: 'memcpy replaced with explicit loop'
+    commits:
+    - https://github.com/jedisct1/libsodium/commit/34aeee6ba5d090c0309a9483067e8bea14db898e
+    - https://github.com/jedisct1/libsodium/commit/50e11be47212c37f6cd7b4de801bfed912bdebac
+    - https://github.com/jedisct1/libsodium/commit/d7294320c40a8e0c4c22d44b1b1b0eeea954eb41
+  crypto_secretbox_open_detached:
+    category: 'genuine'
+    comment: 'new behavior of decryption functions - accept null pointer as output'
+    commits: []
+  crypto_secretbox_open_easy:
+    category: 'genuine'
+    comment: 'new behavior of decryption functions - accept null pointer as output'
+    commits:
+    - https://github.com/jedisct1/libsodium/commit/0a590b07b23bc8d6c707bbcb2705ee0dd89fac3f
+1.0.11 -> 1.0.12:
+  crypto_hash_sha256:
+    category: 'unknown'
+    comment: 'no diff'
+    commits: []
+  crypto_pwhash_scryptsalsa208sha256:
+    category: 'genuine'
+    comment: 'change min size of password'
+    commits: []
+1.0.12 -> 1.0.13:
+  crypto_pwhash:
+    category: 'genuine'
+    comment: 'added support for Argon2id'
+    commits:
+    - https://github.com/jedisct1/libsodium/commit/beac50920960c00a0a2a9d7372f183d7e500c730
+  crypto_pwhash_str_verify:
+    category: 'genuine'
+    comment: 'added support for Argon2id'
+    commits:
+    - https://github.com/jedisct1/libsodium/commit/beac50920960c00a0a2a9d7372f183d7e500c730
+  crypto_secretbox_detached:
+    category: 'simple'
+    comment: 'avoiding memmove if input and output addresses are the same'
+    commits: []
+  crypto_secretbox_easy:
+    category: 'simple'
+    comment: 'avoiding memmove if input and output addresses are the same'
+    commits:
+    - https://github.com/jedisct1/libsodium/commit/fbe3eb265fc1e93c74bf6110615176d1fb432b04
+1.0.13 -> 1.0.14:
+  crypto_aead_aes256gcm_decrypt:
+    category: 'genuine'
+    comment: 'updated error handling'
+    commits:
+    - https://github.com/jedisct1/libsodium/commit/74703c63a6ba3aaa540b0567d192786e0a3ad827
+    - https://github.com/jedisct1/libsodium/commit/16179b87f3909938fe3823cc47ac6d4449d15605
+    - https://github.com/jedisct1/libsodium/commit/bac61ebf506c1b32185a3f3cc6a582445d55bc75
+    - https://github.com/jedisct1/libsodium/commit/8b9b6a54be5490449e0c5e535aa257d6406b04b2
+  crypto_aead_aes256gcm_decrypt_afternm:
+    category: 'genuine'
+    comment: 'updated error handling'
+    commits:
+    - https://github.com/jedisct1/libsodium/commit/74703c63a6ba3aaa540b0567d192786e0a3ad827
+    - https://github.com/jedisct1/libsodium/commit/16179b87f3909938fe3823cc47ac6d4449d15605
+    - https://github.com/jedisct1/libsodium/commit/bac61ebf506c1b32185a3f3cc6a582445d55bc75
+    - https://github.com/jedisct1/libsodium/commit/8b9b6a54be5490449e0c5e535aa257d6406b04b2
+  crypto_aead_aes256gcm_decrypt_detached:
+    category: 'genuine'
+    comment: 'updated error handling'
+    commits:
+    - https://github.com/jedisct1/libsodium/commit/74703c63a6ba3aaa540b0567d192786e0a3ad827
+    - https://github.com/jedisct1/libsodium/commit/16179b87f3909938fe3823cc47ac6d4449d15605
+    - https://github.com/jedisct1/libsodium/commit/bac61ebf506c1b32185a3f3cc6a582445d55bc75
+    - https://github.com/jedisct1/libsodium/commit/8b9b6a54be5490449e0c5e535aa257d6406b04b2
+  crypto_aead_aes256gcm_decrypt_detached_afternm:
+    category: 'genuine'
+    comment: 'updated error handling'
+    commits: []
+  crypto_aead_aes256gcm_encrypt:
+    category: 'genuine'
+    comment: 'updated error handling'
+    commits:
+    - https://github.com/jedisct1/libsodium/commit/74703c63a6ba3aaa540b0567d192786e0a3ad827
+    - https://github.com/jedisct1/libsodium/commit/16179b87f3909938fe3823cc47ac6d4449d15605
+    - https://github.com/jedisct1/libsodium/commit/bac61ebf506c1b32185a3f3cc6a582445d55bc75
+    - https://github.com/jedisct1/libsodium/commit/8b9b6a54be5490449e0c5e535aa257d6406b04b2
+  crypto_aead_aes256gcm_encrypt_afternm:
+    category: 'genuine'
+    comment: 'updated error handling'
+    commits:
+    - https://github.com/jedisct1/libsodium/commit/74703c63a6ba3aaa540b0567d192786e0a3ad827
+    - https://github.com/jedisct1/libsodium/commit/16179b87f3909938fe3823cc47ac6d4449d15605
+    - https://github.com/jedisct1/libsodium/commit/bac61ebf506c1b32185a3f3cc6a582445d55bc75
+    - https://github.com/jedisct1/libsodium/commit/8b9b6a54be5490449e0c5e535aa257d6406b04b2
+  crypto_aead_aes256gcm_encrypt_detached:
+    category: 'genuine'
+    comment: 'updated error handling'
+    commits:
+    - https://github.com/jedisct1/libsodium/commit/74703c63a6ba3aaa540b0567d192786e0a3ad827
+    - https://github.com/jedisct1/libsodium/commit/16179b87f3909938fe3823cc47ac6d4449d15605
+    - https://github.com/jedisct1/libsodium/commit/bac61ebf506c1b32185a3f3cc6a582445d55bc75
+    - https://github.com/jedisct1/libsodium/commit/8b9b6a54be5490449e0c5e535aa257d6406b04b2
+  crypto_aead_aes256gcm_encrypt_detached_afternm:
+    category: 'genuine'
+    comment: 'updated error handling'
+    commits: []
+  crypto_aead_chacha20poly1305_encrypt:
+    category: 'genuine'
+    comment: 'updated error handling'
+    commits: []
+  crypto_aead_chacha20poly1305_ietf_encrypt:
+    category: 'genuine'
+    comment: 'updated error handling'
+    commits: []
+  crypto_aead_xchacha20poly1305_ietf_encrypt:
+    category: 'genuine'
+    comment: 'updated error handling'
+    commits: []
+  crypto_box_easy:
+    category: 'genuine'
+    comment: 'updated error handling'
+    commits: []
+  crypto_box_easy_afternm:
+    category: 'genuine'
+    comment: 'updated error handling'
+    commits: []
+  crypto_kx_client_session_keys:
+    category: 'genuine'
+    comment: 'added error check'
+    commits: []
+  crypto_kx_server_session_keys:
+    category: 'genuine'
+    comment: 'added error check'
+    commits: []
+  crypto_pwhash_scryptsalsa208sha256:
+    category: 'unknown'
+    comment: 'no diff'
+    commits: []
+  crypto_secretbox_easy:
+    category: 'genuine'
+    comment: 'updated error handling'
+    commits:
+    - https://github.com/jedisct1/libsodium/commit/90bd94e4e4b0421b377ed59a6151c0feeddd9d6a
+  sodium_bin2hex:
+    category: 'genuine'
+    comment: 'updated error handling'
+    commits: []
+  sodium_hex2bin:
+    category: 'genuine'
+    comment: 'updated error handling'
+    commits: []
+1.0.14 -> 1.0.15:
+  crypto_pwhash:
+    category: 'genuine'
+    comment: 'added support for Argon2id'
+    commits:
+    - https://github.com/jedisct1/libsodium/commit/d338ae951209aa85018cdd1d07fcc21c037f743c
+    - https://github.com/jedisct1/libsodium/commit/4c37368f95e756b7f930f437e5ecbdc934d5f926
+  crypto_pwhash_str:
+    category: 'genuine'
+    comment: 'added support for Argon2id'
+    commits:
+    - https://github.com/jedisct1/libsodium/commit/d3e20869afb7051cedd7abbd08156ac4e844ff96
+    - https://github.com/jedisct1/libsodium/commit/4c37368f95e756b7f930f437e5ecbdc934d5f926
+  crypto_secretstream_xchacha20poly1305_init_pull:
+    category: 'genuine'
+    comment: 'counter initialization changed'
+    commits:
+    - https://github.com/jedisct1/libsodium/commit/4c37368f95e756b7f930f437e5ecbdc934d5f926
+    - https://github.com/jedisct1/libsodium/commit/2542367c2db367283af164aa10f4d4f80e7e386d
+  crypto_secretstream_xchacha20poly1305_init_push:
+    category: 'genuine'
+    comment: 'counter initialization changed'
+    commits:
+    - https://github.com/jedisct1/libsodium/commit/4c37368f95e756b7f930f437e5ecbdc934d5f926
+    - https://github.com/jedisct1/libsodium/commit/2542367c2db367283af164aa10f4d4f80e7e386d
+  crypto_secretstream_xchacha20poly1305_pull:
+    category: 'genuine'
+    comment: 'counter initialization changed'
+    commits:
+    - https://github.com/jedisct1/libsodium/commit/4c37368f95e756b7f930f437e5ecbdc934d5f926
+  crypto_secretstream_xchacha20poly1305_push:
+    category: 'genuine'
+    comment: 'counter initialization changed'
+    commits:
+    - https://github.com/jedisct1/libsodium/commit/4c37368f95e756b7f930f437e5ecbdc934d5f926
+1.0.15 -> 1.0.16:
+  crypto_aead_aes256gcm_decrypt:
+    category: 'simple'
+    comment: 'added buffer zeroization'
+    commits:
+    - https://github.com/jedisct1/libsodium/commit/1947a49020fd13b26573cd966abd842c978e232a
+    - https://github.com/jedisct1/libsodium/commit/c5e43f4c1cf62b4669b1f33516fc33ef2d005187
+  crypto_aead_aes256gcm_encrypt:
+    category: 'simple'
+    comment: 'added buffer zeroization'
+    commits:
+    - https://github.com/jedisct1/libsodium/commit/1947a49020fd13b26573cd966abd842c978e232a
+    - https://github.com/jedisct1/libsodium/commit/c5e43f4c1cf62b4669b1f33516fc33ef2d005187
+  crypto_hash_sha256:
+    category: 'simple'
+    comment: 'changed the type of local variables to a smaller one, but they are bounded'
+    commits:
+    - https://github.com/jedisct1/libsodium/commit/5935cf7a7e393fc57964c432a1c380e262ce8de2
+  crypto_hash_sha512:
+    category: 'simple'
+    comment: 'changed the type of local variables to a smaller one, but they are bounded'
+    commits:
+    - https://github.com/jedisct1/libsodium/commit/5935cf7a7e393fc57964c432a1c380e262ce8de2
+1.0.16 -> 1.0.17:
+  crypto_aead_aes256gcm_decrypt:
+    category: 'unknown'
+    comment:  'input structure changed'
+    commits:
+    - https://github.com/jedisct1/libsodium/commit/675149b9b8b66ff44152553fb3ebf9858128363d
+    - https://github.com/jedisct1/libsodium/commit/3c59cebe9112f6055a0fa0cf6efa332557a16745
+  crypto_aead_aes256gcm_decrypt_afternm:
+    category: 'unknown'
+    comment: 'input structure changed'
+    commits:
+    - https://github.com/jedisct1/libsodium/commit/675149b9b8b66ff44152553fb3ebf9858128363d
+    - https://github.com/jedisct1/libsodium/commit/3c59cebe9112f6055a0fa0cf6efa332557a16745
+  crypto_aead_aes256gcm_decrypt_detached:
+    category: 'unknown'
+    comment: 'input structure changed'
+    commits:
+    - https://github.com/jedisct1/libsodium/commit/675149b9b8b66ff44152553fb3ebf9858128363d
+    - https://github.com/jedisct1/libsodium/commit/3c59cebe9112f6055a0fa0cf6efa332557a16745
+  crypto_aead_aes256gcm_decrypt_detached_afternm:
+    category: 'unknown'
+    comment: 'input structure changed'
+    commits:
+    - https://github.com/jedisct1/libsodium/commit/675149b9b8b66ff44152553fb3ebf9858128363d
+    - https://github.com/jedisct1/libsodium/commit/3c59cebe9112f6055a0fa0cf6efa332557a16745
+  crypto_aead_aes256gcm_encrypt:
+    category: 'unknown'
+    comment: 'input structure changed'
+    commits:
+    - https://github.com/jedisct1/libsodium/commit/675149b9b8b66ff44152553fb3ebf9858128363d
+    - https://github.com/jedisct1/libsodium/commit/3c59cebe9112f6055a0fa0cf6efa332557a16745
+  crypto_aead_aes256gcm_encrypt_afternm:
+    category: 'unknown'
+    comment: 'input structure changed'
+    commits:
+    - https://github.com/jedisct1/libsodium/commit/675149b9b8b66ff44152553fb3ebf9858128363d
+    - https://github.com/jedisct1/libsodium/commit/3c59cebe9112f6055a0fa0cf6efa332557a16745
+  crypto_aead_aes256gcm_encrypt_detached:
+    category: 'unknown'
+    comment: 'input structure changed'
+    commits:
+    - https://github.com/jedisct1/libsodium/commit/675149b9b8b66ff44152553fb3ebf9858128363d
+    - https://github.com/jedisct1/libsodium/commit/3c59cebe9112f6055a0fa0cf6efa332557a16745
+  crypto_aead_aes256gcm_encrypt_detached_afternm:
+    category: 'unknown'
+    comment: 'input structure changed'
+    commits:
+    - https://github.com/jedisct1/libsodium/commit/675149b9b8b66ff44152553fb3ebf9858128363d
+    - https://github.com/jedisct1/libsodium/commit/3c59cebe9112f6055a0fa0cf6efa332557a16745
+  crypto_aead_chacha20poly1305_ietf_encrypt:
+    category: 'genuine'
+    comment: 'added error check'
+    commits:
+    - https://github.com/jedisct1/libsodium/commit/675149b9b8b66ff44152553fb3ebf9858128363d
+  crypto_aead_xchacha20poly1305_ietf_encrypt:
+    category: 'genuine'
+    comment: 'added error check'
+    commits:
+    - https://github.com/jedisct1/libsodium/commit/675149b9b8b66ff44152553fb3ebf9858128363d
+    - https://github.com/jedisct1/libsodium/commit/462a8ab7758f51290cf5a4168f396ce376cf0553
+    - https://github.com/jedisct1/libsodium/commit/cf217e3dfcad0ca6320af9d596333bf139035f2e
+  crypto_stream_chacha20_ietf:
+    category: 'genuine'
+    comment: 'added error check'
+    commits:
+    - https://github.com/jedisct1/libsodium/commit/675149b9b8b66ff44152553fb3ebf9858128363d
+    - https://github.com/jedisct1/libsodium/commit/3e9d341d065dde2becdb69a2a27ea75c10d17745
+    - https://github.com/jedisct1/libsodium/commit/04a7ab95f2f0e4f6fb48aa1d2953cfbdf5a8a36a
+  sodium_pad:
+    category: 'genuine'
+    comment: 'padding fix for large block sizes'
+    commits:
+    - https://github.com/jedisct1/libsodium/commit/675149b9b8b66ff44152553fb3ebf9858128363d
+    - https://github.com/jedisct1/libsodium/commit/1ec6edc1a8b70e8094e36ac7011b6439486f1c53
+    - https://github.com/jedisct1/libsodium/commit/32385c6b9a00cb2a83c64cba80e8b5962841cd88
+    - https://github.com/jedisct1/libsodium/commit/543b5ad0686f130501cf86d40ad926f857933d00
+1.0.17 -> 1.0.18: {}
+1.0.18 -> 1.0.19:
+  crypto_aead_aes256gcm_decrypt:
+    category: 'unknown'
+    comment: 'completely new implementation of AES-GCM'
+    commits:
+    - https://github.com/jedisct1/libsodium/commit/d0c73fcefc08c771f312baec8f70b50ea8f97e9e
+    - https://github.com/jedisct1/libsodium/commit/a75c1370208735a5c3840fe46e2e7cf36d448c90
+    - https://github.com/jedisct1/libsodium/commit/3a6a6025ccf65f333944b328d761480a57b4bc7d
+    - https://github.com/jedisct1/libsodium/commit/dab102d40478db3ca663920cec28d7311c1691a0
+  crypto_aead_aes256gcm_decrypt_afternm:
+    category: 'unknown'
+    comment: 'completely new implementation of AES-GCM'
+    commits:
+    - https://github.com/jedisct1/libsodium/commit/d0c73fcefc08c771f312baec8f70b50ea8f97e9e
+    - https://github.com/jedisct1/libsodium/commit/a75c1370208735a5c3840fe46e2e7cf36d448c90
+    - https://github.com/jedisct1/libsodium/commit/3a6a6025ccf65f333944b328d761480a57b4bc7d
+    - https://github.com/jedisct1/libsodium/commit/dab102d40478db3ca663920cec28d7311c1691a0
+  crypto_aead_aes256gcm_decrypt_detached:
+    category: 'unknown'
+    comment: 'completely new implementation of AES-GCM'
+    commits:
+    - https://github.com/jedisct1/libsodium/commit/d0c73fcefc08c771f312baec8f70b50ea8f97e9e
+    - https://github.com/jedisct1/libsodium/commit/a75c1370208735a5c3840fe46e2e7cf36d448c90
+    - https://github.com/jedisct1/libsodium/commit/3a6a6025ccf65f333944b328d761480a57b4bc7d
+    - https://github.com/jedisct1/libsodium/commit/dab102d40478db3ca663920cec28d7311c1691a0
+  crypto_aead_aes256gcm_decrypt_detached_afternm:
+    category: 'unknown'
+    comment: 'completely new implementation of AES-GCM'
+    commits:
+    - https://github.com/jedisct1/libsodium/commit/d0c73fcefc08c771f312baec8f70b50ea8f97e9e
+    - https://github.com/jedisct1/libsodium/commit/a75c1370208735a5c3840fe46e2e7cf36d448c90
+    - https://github.com/jedisct1/libsodium/commit/3a6a6025ccf65f333944b328d761480a57b4bc7d
+    - https://github.com/jedisct1/libsodium/commit/dab102d40478db3ca663920cec28d7311c1691a0
+  crypto_aead_aes256gcm_encrypt:
+    category: 'unknown'
+    comment: 'completely new implementation of AES-GCM'
+    commits:
+    - https://github.com/jedisct1/libsodium/commit/d0c73fcefc08c771f312baec8f70b50ea8f97e9e
+    - https://github.com/jedisct1/libsodium/commit/3a6a6025ccf65f333944b328d761480a57b4bc7d
+    - https://github.com/jedisct1/libsodium/commit/dab102d40478db3ca663920cec28d7311c1691a0
+  crypto_aead_aes256gcm_encrypt_afternm:
+    category: 'unknown'
+    comment: 'completely new implementation of AES-GCM'
+    commits:
+    - https://github.com/jedisct1/libsodium/commit/d0c73fcefc08c771f312baec8f70b50ea8f97e9e
+    - https://github.com/jedisct1/libsodium/commit/a75c1370208735a5c3840fe46e2e7cf36d448c90
+    - https://github.com/jedisct1/libsodium/commit/3a6a6025ccf65f333944b328d761480a57b4bc7d
+    - https://github.com/jedisct1/libsodium/commit/dab102d40478db3ca663920cec28d7311c1691a0
+  crypto_aead_aes256gcm_encrypt_detached:
+    category: 'unknown'
+    comment: 'completely new implementation of AES-GCM'
+    commits:
+    - https://github.com/jedisct1/libsodium/commit/d0c73fcefc08c771f312baec8f70b50ea8f97e9e
+    - https://github.com/jedisct1/libsodium/commit/3a6a6025ccf65f333944b328d761480a57b4bc7d
+    - https://github.com/jedisct1/libsodium/commit/dab102d40478db3ca663920cec28d7311c1691a0
+  crypto_aead_aes256gcm_encrypt_detached_afternm:
+    category: 'unknown'
+    comment: 'completely new implementation of AES-GCM'
+    commits:
+    - https://github.com/jedisct1/libsodium/commit/d0c73fcefc08c771f312baec8f70b50ea8f97e9e
+    - https://github.com/jedisct1/libsodium/commit/a75c1370208735a5c3840fe46e2e7cf36d448c90
+    - https://github.com/jedisct1/libsodium/commit/3a6a6025ccf65f333944b328d761480a57b4bc7d
+    - https://github.com/jedisct1/libsodium/commit/dab102d40478db3ca663920cec28d7311c1691a0
+  crypto_hash_sha256:
+    category: 'simple'
+    comment: 'added a fence'
+    commits:
+    - https://github.com/jedisct1/libsodium/commit/675149b9b8b66ff44152553fb3ebf9858128363d
+    - https://github.com/jedisct1/libsodium/commit/e95d437f8452adb5ff5c97eb3fedc0d7f2cf2908
+  crypto_hash_sha512:
+    category: 'simple'
+    comment: 'added a fence'
+    commits:
+    - https://github.com/jedisct1/libsodium/commit/675149b9b8b66ff44152553fb3ebf9858128363d
+    - https://github.com/jedisct1/libsodium/commit/e95d437f8452adb5ff5c97eb3fedc0d7f2cf2908
+  crypto_pwhash_scryptsalsa208sha256:
+    category: 'simple'
+    comment: 'added a fence'
+    commits:
+    - https://github.com/jedisct1/libsodium/commit/df83ed92353791be18780c540bb483fce4cd706c
+    - https://github.com/jedisct1/libsodium/commit/c5e43f4c1cf62b4669b1f33516fc33ef2d005187
+  crypto_secretbox_open_detached:
+    category: 'simple'
+    comment: 'multiple simple refactorings (zeroization, memcpy)
+    commits:
+    - https://github.com/jedisct1/libsodium/commit/f1652acba26dc5e27c711a41e522ef86de2dbdf4
+    - https://github.com/jedisct1/libsodium/commit/c5e43f4c1cf62b4669b1f33516fc33ef2d005187
+    - https://github.com/jedisct1/libsodium/commit/d69a2342bccb98a3c28c0b7d5e4e6f3b8c789621
+  crypto_secretbox_open_easy:
+    category: 'simple'
+    comment: 'multiple simple refactorings (zeroization, memcpy)
+    commits:
+    - https://github.com/jedisct1/libsodium/commit/f1652acba26dc5e27c711a41e522ef86de2dbdf4
+    - https://github.com/jedisct1/libsodium/commit/c5e43f4c1cf62b4669b1f33516fc33ef2d005187
+    - https://github.com/jedisct1/libsodium/commit/d69a2342bccb98a3c28c0b7d5e4e6f3b8c789621
+  sodium_base642bin:
+    category: 'simple'
+    comment: 'added a fence'
+    commits:
+    - https://github.com/jedisct1/libsodium/commit/e95d437f8452adb5ff5c97eb3fedc0d7f2cf2908
+    - https://github.com/jedisct1/libsodium/commit/c5e43f4c1cf62b4669b1f33516fc33ef2d005187
+  sodium_bin2base64:
+    category: 'simple'
+    comment: 'added a fence'
+    commits:
+    - https://github.com/jedisct1/libsodium/commit/c5e43f4c1cf62b4669b1f33516fc33ef2d005187

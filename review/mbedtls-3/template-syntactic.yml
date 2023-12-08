@@ -1,37 +1,99 @@
 mbedtls-3.1.0 -> mbedtls-3.2.0:
-  mbedtls_aes_crypt_xts: 'comment changed'
-  mbedtls_ccm_auth_decrypt: 'formatting'
-  mbedtls_ccm_encrypt_and_tag: 'formatting'
-  mbedtls_ccm_star_auth_decrypt: 'formatting'
-  mbedtls_ccm_star_encrypt_and_tag: 'formatting'
+  mbedtls_aes_crypt_xts:
+    category: 'trivial'
+    comment: 'comment'
+  mbedtls_ccm_auth_decrypt:
+    category: 'trivial'
+    comment: 'formatting'
+  mbedtls_ccm_encrypt_and_tag:
+    category: 'trivial'
+    comment: 'formatting'
+  mbedtls_ccm_star_auth_decrypt:
+    category: 'trivial'
+    comment: 'formatting'
+  mbedtls_ccm_star_encrypt_and_tag:
+    category: 'trivial'
+    comment: 'formatting'
 mbedtls-3.2.0 -> mbedtls-3.3.0:
-  mbedtls_ccm_auth_decrypt: 'comment changed'
-  mbedtls_ccm_encrypt_and_tag: 'comment changed'
-  mbedtls_ccm_star_auth_decrypt: 'comment changed'
-  mbedtls_ccm_star_encrypt_and_tag: 'comment changed'
+  mbedtls_ccm_auth_decrypt:
+    category: 'trivial'
+    comment: 'comment'
+  mbedtls_ccm_encrypt_and_tag:
+    category: 'trivial'
+    comment: 'comment'
+  mbedtls_ccm_star_auth_decrypt:
+    category: 'trivial'
+    comment: 'comment'
+  mbedtls_ccm_star_encrypt_and_tag:
+    category: 'trivial'
+    comment: 'comment'
 mbedtls-3.3.0 -> mbedtls-3.4.0:
-  mbedtls_base64_decode: 'formatting'
-  mbedtls_base64_encode: 'formatting'
-  mbedtls_dhm_calc_secret: 'formatting'
-  mbedtls_ecdh_compute_shared: 'formatting'
-  mbedtls_ecdsa_sign: 'formatting'
-  mbedtls_ecdsa_verify: 'formatting'
-  mbedtls_ecjpake_derive_secret: 'formatting'
-  mbedtls_hkdf: 'formatting'
-  mbedtls_md: 'formatting'
-  mbedtls_pkcs12_derivation: 'formatting'
-  mbedtls_pkcs12_pbe: 'formatting'
-  mbedtls_rsa_pkcs1_decrypt: 'formatting'
-  mbedtls_rsa_pkcs1_encrypt: 'formatting'
-  mbedtls_rsa_pkcs1_sign: 'formatting'
-  mbedtls_rsa_pkcs1_verify: 'formatting'
-  mbedtls_rsa_rsaes_oaep_decrypt: 'formatting'
-  mbedtls_rsa_rsaes_oaep_encrypt: 'formatting'
-  mbedtls_rsa_rsaes_pkcs1_v15_decrypt: 'formatting'
-  mbedtls_rsa_rsaes_pkcs1_v15_encrypt: 'formatting'
-  mbedtls_rsa_rsassa_pkcs1_v15_sign: 'formatting'
-  mbedtls_rsa_rsassa_pkcs1_v15_verify: 'formatting'
-  mbedtls_rsa_rsassa_pss_sign: 'formatting'
-  mbedtls_rsa_rsassa_pss_verify: 'formatting'
-mbedtls-3.4.0 -> mbedtls-3.5.0:
-  mbedtls_aes_crypt_ecb: 'ifdef encapsulation not translated into llvm'
+  mbedtls_base64_decode:
+    category: 'trivial'
+    comment: 'formatting'
+  mbedtls_base64_encode:
+    category: 'trivial'
+    comment: 'formatting'
+  mbedtls_dhm_calc_secret:
+    category: 'trivial'
+    comment: 'formatting'
+  mbedtls_ecdh_compute_shared:
+    category: 'trivial'
+    comment: 'formatting'
+  mbedtls_ecdsa_sign:
+    category: 'trivial'
+    comment: 'formatting'
+  mbedtls_ecdsa_verify:
+    category: 'trivial'
+    comment: 'formatting'
+  mbedtls_ecjpake_derive_secret:
+    category: 'trivial'
+    comment: 'formatting'
+  mbedtls_hkdf:
+    category: 'trivial'
+    comment: 'formatting'
+  mbedtls_md:
+    category: 'trivial'
+    comment: 'formatting'
+  mbedtls_pkcs12_derivation:
+    category: 'trivial'
+    comment: 'formatting'
+  mbedtls_pkcs12_pbe:
+    category: 'trivial'
+    comment: 'formatting'
+  mbedtls_rsa_pkcs1_decrypt:
+    category: 'trivial'
+    comment: 'formatting'
+  mbedtls_rsa_pkcs1_encrypt:
+    category: 'trivial'
+    comment: 'formatting'
+  mbedtls_rsa_pkcs1_sign:
+    category: 'trivial'
+    comment: 'formatting'
+  mbedtls_rsa_pkcs1_verify:
+    category: 'trivial'
+    comment: 'formatting'
+  mbedtls_rsa_rsaes_oaep_decrypt:
+    category: 'trivial'
+    comment: 'formatting'
+  mbedtls_rsa_rsaes_oaep_encrypt:
+    category: 'trivial'
+    comment: 'formatting'
+  mbedtls_rsa_rsaes_pkcs1_v15_decrypt:
+    category: 'trivial'
+    comment: 'formatting'
+  mbedtls_rsa_rsaes_pkcs1_v15_encrypt:
+    category: 'trivial'
+    comment: 'formatting'
+  mbedtls_rsa_rsassa_pkcs1_v15_sign:
+    category: 'trivial'
+    comment: 'formatting'
+  mbedtls_rsa_rsassa_pkcs1_v15_verify:
+    category: 'trivial'
+    comment: 'formatting'
+  mbedtls_rsa_rsassa_pss_sign:
+    category: 'trivial'
+    comment: 'formatting'
+  mbedtls_rsa_rsassa_pss_verify:
+    category: 'trivial'
+    comment: 'formatting'

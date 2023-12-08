@@ -1,0 +1,70 @@
+1.0.10 -> 1.0.11:
+  crypto_aead_aes256gcm_encrypt_afternm:
+    category: 'trivial'
+    comment: 'comment'
+  crypto_aead_aes256gcm_encrypt_detached_afternm:
+    category: 'trivial'
+    comment: 'comment'
+1.0.11 -> 1.0.12:
+  crypto_aead_aes256gcm_encrypt:
+    category: 'trivial'
+    comment: 'comment'
+  crypto_aead_aes256gcm_encrypt_afternm:
+    category: 'trivial'
+    comment: 'comment'
+  crypto_aead_aes256gcm_encrypt_detached:
+    category: 'trivial'
+    comment: 'comment'
+  crypto_aead_aes256gcm_encrypt_detached_afternm:
+    category: 'trivial'
+    comment: 'comment'
+  crypto_auth_hmacsha256:
+    category: 'trivial'
+    comment: 'formatting'
+  crypto_auth_hmacsha256_verify:
+    category: 'trivial'
+    comment: 'formatting'
+  crypto_auth_hmacsha512:
+    category: 'trivial'
+    comment: 'formatting'
+  crypto_auth_hmacsha512256_verify:
+    category: 'trivial'
+    comment: 'formatting'
+  crypto_auth_hmacsha512_verify:
+    category: 'trivial'
+    comment: 'formatting'
+  crypto_box_open_detached_afternm:
+    category: 'trivial'
+    comment: 'formatting'
+  crypto_stream_salsa2012:
+    category: 'trivial'
+    comment: 'formatting'
+  crypto_stream_salsa208:
+    category: 'trivial'
+    comment: 'formatting'
+  sodium_bin2hex:
+    category: 'trivial'
+    comment: 'formatting'
+  sodium_hex2bin:
+    category: 'trivial'
+    comment: 'formatting'
+1.0.13 -> 1.0.14:
+  crypto_hash_sha512:
+    category: 'trivial'
+    comment: 'comment'
+  crypto_secretbox_detached:
+    category: 'trivial'
+    comment: 'comment'
+  crypto_secretbox_open_detached:
+    category: 'trivial'
+    comment: 'comment'
+  crypto_secretbox_open_easy:
+    category: 'trivial'
+    comment: 'comment'
+1.0.16 -> 1.0.17:
+  crypto_aead_xchacha20poly1305_ietf_decrypt:
+    category: 'trivial'
+    comment: 'formatting'
+  crypto_kx_client_session_keys:
+    category: 'trivial'
+    comment: 'comment'

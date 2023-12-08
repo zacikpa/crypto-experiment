@@ -1,4 +1,0 @@
-mbedtls-2.20.0 -> mbedtls-2.21.0:
-  mbedtls_md: '#ifdef encapsulation not translated into llvm'
-  mbedtls_md_hmac: '#ifdef encapsulation not translated into llvm'
-  mbedtls_sha512: '#ifdef encapsulation not translated into llvm'
