@@ -1,0 +1,955 @@
+v4.0.0-stable -> v4.1.0-stable:
+  wc_AesCtrEncrypt:
+    category: 'simple'
+    comment: 'added buffer zeroization'
+    commits: []
+  wc_PBKDF1:
+    category: 'unknown'
+    comment: 'no diff'
+    commits: []
+  wc_PKCS12_PBKDF:
+    category: 'unknown'
+    comment: 'no relevant diff'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/eba78cd87a39f6ace94dd1e528acfa999245eed5
+  wc_RsaPSS_Verify:
+    category: 'genuine'
+    comment: 'added new functionality - cryptocell 310'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/6c65550eab6c66bd24bb7dbfd4496eb48ef741eb
+  wc_RsaPrivateDecrypt:
+    category: 'genuine'
+    comment: 'added new functionality - cryptocell 310'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/6c65550eab6c66bd24bb7dbfd4496eb48ef741eb
+  wc_RsaSSL_Verify:
+    category: 'genuine'
+    comment: 'added new functionality - cryptocell 310'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/6c65550eab6c66bd24bb7dbfd4496eb48ef741eb
+  wc_ecc_decrypt:
+    category: 'unknown'
+    comment: 'no diff'
+    commits: []
+  wc_ecc_encrypt:
+    category: 'unknown'
+    comment: 'no diff'
+    commits: []
+  wc_ecc_shared_secret:
+    category: 'genuine'
+    comment: 'added new functionality - cryptocell 310'
+    commits: []
+  wc_ecc_sign_hash:
+    category: 'genuine'
+    comment: 'added new functionality - cryptocell 310'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/483f6a5acd9808b405306661c121aa6407464dc2
+    - https://github.com/wolfSSL/wolfssl/commit/f66aa60385edbf5e7c6c70cac6ff24a50f93fba0
+    - https://github.com/wolfSSL/wolfssl/commit/5d2f34aa6d1741aacd0f3ed2c0d19bcd92e35b9f
+    - https://github.com/wolfSSL/wolfssl/commit/6c65550eab6c66bd24bb7dbfd4496eb48ef741eb
+    - https://github.com/wolfSSL/wolfssl/commit/34c1d5cba0d7b5f19e284793289d0c3a759f2f12
+  wc_ecc_verify_hash:
+    category: 'genuine'
+    comment: 'added new functionality - cryptocell 310'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/6c65550eab6c66bd24bb7dbfd4496eb48ef741eb
+    - https://github.com/wolfSSL/wolfssl/commit/483f6a5acd9808b405306661c121aa6407464dc2
+    - https://github.com/wolfSSL/wolfssl/commit/34c1d5cba0d7b5f19e284793289d0c3a759f2f12
+  wc_ed25519_sign_msg:
+    category: 'simple'
+    comment: 'code moved into a function'
+    commits: []
+  wc_ed25519_verify_msg:
+    category: 'simple'
+    comment: 'code moved into a function'
+    commits: []
+v4.1.0-stable -> v4.2.0-stable:
+  Base64_Decode:
+    category: 'genuine'
+    comment: 'add a null terminator to the end if there is room'
+    commits: []
+  Base64_Encode:
+    category: 'genuine'
+    comment: 'add a null terminator to the end if there is room'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/b7fe49c8b42af70e67e71e67d820c9f2a5f7a8c2
+    - https://github.com/wolfSSL/wolfssl/commit/54b61482596bc024918fbaa54d82facb56f94fed
+  wc_AesCfbDecrypt:
+    category: 'genuine'
+    comment: 'added logging when entering the function'
+    commits: []
+  wc_AesCfbEncrypt:
+    category: 'genuine'
+    comment: 'added logging when entering the function'
+    commits: []
+  wc_AesCmacGenerate:
+    category: 'unknown'
+    comment: 'no diff'
+    commits: []
+  wc_AesCmacVerify:
+    category: 'unknown'
+    comment: 'no diff'
+    commits: []
+  wc_AesCtrEncrypt:
+    category: 'unknown'
+    comment: 'no diff'
+    commits: []
+  wc_AesGcmDecrypt:
+    category: 'unknown'
+    comment: 'added functionality if OPENSSL_EXTRA is defined'
+    commits: []
+  wc_AesGcmEncrypt:
+    category: 'unknown'
+    comment: 'added functionality if OPENSSL_EXTRA is defined'
+    commits: []
+  wc_CmacFinal:
+    category: 'unknown'
+    comment: 'no diff'
+    commits: []
+  wc_CmacUpdate:
+    category: 'unknown'
+    comment: 'no diff'
+    commits: []
+  wc_DsaSign:
+    category: 'genuine'
+    comment: 'changed k generation for DSA per FIPS 186-4'
+    commits: []
+  wc_GmacUpdate:
+    category: 'unknown'
+    comment: 'added functionality if OPENSSL_EXTRA is defined'
+    commits: []
+  wc_HKDF:
+    category: 'unknown'
+    comment: 'no diff'
+    commits: []
+  wc_Md5Final:
+    category: 'unknown'
+    comment: 'heavy optimization'
+    commits: []
+  wc_Md5Hash:
+    category: 'unknown'
+    comment: 'heavy optimization'
+    commits: []
+  wc_Md5Update:
+    category: 'unknown'
+    comment: 'heavy optimization'
+    commits: []
+  wc_PBKDF1:
+    category: 'unknown'
+    comment: 'no diff'
+    commits: []
+  wc_PBKDF2:
+    category: 'unknown'
+    comment: 'no diff'
+    commits: []
+  wc_PKCS12_PBKDF:
+    category: 'unknown'
+    comment: 'new compatibility API of PKCS12'
+    commits: []
+  wc_RsaPSS_Verify:
+    category: 'genuine'
+    comment: 'fix of inline RSA computation'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/4e62d1f509dcbd577dfe6a5e91097a4f923220b7
+  wc_RsaPrivateDecrypt:
+    category: 'genuine'
+    comment: 'fix of inline RSA computation'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/4e62d1f509dcbd577dfe6a5e91097a4f923220b7
+  wc_RsaSSL_Verify:
+    category: 'genuine'
+    comment: 'fix of inline RSA computation'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/4e62d1f509dcbd577dfe6a5e91097a4f923220b7
+  wc_Sha224Hash:
+    category: 'unknown'
+    comment: 'heavy optimization'
+    commits: []
+  wc_Sha256Hash:
+    category: 'unknown'
+    comment: 'heavy optimization'
+    commits: []
+  wc_Sha384Hash:
+    category: 'unknown'
+    comment: 'heavy optimization'
+    commits: []
+  wc_Sha3_224Hash:
+    category: 'genuine'
+    comment: 'added support for keccak256 used in ethereum'
+    commits: []
+  wc_Sha3_256Hash:
+    category: 'genuine'
+    comment: 'added support for keccak256 used in ethereum'
+    commits: []
+  wc_Sha3_384Hash:
+    category: 'genuine'
+    comment: 'added support for keccak256 used in ethereum'
+    commits: []
+  wc_Sha3_512Hash:
+    category: 'genuine'
+    comment: 'added support for keccak256 used in ethereum'
+    commits: []
+  wc_Sha512Hash:
+    category: 'unknown'
+    comment: 'heavy optimization'
+    commits: []
+  wc_ShaHash:
+    category: 'unknown'
+    comment: 'heavy optimization'
+    commits: []
+  wc_ecc_decrypt:
+    category: 'genuine'
+    comment: 'added error checking'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/03967d62f4ebe2b8e6059d4eb2a36f5b9a461cc7
+  wc_ecc_encrypt:
+    category: 'genuine'
+    comment: 'added error checking'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/03967d62f4ebe2b8e6059d4eb2a36f5b9a461cc7
+  wc_ecc_shared_secret:
+    category: 'genuine'
+    comment: 'added error checking'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/03967d62f4ebe2b8e6059d4eb2a36f5b9a461cc7
+  wc_ecc_sign_hash:
+    category: 'genuine'
+    comment: 'many bug fixes found by cppcheck'
+    commits: []
+v4.2.0-stable -> v4.3.0-stable:
+  Base64_Decode:
+    category: 'genuine'
+    comment: 'new error checking'
+    commits: []
+  wc_AesCcmEncrypt:
+    category: 'unknown'
+    comment: 'fixed initialization issue'
+    commits: []
+  wc_AesGcmEncrypt:
+    category: 'unknown'
+    comment: 'fixed initialization issue'
+    commits: []
+  wc_DsaSign:
+    category: 'complex'
+    comment: 'added blinding to DSA'
+    commits: []
+  wc_GmacUpdate:
+    category: 'unknown'
+    comment: 'no diff'
+    commits: []
+  wc_HKDF:
+    category: 'unknown'
+    comment: 'no diff'
+    commits: []
+  wc_PKCS12_PBKDF:
+    category: 'genuine'
+    comment: 'bug fixes of new compatibility API of PKCS12'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/8d7d2c74ee6c57210b4d89291ef0dd12933d528a
+  wc_RsaPSS_Sign:
+    category: 'genuine'
+    comment: 'new options of RSA PSS'
+    commits: []
+  wc_RsaPSS_Verify:
+    category: 'genuine'
+    comment: 'new options of RSA PSS'
+    commits: []
+  wc_RsaPrivateDecrypt:
+    category: 'genuine'
+    comment: 'option to use 4096 bit RSA'
+    commits: []
+  wc_RsaPublicEncrypt:
+    category: 'genuine'
+    comment: 'option to use 4096 bit RSA'
+    commits: []
+  wc_RsaSSL_Sign:
+    category: 'genuine'
+    comment: 'option to use 4096 bit RSA'
+    commits: []
+  wc_RsaSSL_Verify:
+    category: 'genuine'
+    comment: 'option to use 4096 bit RSA'
+    commits: []
+  wc_SignatureGenerate:
+    category: 'genuine'
+    comment: 'signature generation verifies the result by default'
+    commits: []
+  wc_ecc_decrypt:
+    category: 'unknown'
+    comment: 'improved cache attack resistance'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/cc880e39aefaba8d50e561e9414dcc561628bbb7
+    - https://github.com/wolfSSL/wolfssl/commit/2a0c037f98c8d6c02f47fec2df1375338f7f17fe
+  wc_ecc_encrypt:
+    category: 'unknown'
+    comment: 'improved cache attack resistance'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/cc880e39aefaba8d50e561e9414dcc561628bbb7
+    - https://github.com/wolfSSL/wolfssl/commit/2a0c037f98c8d6c02f47fec2df1375338f7f17fe
+  wc_ecc_shared_secret:
+    category: 'unknown'
+    comment: 'improved cache attack resistance'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/cc880e39aefaba8d50e561e9414dcc561628bbb7
+    - https://github.com/wolfSSL/wolfssl/commit/2a0c037f98c8d6c02f47fec2df1375338f7f17fe
+  wc_ecc_sign_hash:
+    category: 'unknown'
+    comment: 'improved cache attack resistance'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/cc880e39aefaba8d50e561e9414dcc561628bbb7
+    - https://github.com/wolfSSL/wolfssl/commit/2a0c037f98c8d6c02f47fec2df1375338f7f17fe
+    - https://github.com/wolfSSL/wolfssl/commit/550fbcfff7bc5e7f1397b9ea9eccd5063cafd18b
+    - https://github.com/wolfSSL/wolfssl/commit/1361e4dbef28734fe05803550b0dd7557d78bc64
+    - https://github.com/wolfSSL/wolfssl/commit/a6e4926d2f7a8e547f66e5e76dfc30aa249c8738
+  wc_ecc_verify_hash:
+    category: 'unknown'
+    comment: 'improved cache attack resistance'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/cc880e39aefaba8d50e561e9414dcc561628bbb7
+    - https://github.com/wolfSSL/wolfssl/commit/2a0c037f98c8d6c02f47fec2df1375338f7f17fe
+    - https://github.com/wolfSSL/wolfssl/commit/b80b10b980b66156632ccddae638209443404b61
+    - https://github.com/wolfSSL/wolfssl/commit/52bf19eefdd43f0bf496bfc91cba14a1d419a41f
+    - https://github.com/wolfSSL/wolfssl/commit/f41f67d23117ea83a44bea6333e9d9c706f8fdc3
+    - https://github.com/wolfSSL/wolfssl/commit/13c63461580161479ec1d74692162c5616151e6d
+v4.3.0-stable -> v4.4.0-stable:
+  Base64_Decode:
+    category: 'genuine'
+    comment: 'error checking added'
+    commits: []
+  wc_AesCfbDecrypt:
+    category: 'unknown'
+    comment: 'heavy refactoring while adding CFB8 support'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/e75b1b5cb938e68dbce8f9104c50d485d7e70a1b
+    - https://github.com/wolfSSL/wolfssl/commit/9339808ea147691c9c88f9293678a39cd5635fbd
+    - https://github.com/wolfSSL/wolfssl/commit/0814f61b11f3e493df744b59e826d37e0c898359
+  wc_AesCfbEncrypt:
+    category: 'unknown'
+    comment: 'heavy refactoring while adding CFB8 support'
+    commits: []
+  wc_AesGcmDecrypt:
+    category: 'genuine'
+    comment: 'new error checking'
+    commits: []
+  wc_AesGcmEncrypt:
+    category: 'genuine'
+    comment: 'new error checking'
+    commits: []
+  wc_ChaCha20Poly1305_Decrypt:
+    category: 'genuine'
+    comment: 'API changed'
+    commits: []
+  wc_ChaCha20Poly1305_Encrypt:
+    category: 'genuine'
+    comment: 'API changed'
+    commits: []
+  wc_Chacha_Process:
+    category: 'unknown'
+    comment: 'complex refactoring of leftover block handling'
+    commits: []
+  wc_DhAgree:
+    category: 'unknown'
+    comment: 'complex refactoring'
+    commits: []
+  wc_GmacUpdate:
+    category: 'genuine'
+    comment: 'added error checking'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/6b3642db36bd99c9f586efb53d3ab512225f81fd
+  wc_Poly1305_MAC:
+    category: 'unknown'
+    comment: 'complex refactoring'
+    commits: []
+  wc_RsaPSS_Sign:
+    category: 'genuine'
+    comment: 'improvements to be able to sign more digest types'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/f58a9e81e9e9a8130fa2cff3a8548bc9acb95d4c
+  wc_RsaPSS_Verify:
+    category: 'genuine'
+    comment: 'improvements to be able to sign more digest types'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/f58a9e81e9e9a8130fa2cff3a8548bc9acb95d4c
+    - https://github.com/wolfSSL/wolfssl/commit/22f0b145d31ff6d80b3e5cc891eac70eb6202f87
+    - https://github.com/wolfSSL/wolfssl/commit/81bebd8e5c561a947faba52c9b5361e94e2ec2c7
+  wc_RsaPrivateDecrypt:
+    category: 'complex'
+    comment: 'optimizations'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/f58a9e81e9e9a8130fa2cff3a8548bc9acb95d4c
+    - https://github.com/wolfSSL/wolfssl/commit/22f0b145d31ff6d80b3e5cc891eac70eb6202f87
+    - https://github.com/wolfSSL/wolfssl/commit/81bebd8e5c561a947faba52c9b5361e94e2ec2c7
+  wc_RsaPublicEncrypt:
+    category: 'complex'
+    comment: 'optimizations'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/f58a9e81e9e9a8130fa2cff3a8548bc9acb95d4c
+  wc_RsaSSL_Sign:
+    category: 'genuine'
+    comment: 'improvements to be able to sign more digest types'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/f58a9e81e9e9a8130fa2cff3a8548bc9acb95d4c
+  wc_RsaSSL_Verify:
+    category: 'genuine'
+    comment: 'improvements to be able to sign more digest types'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/f58a9e81e9e9a8130fa2cff3a8548bc9acb95d4c
+    - https://github.com/wolfSSL/wolfssl/commit/22f0b145d31ff6d80b3e5cc891eac70eb6202f87
+    - https://github.com/wolfSSL/wolfssl/commit/81bebd8e5c561a947faba52c9b5361e94e2ec2c7
+  wc_SignatureGenerate:
+    category: 'genuine'
+    comment: 'improvements to be able to sign more digest types'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/f58a9e81e9e9a8130fa2cff3a8548bc9acb95d4c
+    - https://github.com/wolfSSL/wolfssl/commit/55ea2facdd1a187ce28869cb37994c25458878e1
+    - https://github.com/wolfSSL/wolfssl/commit/1831193c208cc75045d9c6d485b27fc40f5a0b7b
+  wc_SignatureVerify:
+    category: 'genuine'
+    comment: 'improvements to be able to sign more digest types'
+    commits: []
+  wc_ecc_decrypt:
+    category: 'genuine'
+    comment: 'added support for P384'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/8972bf62785b72ac853240d925582e148ae95a10
+    - https://github.com/wolfSSL/wolfssl/commit/1de07da61f0c8e9926dcbd68119f73230dae283f
+  wc_ecc_encrypt:
+    category: 'genuine'
+    comment: 'added support for P384'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/8972bf62785b72ac853240d925582e148ae95a10
+    - https://github.com/wolfSSL/wolfssl/commit/1de07da61f0c8e9926dcbd68119f73230dae283f
+  wc_ecc_shared_secret:
+    category: 'genuine'
+    comment: 'added support for P384'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/8972bf62785b72ac853240d925582e148ae95a10
+    - https://github.com/wolfSSL/wolfssl/commit/1de07da61f0c8e9926dcbd68119f73230dae283f
+  wc_ecc_sign_hash:
+    category: 'genuine'
+    comment: 'added support for P384'
+    commits: []
+  wc_ecc_verify_hash:
+    category: 'genuine'
+    comment: 'added support for P384'
+    commits: []
+v4.4.0-stable -> v4.5.0-stable:
+  wc_AesCcmDecrypt:
+    category: 'genuine'
+    comment: 'added error check'
+    commits: []
+  wc_AesCcmEncrypt:
+    category: 'genuine'
+    comment: 'added error check'
+    commits: []
+  wc_ChaCha20Poly1305_Decrypt:
+    category: 'simple'
+    comment: 'type cast of boolean flag to byte type'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/cebb28382243707a435c12db370f1c1a1e4741e3
+  wc_ChaCha20Poly1305_Encrypt:
+    category: 'simple'
+    comment: 'type cast of boolean flag to byte type'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/cebb28382243707a435c12db370f1c1a1e4741e3
+  wc_Chacha_Process:
+    category: 'genuine'
+    comment: 'added error check'
+    commits: []
+  wc_HKDF:
+    category: 'unknown'
+    comment: 'no diff'
+    commits: []
+  wc_Poly1305Final:
+    category: 'genuine'
+    comment: 'added error check'
+    commits: []
+  wc_Poly1305Update:
+    category: 'genuine'
+    comment: 'added error check'
+    commits: []
+  wc_Poly1305_MAC:
+    category: 'genuine'
+    comment: 'added error check'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/cebb28382243707a435c12db370f1c1a1e4741e3
+  wc_RsaPSS_Sign:
+    category: 'genuine'
+    comment: 'changed return code among other things'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/6a7a8fa5b7f093b010b5fd8d374e6f73359b8fed
+  wc_RsaPSS_Verify:
+    category: 'genuine'
+    comment: 'changed return code among other things'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/cebb28382243707a435c12db370f1c1a1e4741e3
+    - https://github.com/wolfSSL/wolfssl/commit/6a7a8fa5b7f093b010b5fd8d374e6f73359b8fed
+  wc_RsaPrivateDecrypt:
+    category: 'genuine'
+    comment: 'changed return code among other things'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/cebb28382243707a435c12db370f1c1a1e4741e3
+    - https://github.com/wolfSSL/wolfssl/commit/6a7a8fa5b7f093b010b5fd8d374e6f73359b8fed
+  wc_RsaPublicEncrypt:
+    category: 'genuine'
+    comment: 'changed return code among other things'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/6a7a8fa5b7f093b010b5fd8d374e6f73359b8fed
+  wc_RsaSSL_Sign:
+    category: 'genuine'
+    comment: 'changed return code among other things'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/6a7a8fa5b7f093b010b5fd8d374e6f73359b8fed
+  wc_RsaSSL_Verify:
+    category: 'genuine'
+    comment: 'changed return code among other things'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/cebb28382243707a435c12db370f1c1a1e4741e3
+    - https://github.com/wolfSSL/wolfssl/commit/6a7a8fa5b7f093b010b5fd8d374e6f73359b8fed
+  wc_SignatureGenerate:
+    category: 'genuine'
+    comment: 'bug fixes for CryptoCell 310'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/6b1a6309ce068a2db2cbd8e34402508cab137751
+  wc_SignatureVerify:
+    category: 'genuine'
+    comment: 'bug fixes for CryptoCell 310'
+    commits: []
+  wc_ecc_decrypt:
+    category: 'genuine'
+    comment: 'new error checking'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/8b05160349d3162f366c2a495dc271e1a4d8330c
+    - https://github.com/wolfSSL/wolfssl/commit/6467de5a88404b4fabc1dea9cb0cb4b18a07eac6
+  wc_ecc_encrypt:
+    category: 'genuine'
+    comment: 'new error checking'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/8b05160349d3162f366c2a495dc271e1a4d8330c
+    - https://github.com/wolfSSL/wolfssl/commit/6467de5a88404b4fabc1dea9cb0cb4b18a07eac6
+  wc_ecc_shared_secret:
+    category: 'genuine'
+    comment: 'new error checking'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/8b05160349d3162f366c2a495dc271e1a4d8330c
+    - https://github.com/wolfSSL/wolfssl/commit/6467de5a88404b4fabc1dea9cb0cb4b18a07eac6
+  wc_ecc_sign_hash:
+    category: 'unknown'
+    comment: 'heavy refactoring of timing resistance'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/896fcd9aecb91d8dfd45299f018e1e24b3025153
+  wc_ecc_verify_hash:
+    category: 'unknown'
+    comment: 'heavy refactoring of timing resistance'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/896fcd9aecb91d8dfd45299f018e1e24b3025153
+  wc_ed25519_verify_msg:
+    category: 'genuine'
+    comment: 'added error checking'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/722961f55c68859c9f3a2a67e22105a2fa8e9964
+  wc_ed25519ctx_verify_msg:
+    category: 'genuine'
+    comment: 'added error checking'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/722961f55c68859c9f3a2a67e22105a2fa8e9964
+  wc_ed25519ph_verify_hash:
+    category: 'genuine'
+    comment: 'added error checking'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/722961f55c68859c9f3a2a67e22105a2fa8e9964
+  wc_ed25519ph_verify_msg:
+    category: 'genuine'
+    comment: 'added error checking'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/722961f55c68859c9f3a2a67e22105a2fa8e9964
+v4.5.0-stable -> v4.6.0-stable:
+  Base64_Decode:
+    category: 'unknown'
+    comment: 'making base64 decode cache attack resistant'
+    commits: []
+  wc_AesCbcDecrypt:
+    category: 'unknown'
+    comment: 'complex hardware optimization'
+    commits: []
+  wc_AesCbcEncrypt:
+    category: 'unknown'
+    comment: 'complex hardware optimization'
+    commits: []
+  wc_AesCcmDecrypt:
+    category: 'unknown'
+    comment: 'complex refactoring'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/d0703f8931066016f05c3dfc55a533935d9448c9
+    - https://github.com/wolfSSL/wolfssl/commit/60a686f48c37b5a4dd62a893902036d189053732
+    - https://github.com/wolfSSL/wolfssl/commit/cd14cfb0923e4d006301b200e8fb55d2d2a7f4fe
+    - https://github.com/wolfSSL/wolfssl/commit/3d9b4f10f0dd2472ccb85f827eb884cdda564405
+    - https://github.com/wolfSSL/wolfssl/commit/36263323349df017769973bbd71350e1923f698c
+    - https://github.com/wolfSSL/wolfssl/commit/9244bbbf837fa042b00f1115c5253073a9086292
+  wc_AesCcmEncrypt:
+    category: 'unknown'
+    comment: 'complex refactoring'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/d0703f8931066016f05c3dfc55a533935d9448c9
+    - https://github.com/wolfSSL/wolfssl/commit/60a686f48c37b5a4dd62a893902036d189053732
+    - https://github.com/wolfSSL/wolfssl/commit/cd14cfb0923e4d006301b200e8fb55d2d2a7f4fe
+    - https://github.com/wolfSSL/wolfssl/commit/3d9b4f10f0dd2472ccb85f827eb884cdda564405
+    - https://github.com/wolfSSL/wolfssl/commit/36263323349df017769973bbd71350e1923f698c
+    - https://github.com/wolfSSL/wolfssl/commit/9244bbbf837fa042b00f1115c5253073a9086292
+  wc_AesCfbDecrypt:
+    category: 'unknown'
+    comment: 'complex refactoring'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/d0703f8931066016f05c3dfc55a533935d9448c9
+    - https://github.com/wolfSSL/wolfssl/commit/60a686f48c37b5a4dd62a893902036d189053732
+    - https://github.com/wolfSSL/wolfssl/commit/cd14cfb0923e4d006301b200e8fb55d2d2a7f4fe
+    - https://github.com/wolfSSL/wolfssl/commit/3d9b4f10f0dd2472ccb85f827eb884cdda564405
+    - https://github.com/wolfSSL/wolfssl/commit/36263323349df017769973bbd71350e1923f698c
+    - https://github.com/wolfSSL/wolfssl/commit/9244bbbf837fa042b00f1115c5253073a9086292
+  wc_AesCfbEncrypt:
+    category: 'unknown'
+    comment: 'complex refactoring'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/d0703f8931066016f05c3dfc55a533935d9448c9
+    - https://github.com/wolfSSL/wolfssl/commit/60a686f48c37b5a4dd62a893902036d189053732
+    - https://github.com/wolfSSL/wolfssl/commit/cd14cfb0923e4d006301b200e8fb55d2d2a7f4fe
+    - https://github.com/wolfSSL/wolfssl/commit/3d9b4f10f0dd2472ccb85f827eb884cdda564405
+    - https://github.com/wolfSSL/wolfssl/commit/36263323349df017769973bbd71350e1923f698c
+    - https://github.com/wolfSSL/wolfssl/commit/9244bbbf837fa042b00f1115c5253073a9086292
+  wc_AesCmacGenerate:
+    category: 'unknown'
+    comment: 'no diff'
+    commits: []
+  wc_AesCmacVerify:
+    category: 'unknown'
+    comment: 'no diff'
+    commits: []
+  wc_AesCtrEncrypt:
+    category: 'unknown'
+    comment: 'complex refactoring'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/d0703f8931066016f05c3dfc55a533935d9448c9
+    - https://github.com/wolfSSL/wolfssl/commit/60a686f48c37b5a4dd62a893902036d189053732
+    - https://github.com/wolfSSL/wolfssl/commit/cd14cfb0923e4d006301b200e8fb55d2d2a7f4fe
+    - https://github.com/wolfSSL/wolfssl/commit/3d9b4f10f0dd2472ccb85f827eb884cdda564405
+    - https://github.com/wolfSSL/wolfssl/commit/36263323349df017769973bbd71350e1923f698c
+    - https://github.com/wolfSSL/wolfssl/commit/9244bbbf837fa042b00f1115c5253073a9086292
+  wc_AesDecryptDirect:
+    category: 'unknown'
+    comment: 'complex refactoring'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/c0823c8a7eeb239e0b2dd27eaf9d73abe465b1f4
+    - https://github.com/wolfSSL/wolfssl/commit/6fcdd848c99d4458c179a24916b2605cc60778a3
+    - https://github.com/wolfSSL/wolfssl/commit/79c31a5f2c809d110410e20f1733876056fcafeb
+    - https://github.com/wolfSSL/wolfssl/commit/bd871280d778c94f066a39f13387ca6979604c9e
+    - https://github.com/wolfSSL/wolfssl/commit/d0703f8931066016f05c3dfc55a533935d9448c9
+    - https://github.com/wolfSSL/wolfssl/commit/a07f9ded63c2d7ff72cf78fb4508a1922ff321b1
+    - https://github.com/wolfSSL/wolfssl/commit/dfc8ed5a737b292a6b3d054d3f40a245d0ae3da9
+    - https://github.com/wolfSSL/wolfssl/commit/0c9ba76a93cfd74f93df876ba353370b13c4f4a3
+    - https://github.com/wolfSSL/wolfssl/commit/60a686f48c37b5a4dd62a893902036d189053732
+    - https://github.com/wolfSSL/wolfssl/commit/cd14cfb0923e4d006301b200e8fb55d2d2a7f4fe
+    - https://github.com/wolfSSL/wolfssl/commit/2ac5835ee8e2561989835b895d77c169753564cd
+    - https://github.com/wolfSSL/wolfssl/commit/5ead4386b35905c21b6ed0fc9a21fd73734e57fa
+    - https://github.com/wolfSSL/wolfssl/commit/3d9b4f10f0dd2472ccb85f827eb884cdda564405
+    - https://github.com/wolfSSL/wolfssl/commit/36263323349df017769973bbd71350e1923f698c
+    - https://github.com/wolfSSL/wolfssl/commit/9244bbbf837fa042b00f1115c5253073a9086292
+  wc_AesEncryptDirect:
+    category: 'unknown'
+    comment: 'complex refactoring'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/d0703f8931066016f05c3dfc55a533935d9448c9
+    - https://github.com/wolfSSL/wolfssl/commit/60a686f48c37b5a4dd62a893902036d189053732
+    - https://github.com/wolfSSL/wolfssl/commit/cd14cfb0923e4d006301b200e8fb55d2d2a7f4fe
+    - https://github.com/wolfSSL/wolfssl/commit/3d9b4f10f0dd2472ccb85f827eb884cdda564405
+    - https://github.com/wolfSSL/wolfssl/commit/36263323349df017769973bbd71350e1923f698c
+    - https://github.com/wolfSSL/wolfssl/commit/9244bbbf837fa042b00f1115c5253073a9086292
+  wc_AesGcmDecrypt:
+    category: 'unknown'
+    comment: 'complex refactoring'
+    commits: []
+  wc_AesGcmEncrypt:
+    category: 'unknown'
+    comment: 'complex refactoring'
+    commits: []
+  wc_AesXtsDecrypt:
+    category: 'unknown'
+    comment: 'complex refactoring'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/c0823c8a7eeb239e0b2dd27eaf9d73abe465b1f4
+    - https://github.com/wolfSSL/wolfssl/commit/6fcdd848c99d4458c179a24916b2605cc60778a3
+    - https://github.com/wolfSSL/wolfssl/commit/79c31a5f2c809d110410e20f1733876056fcafeb
+    - https://github.com/wolfSSL/wolfssl/commit/bd871280d778c94f066a39f13387ca6979604c9e
+    - https://github.com/wolfSSL/wolfssl/commit/d0703f8931066016f05c3dfc55a533935d9448c9
+    - https://github.com/wolfSSL/wolfssl/commit/a07f9ded63c2d7ff72cf78fb4508a1922ff321b1
+    - https://github.com/wolfSSL/wolfssl/commit/dfc8ed5a737b292a6b3d054d3f40a245d0ae3da9
+    - https://github.com/wolfSSL/wolfssl/commit/0c9ba76a93cfd74f93df876ba353370b13c4f4a3
+    - https://github.com/wolfSSL/wolfssl/commit/60a686f48c37b5a4dd62a893902036d189053732
+    - https://github.com/wolfSSL/wolfssl/commit/cd14cfb0923e4d006301b200e8fb55d2d2a7f4fe
+    - https://github.com/wolfSSL/wolfssl/commit/2ac5835ee8e2561989835b895d77c169753564cd
+    - https://github.com/wolfSSL/wolfssl/commit/5ead4386b35905c21b6ed0fc9a21fd73734e57fa
+    - https://github.com/wolfSSL/wolfssl/commit/3d9b4f10f0dd2472ccb85f827eb884cdda564405
+    - https://github.com/wolfSSL/wolfssl/commit/36263323349df017769973bbd71350e1923f698c
+    - https://github.com/wolfSSL/wolfssl/commit/9244bbbf837fa042b00f1115c5253073a9086292
+  wc_AesXtsDecryptSector:
+    category: 'unknown'
+    comment: 'complex refactoring'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/c0823c8a7eeb239e0b2dd27eaf9d73abe465b1f4
+    - https://github.com/wolfSSL/wolfssl/commit/6fcdd848c99d4458c179a24916b2605cc60778a3
+    - https://github.com/wolfSSL/wolfssl/commit/79c31a5f2c809d110410e20f1733876056fcafeb
+    - https://github.com/wolfSSL/wolfssl/commit/bd871280d778c94f066a39f13387ca6979604c9e
+    - https://github.com/wolfSSL/wolfssl/commit/d0703f8931066016f05c3dfc55a533935d9448c9
+    - https://github.com/wolfSSL/wolfssl/commit/a07f9ded63c2d7ff72cf78fb4508a1922ff321b1
+    - https://github.com/wolfSSL/wolfssl/commit/dfc8ed5a737b292a6b3d054d3f40a245d0ae3da9
+    - https://github.com/wolfSSL/wolfssl/commit/0c9ba76a93cfd74f93df876ba353370b13c4f4a3
+    - https://github.com/wolfSSL/wolfssl/commit/60a686f48c37b5a4dd62a893902036d189053732
+    - https://github.com/wolfSSL/wolfssl/commit/cd14cfb0923e4d006301b200e8fb55d2d2a7f4fe
+    - https://github.com/wolfSSL/wolfssl/commit/2ac5835ee8e2561989835b895d77c169753564cd
+    - https://github.com/wolfSSL/wolfssl/commit/5ead4386b35905c21b6ed0fc9a21fd73734e57fa
+    - https://github.com/wolfSSL/wolfssl/commit/3d9b4f10f0dd2472ccb85f827eb884cdda564405
+    - https://github.com/wolfSSL/wolfssl/commit/36263323349df017769973bbd71350e1923f698c
+    - https://github.com/wolfSSL/wolfssl/commit/9244bbbf837fa042b00f1115c5253073a9086292
+  wc_AesXtsEncrypt:
+    category: 'unknown'
+    comment: 'complex refactoring'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/c0823c8a7eeb239e0b2dd27eaf9d73abe465b1f4
+    - https://github.com/wolfSSL/wolfssl/commit/6fcdd848c99d4458c179a24916b2605cc60778a3
+    - https://github.com/wolfSSL/wolfssl/commit/79c31a5f2c809d110410e20f1733876056fcafeb
+    - https://github.com/wolfSSL/wolfssl/commit/bd871280d778c94f066a39f13387ca6979604c9e
+    - https://github.com/wolfSSL/wolfssl/commit/d0703f8931066016f05c3dfc55a533935d9448c9
+    - https://github.com/wolfSSL/wolfssl/commit/a07f9ded63c2d7ff72cf78fb4508a1922ff321b1
+    - https://github.com/wolfSSL/wolfssl/commit/dfc8ed5a737b292a6b3d054d3f40a245d0ae3da9
+    - https://github.com/wolfSSL/wolfssl/commit/0c9ba76a93cfd74f93df876ba353370b13c4f4a3
+    - https://github.com/wolfSSL/wolfssl/commit/60a686f48c37b5a4dd62a893902036d189053732
+    - https://github.com/wolfSSL/wolfssl/commit/cd14cfb0923e4d006301b200e8fb55d2d2a7f4fe
+    - https://github.com/wolfSSL/wolfssl/commit/2ac5835ee8e2561989835b895d77c169753564cd
+    - https://github.com/wolfSSL/wolfssl/commit/5ead4386b35905c21b6ed0fc9a21fd73734e57fa
+    - https://github.com/wolfSSL/wolfssl/commit/3d9b4f10f0dd2472ccb85f827eb884cdda564405
+    - https://github.com/wolfSSL/wolfssl/commit/36263323349df017769973bbd71350e1923f698c
+    - https://github.com/wolfSSL/wolfssl/commit/9244bbbf837fa042b00f1115c5253073a9086292
+  wc_AesXtsEncryptSector:
+    category: 'unknown'
+    comment: 'complex refactoring'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/c0823c8a7eeb239e0b2dd27eaf9d73abe465b1f4
+    - https://github.com/wolfSSL/wolfssl/commit/6fcdd848c99d4458c179a24916b2605cc60778a3
+    - https://github.com/wolfSSL/wolfssl/commit/79c31a5f2c809d110410e20f1733876056fcafeb
+    - https://github.com/wolfSSL/wolfssl/commit/bd871280d778c94f066a39f13387ca6979604c9e
+    - https://github.com/wolfSSL/wolfssl/commit/d0703f8931066016f05c3dfc55a533935d9448c9
+    - https://github.com/wolfSSL/wolfssl/commit/a07f9ded63c2d7ff72cf78fb4508a1922ff321b1
+    - https://github.com/wolfSSL/wolfssl/commit/dfc8ed5a737b292a6b3d054d3f40a245d0ae3da9
+    - https://github.com/wolfSSL/wolfssl/commit/0c9ba76a93cfd74f93df876ba353370b13c4f4a3
+    - https://github.com/wolfSSL/wolfssl/commit/60a686f48c37b5a4dd62a893902036d189053732
+    - https://github.com/wolfSSL/wolfssl/commit/cd14cfb0923e4d006301b200e8fb55d2d2a7f4fe
+    - https://github.com/wolfSSL/wolfssl/commit/2ac5835ee8e2561989835b895d77c169753564cd
+    - https://github.com/wolfSSL/wolfssl/commit/5ead4386b35905c21b6ed0fc9a21fd73734e57fa
+    - https://github.com/wolfSSL/wolfssl/commit/3d9b4f10f0dd2472ccb85f827eb884cdda564405
+    - https://github.com/wolfSSL/wolfssl/commit/36263323349df017769973bbd71350e1923f698c
+    - https://github.com/wolfSSL/wolfssl/commit/9244bbbf837fa042b00f1115c5253073a9086292
+  wc_CmacFinal:
+    category: 'unknown'
+    comment: 'no diff'
+    commits: []
+  wc_CmacUpdate:
+    category: 'unknown'
+    comment: 'no diff'
+    commits: []
+  wc_Des3_CbcDecrypt:
+    category: 'unknown'
+    comment: 'no diff'
+    commits: []
+  wc_Des3_CbcEncrypt:
+    category: 'unknown'
+    comment: 'no diff'
+    commits: []
+  wc_DsaSign:
+    category: 'unknown'
+    comment: 'complex refactoring'
+    commits: []
+  wc_DsaVerify:
+    category: 'unknown'
+    comment: 'complex refactoring'
+    commits: []
+  wc_GmacUpdate:
+    category: 'unknown'
+    comment: 'complex refactoring'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/a9ff89eafac7451121e50663c7d0940787207371
+  wc_HKDF:
+    category: 'unknown'
+    comment: 'no diff'
+    commits: []
+  wc_HmacFinal:
+    category: 'unknown'
+    comment: 'no relevant diff'
+    commits: []
+  wc_HmacUpdate:
+    category: 'unknown'
+    comment: 'no relevant diff'
+    commits: []
+  wc_PBKDF2:
+    category: 'unknown'
+    comment: 'no diff'
+    commits: []
+  wc_Poly1305Update:
+    category: 'simple'
+    comment: 'removed duplicate argument check'
+    commits: []
+  wc_Poly1305_MAC:
+    category: 'simple'
+    comment: 'removed duplicate argument check'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/6142c229483f80fe2d86ff6a395dd48f89a2e18d
+    - https://github.com/wolfSSL/wolfssl/commit/7c2aefcfdd856358dcd0792005372e5c0e5cbe70
+  wc_RsaPSS_Sign:
+    category: 'unknown'
+    comment: 'no diff'
+    commits: []
+  wc_RsaPSS_Verify:
+    category: 'genuine'
+    comment: 'off by one error'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/ce0a2f3bc9614ab88cdbe9c5bd2c5b35f1a784da
+  wc_RsaPrivateDecrypt:
+    category: 'genuine'
+    comment: 'off by one error'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/ce0a2f3bc9614ab88cdbe9c5bd2c5b35f1a784da
+  wc_RsaPublicEncrypt:
+    category: 'unknown'
+    comment: 'no diff'
+    commits: []
+  wc_RsaSSL_Sign:
+    category: 'unknown'
+    comment: 'no diff'
+    commits: []
+  wc_RsaSSL_Verify:
+    category: 'genuine'
+    comment: 'off by one error'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/ce0a2f3bc9614ab88cdbe9c5bd2c5b35f1a784da
+  wc_Sha224Hash:
+    category: 'genuine'
+    comment: 'callback improvements'
+    commits: []
+  wc_Sha256Hash:
+    category: 'genuine'
+    comment: 'callback improvements'
+    commits: []
+  wc_ShaHash:
+    category: 'unknown'
+    comment: 'optimizations'
+    commits: []
+  wc_SignatureGenerate:
+    category: 'unknown'
+    comment: 'no diff'
+    commits: []
+  wc_SignatureVerify:
+    category: 'unknown'
+    comment: 'no diff'
+    commits: []
+  wc_ecc_decrypt:
+    category: 'unknown'
+    comment: 'heavy refactoring of the ECC code'
+    commits: []
+  wc_ecc_encrypt:
+    category: 'unknown'
+    comment: 'heavy refactoring of the ECC code'
+    commits: []
+  wc_ecc_shared_secret:
+    category: 'unknown'
+    comment: 'heavy refactoring of the ECC code'
+    commits: []
+  wc_ecc_sign_hash:
+    category: 'unknown'
+    comment: 'heavy refactoring of the ECC code'
+    commits: []
+  wc_ecc_verify_hash:
+    category: 'unknown'
+    comment: 'heavy refactoring of the ECC code'
+    commits: []
+v4.6.0-stable -> v4.7.0-stable:
+  Base64_Decode:
+    category: 'simple'
+    comment: 'simplified masking in base64 decode'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/9c87f979a7f1d3a6d786b260653d566c1d31a1c4
+  wc_AesCcmDecrypt:
+    category: 'genuine'
+    comment: 'modified error checking'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/b8a019dedde82b6cb47e4b3f14cae7b87d29061a
+    - https://github.com/wolfSSL/wolfssl/commit/9c87f979a7f1d3a6d786b260653d566c1d31a1c4
+    - https://github.com/wolfSSL/wolfssl/commit/7a583d5b4bd880b83ab3214538b354371a1f7d94
+  wc_AesCcmEncrypt:
+    category: 'genuine'
+    comment: 'modified error checking'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/bdd4ceb445d5679dcc7c43bb877de779d9689fa5
+    - https://github.com/wolfSSL/wolfssl/commit/9c87f979a7f1d3a6d786b260653d566c1d31a1c4
+  wc_AesCmacGenerate:
+    category: 'unknown'
+    comment: 'behavior changed with small stack enabled'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/a332cf36b585902357c04b7cf19fb1cefe4ed1f4
+    - https://github.com/wolfSSL/wolfssl/commit/0f6ae330dade7d1ea7ab02340cd260ca706b4f9a
+    - https://github.com/wolfSSL/wolfssl/commit/9c87f979a7f1d3a6d786b260653d566c1d31a1c4
+  wc_AesCmacVerify:
+    category: 'unknown'
+    comment: 'behavior changed with small stack enabled'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/a332cf36b585902357c04b7cf19fb1cefe4ed1f4
+    - https://github.com/wolfSSL/wolfssl/commit/0f6ae330dade7d1ea7ab02340cd260ca706b4f9a
+    - https://github.com/wolfSSL/wolfssl/commit/9c87f979a7f1d3a6d786b260653d566c1d31a1c4
+  wc_Blake2bFinal:
+    category: 'unknown'
+    comment: 'optimizations'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/9c87f979a7f1d3a6d786b260653d566c1d31a1c4
+  wc_Blake2bUpdate:
+    category: 'unknown'
+    comment: 'optimizations'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/9c87f979a7f1d3a6d786b260653d566c1d31a1c4
+  wc_ecc_decrypt:
+    category: 'unknown'
+    comment: 'behavior changed with small stack enabled'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/72a8a1069a6a1f94fb77c8ae4a05cd09b45ac339
+    - https://github.com/wolfSSL/wolfssl/commit/9c87f979a7f1d3a6d786b260653d566c1d31a1c4
+    - https://github.com/wolfSSL/wolfssl/commit/04e7fa36577e6a9169bf35b6eff5f8426b1c6869
+    - https://github.com/wolfSSL/wolfssl/commit/a332cf36b585902357c04b7cf19fb1cefe4ed1f4
+    - https://github.com/wolfSSL/wolfssl/commit/0f6ae330dade7d1ea7ab02340cd260ca706b4f9a
+  wc_ecc_encrypt:
+    category: 'unknown'
+    comment: 'behavior changed with small stack enabled'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/72a8a1069a6a1f94fb77c8ae4a05cd09b45ac339
+    - https://github.com/wolfSSL/wolfssl/commit/9c87f979a7f1d3a6d786b260653d566c1d31a1c4
+    - https://github.com/wolfSSL/wolfssl/commit/04e7fa36577e6a9169bf35b6eff5f8426b1c6869
+    - https://github.com/wolfSSL/wolfssl/commit/a332cf36b585902357c04b7cf19fb1cefe4ed1f4
+    - https://github.com/wolfSSL/wolfssl/commit/0f6ae330dade7d1ea7ab02340cd260ca706b4f9a
+  wc_ecc_shared_secret:
+    category: 'unknown'
+    comment: 'behavior changed with small stack enabled'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/f955c92008fb9f3219b218dde35afde8bd55e7a7
+    - https://github.com/wolfSSL/wolfssl/commit/9c87f979a7f1d3a6d786b260653d566c1d31a1c4
+  wc_ecc_sign_hash:
+    category: 'unknown'
+    comment: 'behavior changed with small stack enabled'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/905f0b1f5a5ae9556a1998e984c176c1880fd91e
+    - https://github.com/wolfSSL/wolfssl/commit/64bc4b663d76d63d330e42d2458135a6194cad80
+    - https://github.com/wolfSSL/wolfssl/commit/060ebd1ca26536002fdeab5cba7d65aaffce8c77
+    - https://github.com/wolfSSL/wolfssl/commit/f955c92008fb9f3219b218dde35afde8bd55e7a7
+    - https://github.com/wolfSSL/wolfssl/commit/7d869a43b4c78433094bf8e94e2bb126c1d2cdf8
+    - https://github.com/wolfSSL/wolfssl/commit/9c87f979a7f1d3a6d786b260653d566c1d31a1c4
+    - https://github.com/wolfSSL/wolfssl/commit/c739b4d474bf1868c028dc440a01c55cd14cd066
+  wc_ecc_verify_hash:
+    category: 'unknown'
+    comment: 'behavior changed with small stack enabled'
+    commits:
+    - https://github.com/wolfSSL/wolfssl/commit/f955c92008fb9f3219b218dde35afde8bd55e7a7
+    - https://github.com/wolfSSL/wolfssl/commit/9c87f979a7f1d3a6d786b260653d566c1d31a1c4
