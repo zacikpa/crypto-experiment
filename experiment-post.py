@@ -24,6 +24,9 @@ NEW_PATTERNS = [
 for library in LIBRARIES:
     config_filepath = os.path.join(CONFIG_DIR, f"{library}.yml")
     all_pattern_results_dir = os.path.join(RESULTS_DIR, ALL_PATTERNS_RESULTS_DIR)
+    custom_pattern_config_path = os.path.join(
+        CUSTOM_PATTERNS_DIR, library, CUSTOM_PATTERNS_CONFIG_FILENAME
+    )
     analysis_cmd = [
         ANALYSIS_SCRIPT,
         config_filepath,
@@ -32,13 +35,12 @@ for library in LIBRARIES:
         "--output",
         all_pattern_results_dir,
     ]
+    if os.path.isfile(custom_pattern_config_path):
+        analysis_cmd += ["--custom-patterns", custom_pattern_config_path]
     subprocess.run(analysis_cmd)
 
     for pattern in NEW_PATTERNS:
         results_dir = os.path.join(RESULTS_DIR, pattern)
-        custom_pattern_config_path = os.path.join(
-            CUSTOM_PATTERNS_DIR, pattern, CUSTOM_PATTERNS_CONFIG_FILENAME
-        )
         analysis_cmd = [
             ANALYSIS_SCRIPT,
             config_filepath,
@@ -46,11 +48,11 @@ for library in LIBRARIES:
             DIFFKEMP_BINARY,
             "--disable-patterns",
             pattern,
-            "--custom-patterns",
-            custom_pattern_config_path,
             "--output",
             results_dir,
         ]
+        if os.path.isfile(custom_pattern_config_path):
+            analysis_cmd += ["--custom-patterns", custom_pattern_config_path]
         subprocess.run(analysis_cmd)
         diff_file = os.path.join(results_dir, library, DIFF_FILENAME)
         diff_cmd = [
