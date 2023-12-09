@@ -35,6 +35,7 @@ for library in LIBRARIES:
         ",".join(DISABLED_PATTERNS),
         "--output",
         all_pattern_results_dir,
+        "--review-template"
     ]
     subprocess.run(analysis_cmd)
 
