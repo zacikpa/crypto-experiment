@@ -1,0 +1,72 @@
+mbedtls-3.0.0 -> mbedtls-3.1.0:
+  no_diff: 18
+  semantic:
+    complex: 5
+    genuine: 13
+    simple: 1
+    unknown: 2
+  syntactic:
+    non_trivial: 23
+    trivial: 0
+    wrong: 0
+  unknown: 0
+mbedtls-3.1.0 -> mbedtls-3.2.0:
+  no_diff: 48
+  semantic:
+    complex: 0
+    genuine: 0
+    simple: 0
+    unknown: 8
+  syntactic:
+    non_trivial: 1
+    trivial: 5
+    wrong: 0
+  unknown: 0
+mbedtls-3.2.0 -> mbedtls-3.3.0:
+  no_diff: 17
+  semantic:
+    complex: 1
+    genuine: 13
+    simple: 5
+    unknown: 7
+  syntactic:
+    non_trivial: 15
+    trivial: 4
+    wrong: 0
+  unknown: 0
+mbedtls-3.3.0 -> mbedtls-3.4.0:
+  no_diff: 0
+  semantic:
+    complex: 39
+    genuine: 0
+    simple: 0
+    unknown: 0
+  syntactic:
+    non_trivial: 0
+    trivial: 23
+    wrong: 0
+  unknown: 0
+mbedtls-3.4.0 -> mbedtls-3.5.0:
+  no_diff: 18
+  semantic:
+    complex: 23
+    genuine: 6
+    simple: 0
+    unknown: 14
+  syntactic:
+    non_trivial: 1
+    trivial: 0
+    wrong: 0
+  unknown: 0
+total:
+  no_diff: 101
+  semantic:
+    complex: 68
+    genuine: 32
+    simple: 6
+    unknown: 31
+  syntactic:
+    non_trivial: 40
+    trivial: 32
+    wrong: 0
+  unknown: 0

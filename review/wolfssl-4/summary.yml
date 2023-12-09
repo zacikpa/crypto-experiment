@@ -1,0 +1,96 @@
+total:
+  no_diff: 348
+  semantic:
+    complex: 3
+    genuine: 76
+    simple: 8
+    unknown: 90
+  syntactic:
+    non_trivial: 97
+    trivial: 0
+    wrong: 1
+  unknown: 84
+v4.0.0-stable -> v4.1.0-stable:
+  no_diff: 37
+  semantic:
+    complex: 0
+    genuine: 6
+    simple: 3
+    unknown: 4
+  syntactic:
+    non_trivial: 28
+    trivial: 0
+    wrong: 0
+  unknown: 23
+v4.1.0-stable -> v4.2.0-stable:
+  no_diff: 40
+  semantic:
+    complex: 0
+    genuine: 16
+    simple: 0
+    unknown: 20
+  syntactic:
+    non_trivial: 12
+    trivial: 0
+    wrong: 0
+  unknown: 13
+v4.2.0-stable -> v4.3.0-stable:
+  no_diff: 56
+  semantic:
+    complex: 1
+    genuine: 9
+    simple: 0
+    unknown: 9
+  syntactic:
+    non_trivial: 13
+    trivial: 0
+    wrong: 0
+  unknown: 13
+v4.3.0-stable -> v4.4.0-stable:
+  no_diff: 45
+  semantic:
+    complex: 2
+    genuine: 17
+    simple: 0
+    unknown: 5
+  syntactic:
+    non_trivial: 19
+    trivial: 0
+    wrong: 0
+  unknown: 13
+v4.4.0-stable -> v4.5.0-stable:
+  no_diff: 54
+  semantic:
+    complex: 0
+    genuine: 21
+    simple: 2
+    unknown: 3
+  syntactic:
+    non_trivial: 10
+    trivial: 0
+    wrong: 0
+  unknown: 11
+v4.5.0-stable -> v4.6.0-stable:
+  no_diff: 39
+  semantic:
+    complex: 0
+    genuine: 5
+    simple: 2
+    unknown: 40
+  syntactic:
+    non_trivial: 4
+    trivial: 0
+    wrong: 0
+  unknown: 11
+v4.6.0-stable -> v4.7.0-stable:
+  no_diff: 77
+  semantic:
+    complex: 0
+    genuine: 2
+    simple: 1
+    unknown: 9
+  syntactic:
+    non_trivial: 11
+    trivial: 0
+    wrong: 1
+  unknown: 0

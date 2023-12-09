@@ -510,7 +510,7 @@ mbedtls-2.27.0 -> mbedtls-2.28.0:
     comment: 'no diff'
     commits: []
   mbedtls_base64_decode:
-    category: 'genuine
+    category: 'genuine'
     comment: 'refactoring of local variables and semantics-altering bug fix'
     commits:
     - https://github.com/Mbed-TLS/mbedtls/commit/a97e911e5d86164fcac874e02e83219d2fcd57af

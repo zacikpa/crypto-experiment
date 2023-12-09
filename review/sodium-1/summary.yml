@@ -1,0 +1,120 @@
+1.0.10 -> 1.0.11:
+  no_diff: 45
+  semantic:
+    complex: 0
+    genuine: 10
+    simple: 2
+    unknown: 2
+  syntactic:
+    non_trivial: 0
+    trivial: 2
+    wrong: 0
+  unknown: 16
+1.0.11 -> 1.0.12:
+  no_diff: 36
+  semantic:
+    complex: 0
+    genuine: 1
+    simple: 0
+    unknown: 1
+  syntactic:
+    non_trivial: 9
+    trivial: 14
+    wrong: 0
+  unknown: 16
+1.0.12 -> 1.0.13:
+  no_diff: 65
+  semantic:
+    complex: 0
+    genuine: 2
+    simple: 2
+    unknown: 0
+  syntactic:
+    non_trivial: 0
+    trivial: 0
+    wrong: 0
+  unknown: 8
+1.0.13 -> 1.0.14:
+  no_diff: 46
+  semantic:
+    complex: 0
+    genuine: 18
+    simple: 0
+    unknown: 1
+  syntactic:
+    non_trivial: 0
+    trivial: 4
+    wrong: 0
+  unknown: 8
+1.0.14 -> 1.0.15:
+  no_diff: 71
+  semantic:
+    complex: 0
+    genuine: 6
+    simple: 0
+    unknown: 0
+  syntactic:
+    non_trivial: 0
+    trivial: 0
+    wrong: 0
+  unknown: 0
+1.0.15 -> 1.0.16:
+  no_diff: 73
+  semantic:
+    complex: 0
+    genuine: 0
+    simple: 4
+    unknown: 0
+  syntactic:
+    non_trivial: 0
+    trivial: 0
+    wrong: 0
+  unknown: 0
+1.0.16 -> 1.0.17:
+  no_diff: 58
+  semantic:
+    complex: 0
+    genuine: 4
+    simple: 0
+    unknown: 8
+  syntactic:
+    non_trivial: 5
+    trivial: 2
+    wrong: 0
+  unknown: 0
+1.0.17 -> 1.0.18:
+  no_diff: 77
+  semantic:
+    complex: 0
+    genuine: 0
+    simple: 0
+    unknown: 0
+  syntactic:
+    non_trivial: 0
+    trivial: 0
+    wrong: 0
+  unknown: 0
+1.0.18 -> 1.0.19:
+  no_diff: 60
+  semantic:
+    complex: 0
+    genuine: 0
+    simple: 7
+    unknown: 8
+  syntactic:
+    non_trivial: 2
+    trivial: 0
+    wrong: 0
+  unknown: 0
+total:
+  no_diff: 531
+  semantic:
+    complex: 0
+    genuine: 41
+    simple: 15
+    unknown: 20
+  syntactic:
+    non_trivial: 16
+    trivial: 22
+    wrong: 0
+  unknown: 48

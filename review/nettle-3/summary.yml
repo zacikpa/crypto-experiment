@@ -1,0 +1,120 @@
+nettle_3.0_release_20140607 -> nettle_3.1_release_20150407:
+  no_diff: 90
+  semantic:
+    complex: 1
+    genuine: 12
+    simple: 0
+    unknown: 3
+  syntactic:
+    non_trivial: 0
+    trivial: 0
+    wrong: 0
+  unknown: 40
+nettle_3.1_release_20150407 -> nettle_3.2_release_20160128:
+  no_diff: 107
+  semantic:
+    complex: 0
+    genuine: 1
+    simple: 0
+    unknown: 0
+  syntactic:
+    non_trivial: 0
+    trivial: 0
+    wrong: 0
+  unknown: 38
+nettle_3.2_release_20160128 -> nettle_3.3_release_20161001:
+  no_diff: 100
+  semantic:
+    complex: 0
+    genuine: 5
+    simple: 1
+    unknown: 0
+  syntactic:
+    non_trivial: 2
+    trivial: 0
+    wrong: 0
+  unknown: 38
+nettle_3.3_release_20161001 -> nettle_3.4_release_20171119:
+  no_diff: 98
+  semantic:
+    complex: 0
+    genuine: 7
+    simple: 0
+    unknown: 0
+  syntactic:
+    non_trivial: 1
+    trivial: 0
+    wrong: 2
+  unknown: 38
+nettle_3.4_release_20171119 -> nettle_3.5_release_20190626:
+  no_diff: 88
+  semantic:
+    complex: 5
+    genuine: 2
+    simple: 2
+    unknown: 21
+  syntactic:
+    non_trivial: 0
+    trivial: 0
+    wrong: 0
+  unknown: 28
+nettle_3.5_release_20190626 -> nettle_3.6_release_20200429:
+  no_diff: 105
+  semantic:
+    complex: 7
+    genuine: 5
+    simple: 5
+    unknown: 4
+  syntactic:
+    non_trivial: 0
+    trivial: 0
+    wrong: 0
+  unknown: 20
+nettle_3.6_release_20200429 -> nettle_3.7_release_20210104:
+  no_diff: 111
+  semantic:
+    complex: 0
+    genuine: 2
+    simple: 0
+    unknown: 6
+  syntactic:
+    non_trivial: 19
+    trivial: 0
+    wrong: 0
+  unknown: 8
+nettle_3.7_release_20210104 -> nettle_3.8_release_20220602:
+  no_diff: 137
+  semantic:
+    complex: 0
+    genuine: 1
+    simple: 2
+    unknown: 4
+  syntactic:
+    non_trivial: 0
+    trivial: 0
+    wrong: 0
+  unknown: 2
+nettle_3.8_release_20220602 -> nettle_3.9_release_20230514:
+  no_diff: 128
+  semantic:
+    complex: 5
+    genuine: 0
+    simple: 2
+    unknown: 7
+  syntactic:
+    non_trivial: 4
+    trivial: 0
+    wrong: 0
+  unknown: 0
+total:
+  no_diff: 964
+  semantic:
+    complex: 18
+    genuine: 35
+    simple: 12
+    unknown: 45
+  syntactic:
+    non_trivial: 26
+    trivial: 0
+    wrong: 2
+  unknown: 212

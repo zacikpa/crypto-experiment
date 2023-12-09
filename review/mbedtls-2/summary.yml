@@ -1,0 +1,132 @@
+mbedtls-2.18.0 -> mbedtls-2.19.0:
+  no_diff: 52
+  semantic:
+    complex: 1
+    genuine: 2
+    simple: 0
+    unknown: 0
+  syntactic:
+    non_trivial: 0
+    trivial: 0
+    wrong: 0
+  unknown: 0
+mbedtls-2.19.0 -> mbedtls-2.20.0:
+  no_diff: 11
+  semantic:
+    complex: 0
+    genuine: 3
+    simple: 9
+    unknown: 0
+  syntactic:
+    non_trivial: 32
+    trivial: 0
+    wrong: 0
+  unknown: 0
+mbedtls-2.20.0 -> mbedtls-2.21.0:
+  no_diff: 51
+  semantic:
+    complex: 0
+    genuine: 1
+    simple: 0
+    unknown: 0
+  syntactic:
+    non_trivial: 3
+    trivial: 0
+    wrong: 0
+  unknown: 0
+mbedtls-2.21.0 -> mbedtls-2.22.0:
+  no_diff: 54
+  semantic:
+    complex: 0
+    genuine: 0
+    simple: 0
+    unknown: 1
+  syntactic:
+    non_trivial: 0
+    trivial: 0
+    wrong: 0
+  unknown: 0
+mbedtls-2.22.0 -> mbedtls-2.23.0:
+  no_diff: 54
+  semantic:
+    complex: 0
+    genuine: 0
+    simple: 1
+    unknown: 0
+  syntactic:
+    non_trivial: 0
+    trivial: 0
+    wrong: 0
+  unknown: 0
+mbedtls-2.23.0 -> mbedtls-2.24.0:
+  no_diff: 41
+  semantic:
+    complex: 0
+    genuine: 13
+    simple: 0
+    unknown: 1
+  syntactic:
+    non_trivial: 0
+    trivial: 0
+    wrong: 0
+  unknown: 0
+mbedtls-2.24.0 -> mbedtls-2.25.0:
+  no_diff: 25
+  semantic:
+    complex: 0
+    genuine: 16
+    simple: 14
+    unknown: 0
+  syntactic:
+    non_trivial: 0
+    trivial: 0
+    wrong: 0
+  unknown: 0
+mbedtls-2.25.0 -> mbedtls-2.26.0:
+  no_diff: 41
+  semantic:
+    complex: 2
+    genuine: 12
+    simple: 0
+    unknown: 0
+  syntactic:
+    non_trivial: 0
+    trivial: 0
+    wrong: 0
+  unknown: 0
+mbedtls-2.26.0 -> mbedtls-2.27.0:
+  no_diff: 41
+  semantic:
+    complex: 1
+    genuine: 0
+    simple: 12
+    unknown: 0
+  syntactic:
+    non_trivial: 1
+    trivial: 0
+    wrong: 0
+  unknown: 0
+mbedtls-2.27.0 -> mbedtls-2.28.0:
+  no_diff: 15
+  semantic:
+    complex: 4
+    genuine: 11
+    simple: 0
+    unknown: 2
+  syntactic:
+    non_trivial: 23
+    trivial: 0
+    wrong: 0
+  unknown: 0
+total:
+  no_diff: 385
+  semantic:
+    complex: 8
+    genuine: 58
+    simple: 36
+    unknown: 4
+  syntactic:
+    non_trivial: 59
+    trivial: 0
+    wrong: 0
+  unknown: 0

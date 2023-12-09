@@ -1,7 +1,7 @@
 nettle_3.3_release_20161001 -> nettle_3.4_release_20171119:
   nettle_base16_encode_single:
-    category: '?'
+    category: 'wrong'
     comment: 'changed parameter type from uint8_t to char'
   nettle_base16_encode_update:
-    category: '?'
+    category: 'wrong'
     comment: 'changed parameter type from uint8_t to char'
