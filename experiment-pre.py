@@ -13,7 +13,7 @@ DIFF_FILENAME = "diff.yml"
 ALL_PATTERNS_RESULTS_DIR = "all-patterns"
 DISABLED_PATTERNS = ["group-vars", "reordered-bin-ops"]
 
-LIBRARIES = ["mbedtls-2", "mbedtls-3", "nettle-3", "sodium-1", "wolfssl-4", "wolfssl-5"]
+LIBRARIES = ["mbedtls-2", "mbedtls-3", "nettle-3", "sodium-1", "wolfssl-4"]
 
 BUILTIN_PATTERNS = [
     "struct-alignment",

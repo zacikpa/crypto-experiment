@@ -14,7 +14,7 @@ ALL_PATTERNS_RESULTS_DIR = "all-patterns"
 CUSTOM_PATTERNS_CONFIG_FILENAME = "config.yml"
 CUSTOM_PATTERNS_DIR = "custom-patterns"
 
-LIBRARIES = ["mbedtls-2", "mbedtls-3", "nettle-3", "sodium-1", "wolfssl-4", "wolfssl-5"]
+LIBRARIES = ["mbedtls-2", "mbedtls-3", "nettle-3", "sodium-1", "wolfssl-4"]
 
 NEW_PATTERNS = [
     "group-vars",
