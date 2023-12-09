@@ -412,14 +412,14 @@
     - https://github.com/jedisct1/libsodium/commit/c5e43f4c1cf62b4669b1f33516fc33ef2d005187
   crypto_secretbox_open_detached:
     category: 'simple'
-    comment: 'multiple simple refactorings (zeroization, memcpy)
+    comment: 'multiple simple refactorings (zeroization, memcpy)'
     commits:
     - https://github.com/jedisct1/libsodium/commit/f1652acba26dc5e27c711a41e522ef86de2dbdf4
     - https://github.com/jedisct1/libsodium/commit/c5e43f4c1cf62b4669b1f33516fc33ef2d005187
     - https://github.com/jedisct1/libsodium/commit/d69a2342bccb98a3c28c0b7d5e4e6f3b8c789621
   crypto_secretbox_open_easy:
     category: 'simple'
-    comment: 'multiple simple refactorings (zeroization, memcpy)
+    comment: 'multiple simple refactorings (zeroization, memcpy)'
     commits:
     - https://github.com/jedisct1/libsodium/commit/f1652acba26dc5e27c711a41e522ef86de2dbdf4
     - https://github.com/jedisct1/libsodium/commit/c5e43f4c1cf62b4669b1f33516fc33ef2d005187
