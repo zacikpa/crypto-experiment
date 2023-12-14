@@ -1,4 +1,0 @@
-v4.6.0-stable -> v4.7.0-stable:
-  wc_HKDF:
-    category: 'wrong'
-    comment: 'no diff'
