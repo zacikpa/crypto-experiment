@@ -19,11 +19,13 @@ RUN dnf upgrade -y && \
       python3-cffi \
       python3-jinja2 \
       python3-jsonschema \
+      python3-GitPython \
       gtest-devel \
       fish \
       which \
       python-unversioned-command \
-      diffutils
+      diffutils \
+      libcurl-devel
 
 RUN git clone https://github.com/zacikpa/diffkemp-analysis.git
 RUN git clone https://github.com/zacikpa/diffkemp.git
