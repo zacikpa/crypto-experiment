@@ -42,9 +42,9 @@ nettle_3.3_release_20161001 -> nettle_3.4_release_20171119:
     simple: 0
     unknown: 0
   syntactic:
-    non_trivial: 1
+    non_trivial: 3
     trivial: 0
-    wrong: 2
+    wrong: 0
   unknown: 38
 nettle_3.4_release_20171119 -> nettle_3.5_release_20190626:
   no_diff: 88
@@ -112,9 +112,11 @@ total:
     complex: 18
     genuine: 35
     simple: 12
+    total: 110
     unknown: 45
   syntactic:
-    non_trivial: 26
+    non_trivial: 28
+    total: 28
     trivial: 0
-    wrong: 2
+    wrong: 0
   unknown: 212

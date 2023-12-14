@@ -4,11 +4,13 @@ total:
     complex: 3
     genuine: 76
     simple: 8
+    total: 177
     unknown: 90
   syntactic:
-    non_trivial: 97
+    non_trivial: 98
+    total: 98
     trivial: 0
-    wrong: 1
+    wrong: 0
   unknown: 84
 v4.0.0-stable -> v4.1.0-stable:
   no_diff: 37
@@ -90,7 +92,7 @@ v4.6.0-stable -> v4.7.0-stable:
     simple: 1
     unknown: 9
   syntactic:
-    non_trivial: 11
+    non_trivial: 12
     trivial: 0
-    wrong: 1
+    wrong: 0
   unknown: 0

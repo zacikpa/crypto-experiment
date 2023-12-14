@@ -64,9 +64,11 @@ total:
     complex: 68
     genuine: 32
     simple: 6
+    total: 137
     unknown: 31
   syntactic:
     non_trivial: 40
+    total: 72
     trivial: 32
     wrong: 0
   unknown: 0
