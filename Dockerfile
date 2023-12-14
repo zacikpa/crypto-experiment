@@ -25,7 +25,8 @@ RUN dnf upgrade -y && \
       which \
       python-unversioned-command \
       diffutils \
-      libcurl-devel
+      libcurl-devel \
+      openssl-devel
 
 RUN git clone https://github.com/zacikpa/diffkemp-analysis.git
 RUN git clone https://github.com/zacikpa/diffkemp.git
